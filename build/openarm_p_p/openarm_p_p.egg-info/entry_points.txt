@@ -1,0 +1,4 @@
+[console_scripts]
+openarm_p_p = openarm_p_p.openarm_p_p:main
+simple_node = openarm_p_p.simple_node:main
+

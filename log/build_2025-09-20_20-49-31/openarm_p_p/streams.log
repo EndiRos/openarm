@@ -1,0 +1,19 @@
+[1.964s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p': PYTHONPATH=/home/endika/Documents/openarm_ros2/build/openarm_p_p/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/endika/Documents/openarm_ros2/build/openarm_p_p/build --no-deps symlink_data --force
+[2.733s] running develop
+[3.098s] running egg_info
+[3.099s] writing openarm_p_p.egg-info/PKG-INFO
+[3.099s] writing dependency_links to openarm_p_p.egg-info/dependency_links.txt
+[3.100s] writing entry points to openarm_p_p.egg-info/entry_points.txt
+[3.100s] writing requirements to openarm_p_p.egg-info/requires.txt
+[3.100s] writing top-level names to openarm_p_p.egg-info/top_level.txt
+[3.105s] reading manifest file 'openarm_p_p.egg-info/SOURCES.txt'
+[3.109s] writing manifest file 'openarm_p_p.egg-info/SOURCES.txt'
+[3.115s] running build_ext
+[3.116s] Creating /home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages/openarm-p-p.egg-link (link to .)
+[3.118s] Installing move_group_python script to /home/endika/Documents/openarm_ros2/install/openarm_p_p/bin
+[3.121s] 
+[3.121s] Installed /home/endika/Documents/openarm_ros2/build/openarm_p_p
+[3.121s] running symlink_data
+[3.121s] symbolically linking /home/endika/Documents/openarm_ros2/build/openarm_p_p/resource/openarm_p_p -> /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/packages
+[3.122s] symbolically linking /home/endika/Documents/openarm_ros2/build/openarm_p_p/package.xml -> /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p
+[3.233s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p' returned '0': PYTHONPATH=/home/endika/Documents/openarm_ros2/build/openarm_p_p/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/endika/Documents/openarm_ros2/build/openarm_p_p/build --no-deps symlink_data --force

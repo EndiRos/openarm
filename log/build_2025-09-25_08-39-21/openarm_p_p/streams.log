@@ -1,0 +1,27 @@
+[0.081s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_p_p -- -j4 -l4
+[0.367s] [35m[1mConsolidate compiler generated dependencies of target openarm_p_p[0m
+[0.547s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_p_p.dir/src/openarm_p_p.cpp.o[0m
+[32.564s] [100%] [32m[1mLinking CXX executable openarm_p_p[0m
+[34.272s] [100%] Built target openarm_p_p
+[34.314s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_p_p -- -j4 -l4
+[34.351s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_p_p
+[34.371s] -- Install configuration: ""
+[34.373s] -- Execute custom install script
+[34.374s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/openarm_p_p/openarm_p_p
+[34.374s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py
+[34.375s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p
+[34.376s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p
+[34.377s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh
+[34.380s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv
+[34.380s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/path.sh
+[34.381s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/path.dsv
+[34.381s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.bash
+[34.381s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.sh
+[34.382s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.zsh
+[34.383s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.dsv
+[34.386s] -- Symlinking: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/package.dsv
+[34.415s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p
+[34.417s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake
+[34.418s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake
+[34.418s] -- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/package.xml
+[34.425s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_p_p

@@ -1,0 +1,5 @@
+  File "/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages/openarm_p_p/openarm_p_p.py", line 32
+    else:
+    ^^^^
+SyntaxError: invalid syntax
+

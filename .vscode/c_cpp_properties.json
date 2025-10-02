@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "ROS2 - Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "${workspaceFolder}/install/**",
+                "${workspaceFolder}/build/**",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/eigen3"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "/opt/ros/humble/include/**",
+                    "${workspaceFolder}/install",
+                    "${workspaceFolder}/build"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}

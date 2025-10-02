@@ -1,0 +1,1 @@
+/home/endika/Documents/openarm_ros2/openarm_bimanual_moveit_config/launch/static_virtual_joint_tfs.launch.py

@@ -1,0 +1,131 @@
+[0.079s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm_ros2/openarm_description -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm_ros2/install/openarm_description
+[0.342s] -- The C compiler identification is GNU 11.4.0
+[0.611s] -- The CXX compiler identification is GNU 11.4.0
+[0.689s] -- Detecting C compiler ABI info
+[1.173s] -- Detecting C compiler ABI info - done
+[1.212s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.213s] -- Detecting C compile features
+[1.215s] -- Detecting C compile features - done
+[1.247s] -- Detecting CXX compiler ABI info
+[1.753s] -- Detecting CXX compiler ABI info - done
+[1.817s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.820s] -- Detecting CXX compile features
+[1.824s] -- Detecting CXX compile features - done
+[1.855s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.580s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.844s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.043s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.070s] -- Added test 'lint_cmake' to check CMake code style
+[5.083s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.186s] -- Added test 'xmllint' to check XML markup files
+[5.194s] -- Configuring done
+[5.230s] -- Generating done
+[5.248s] -- Build files have been written to: /home/endika/Documents/openarm_ros2/build/openarm_description
+[5.289s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm_ros2/openarm_description -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm_ros2/install/openarm_description
+[5.291s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_description -- -j4 -l4
+[5.626s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_description -- -j4 -l4
+[5.628s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_description
+[5.699s] -- Install configuration: ""
+[5.702s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/launch
+[5.703s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/launch/display_openarm.launch.py
+[5.703s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes
+[5.703s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body
+[5.703s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10
+[5.704s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10/collision
+[5.704s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10/collision/body_link0_symp.stl
+[5.727s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10/visual
+[5.727s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10/visual/body_link0.dae
+[5.837s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/body/v10/visual/body_link0.stl
+[5.901s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee
+[5.901s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand
+[5.901s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/collision
+[5.901s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/collision/finger.stl
+[5.912s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/collision/hand.stl
+[5.912s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual
+[5.912s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/finger.stl
+[5.912s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/hand.dae
+[5.925s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/finger.dae
+[5.978s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm
+[5.979s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10
+[5.980s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision
+[5.981s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link6_symp.stl
+[5.985s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link2_symp.stl
+[5.986s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link1_symp.stl
+[5.990s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link3_symp.stl
+[5.994s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link5_symp.stl
+[5.998s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link7_symp.stl
+[5.999s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link4_symp.stl
+[6.009s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link0_symp.stl
+[6.020s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual
+[6.020s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link5.stl
+[6.072s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link0.stl
+[6.101s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link6.stl
+[6.140s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link7.dae
+[6.198s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link3.stl
+[6.247s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link0.dae
+[6.260s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link1.stl
+[6.315s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link3.dae
+[6.373s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link4.stl
+[6.406s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link2.stl
+[6.449s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link4.dae
+[6.501s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link2.dae
+[6.557s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link5.dae
+[6.642s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link1.dae
+[6.725s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link7.stl
+[6.775s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link6.dae
+[6.827s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/rviz
+[6.829s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/rviz/arm_only.rviz
+[6.830s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/rviz/bimanual.rviz
+[6.830s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf
+[6.831s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/body
+[6.832s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/body/openarm_body_macro.xacro
+[6.833s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/body/openarm_body.xacro
+[6.833s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ee
+[6.833s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand_arguments.xacro
+[6.841s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand.xacro
+[6.841s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ee/ee_with_one_link.xacro
+[6.841s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand_macro.xacro
+[6.842s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/robot
+[6.842s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/robot/v10.urdf.xacro
+[6.842s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/robot/openarm_robot.xacro
+[6.843s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/arm
+[6.843s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/arm/openarm_macro.xacro
+[6.851s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/arm/openarm_arm.xacro
+[6.852s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ros2_control
+[6.852s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ros2_control/openarm.bimanual.ros2_control.xacro
+[6.852s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/urdf/ros2_control/openarm.ros2_control.xacro
+[6.853s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config
+[6.853s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/body
+[6.854s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/body/v10
+[6.854s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/body/v10/kinematics_link.yaml
+[6.862s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/body/v10/kinematics.yaml
+[6.862s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/body/v10/inertials.yaml
+[6.863s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand
+[6.863s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand/openarm_hand
+[6.863s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand/openarm_hand/kinematics_link.yaml
+[6.864s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand/openarm_hand/joint_limits.yaml
+[6.864s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand/openarm_hand/kinematics.yaml
+[6.868s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/hand/openarm_hand/inertials.yaml
+[6.869s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm
+[6.869s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10
+[6.869s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10/kinematics_offset.yaml
+[6.870s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10/kinematics_link.yaml
+[6.870s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10/joint_limits.yaml
+[6.873s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10/kinematics.yaml
+[6.873s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/config/arm/v10/inertials.yaml
+[6.873s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/ament_index/resource_index/package_run_dependencies/openarm_description
+[6.873s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/ament_index/resource_index/parent_prefix_path/openarm_description
+[6.874s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/environment/ament_prefix_path.sh
+[6.883s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/environment/ament_prefix_path.dsv
+[6.883s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/environment/path.sh
+[6.884s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/environment/path.dsv
+[6.884s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/local_setup.bash
+[6.886s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/local_setup.sh
+[6.887s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/local_setup.zsh
+[6.887s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/local_setup.dsv
+[6.891s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/package.dsv
+[6.892s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/ament_index/resource_index/packages/openarm_description
+[6.898s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/cmake/openarm_descriptionConfig.cmake
+[6.898s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/cmake/openarm_descriptionConfig-version.cmake
+[6.898s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_description/share/openarm_description/package.xml
+[9.371s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/endika/Documents/openarm_ros2/install/openarm_p_p:/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_description

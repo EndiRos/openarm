@@ -1,0 +1,324 @@
+[0.000000] (-) TimerEvent: {}
+[0.004050] (-) JobUnselected: {'identifier': 'openarm'}
+[0.004217] (-) JobUnselected: {'identifier': 'openarm_bimanual_moveit_config'}
+[0.004323] (-) JobUnselected: {'identifier': 'openarm_bringup'}
+[0.004431] (-) JobUnselected: {'identifier': 'openarm_can'}
+[0.004562] (-) JobUnselected: {'identifier': 'openarm_description'}
+[0.004653] (-) JobUnselected: {'identifier': 'openarm_hardware'}
+[0.004734] (openarm_p_p) JobQueued: {'identifier': 'openarm_p_p', 'dependencies': OrderedDict()}
+[0.004825] (openarm_p_p) JobStarted: {'identifier': 'openarm_p_p'}
+[0.094785] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'cmake'}
+[0.096621] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'build'}
+[0.099382] (openarm_p_p) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/endika/Documents/openarm_ros2/build/openarm_p_p', '--', '-j4', '-l4'], 'cwd': '/home/endika/Documents/openarm_ros2/build/openarm_p_p', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'endika'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_hardware/lib:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/endika/ws_moveit2/install/moveit_visual_tools/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/endika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/endika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/endika/ws_moveit2/install/moveit_setup_assistant/lib:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_controllers/lib:/home/endika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_framework/lib:/home/endika/ws_moveit2/install/moveit_servo/lib:/home/endika/ws_moveit2/install/moveit_ros_visualization/lib:/home/endika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/endika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/endika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/endika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/endika/ws_moveit2/install/moveit_ros_perception/lib:/home/endika/ws_moveit2/install/moveit_ros_move_group/lib:/home/endika/ws_moveit2/install/moveit_planners_ompl/lib:/home/endika/ws_moveit2/install/moveit_ros_planning/lib:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/endika/ws_moveit2/install/moveit_planners_chomp/lib:/home/endika/ws_moveit2/install/moveit_kinematics/lib:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/endika/ws_moveit2/install/chomp_motion_planner/lib:/home/endika/ws_moveit2/install/moveit_core/lib:/home/endika/ws_moveit2/install/srdfdom/lib:/home/endika/ws_moveit2/install/rviz_marker_tools/lib:/home/endika/ws_moveit2/install/rosparam_shortcuts/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia'), ('HOME', '/home/endika'), ('CHROME_DESKTOP', 'code.desktop'), ('CYCLONEDDS_URI', '/home/endika/unitree_mujoco_ros/cyclonedds.xml'), ('OLDPWD', '/home/endika'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1402'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1747'), ('BUNDLED_DEBUGPY_PATH', '/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '351735'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install:/home/endika/ws_moveit2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'endika'), ('JOURNAL_STREAM', '8:14657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'endika'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/endika/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/endika-Ubuntu:@/tmp/.ICE-unix/1533,unix/endika-Ubuntu:/tmp/.ICE-unix/1533'), ('INVOCATION_ID', '425911d63110448592d476e26dd643d5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-990a3e52794dfc40.txt'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/endika/.config/Code/User/workspaceStorage/49aab8731be56f94ebda47ffb28165f0/ms-python.python/pythonrc.py'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GH5MD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9caccb8879.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_p_p:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/endika/ws_moveit2/install/moveit_runtime:/home/endika/ws_moveit2/install/moveit2_tutorials:/home/endika/ws_moveit2/install/moveit:/home/endika/ws_moveit2/install/moveit_planners:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner:/home/endika/ws_moveit2/install/moveit_visual_tools:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization:/home/endika/ws_moveit2/install/moveit_task_constructor_demo:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/endika/ws_moveit2/install/moveit_task_constructor_core:/home/endika/ws_moveit2/install/moveit_ros_control_interface:/home/endika/ws_moveit2/install/moveit_plugins:/home/endika/ws_moveit2/install/moveit_simple_controller_manager:/home/endika/ws_moveit2/install/moveit_setup_assistant:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/endika/ws_moveit2/install/moveit_setup_core_plugins:/home/endika/ws_moveit2/install/moveit_setup_controllers:/home/endika/ws_moveit2/install/moveit_setup_app_plugins:/home/endika/ws_moveit2/install/moveit_setup_framework:/home/endika/ws_moveit2/install/moveit_servo:/home/endika/ws_moveit2/install/moveit_ros:/home/endika/ws_moveit2/install/moveit_ros_visualization:/home/endika/ws_moveit2/install/moveit_hybrid_planning:/home/endika/ws_moveit2/install/moveit_ros_planning_interface:/home/endika/ws_moveit2/install/moveit_ros_benchmarks:/home/endika/ws_moveit2/install/moveit_ros_warehouse:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction:/home/endika/ws_moveit2/install/moveit_ros_perception:/home/endika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/endika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/endika/ws_moveit2/install/moveit_ros_move_group:/home/endika/ws_moveit2/install/moveit_planners_ompl:/home/endika/ws_moveit2/install/moveit_ros_planning:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/endika/ws_moveit2/install/moveit_planners_chomp:/home/endika/ws_moveit2/install/moveit_kinematics:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/endika/ws_moveit2/install/chomp_motion_planner:/home/endika/ws_moveit2/install/moveit_core:/home/endika/ws_moveit2/install/moveit_configs_utils:/home/endika/ws_moveit2/install/srdfdom:/home/endika/ws_moveit2/install/rviz_marker_tools:/home/endika/ws_moveit2/install/rosparam_shortcuts:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs:/home/endika/ws_moveit2/install/moveit_resources_prbt_support:/home/endika/ws_moveit2/install/moveit_resources:/home/endika/ws_moveit2/install/moveit_resources_pr2_description:/home/endika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_panda_description:/home/endika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_fanuc_description:/home/endika/ws_moveit2/install/moveit_common:/home/endika/ws_moveit2/install/launch_param_builder:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a4dce0c1-761e-4785-abfb-abd38464711f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/endika/ws_moveit2/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/endika/Documents/openarm_ros2/build/openarm_p_p'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/endika/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/endika/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_p_p:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_can:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/endika/ws_moveit2/install/moveit_runtime:/home/endika/ws_moveit2/install/moveit2_tutorials:/home/endika/ws_moveit2/install/moveit:/home/endika/ws_moveit2/install/moveit_planners:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner:/home/endika/ws_moveit2/install/moveit_visual_tools:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization:/home/endika/ws_moveit2/install/moveit_task_constructor_demo:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/endika/ws_moveit2/install/moveit_task_constructor_core:/home/endika/ws_moveit2/install/moveit_ros_control_interface:/home/endika/ws_moveit2/install/moveit_plugins:/home/endika/ws_moveit2/install/moveit_simple_controller_manager:/home/endika/ws_moveit2/install/moveit_setup_assistant:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/endika/ws_moveit2/install/moveit_setup_core_plugins:/home/endika/ws_moveit2/install/moveit_setup_controllers:/home/endika/ws_moveit2/install/moveit_setup_app_plugins:/home/endika/ws_moveit2/install/moveit_setup_framework:/home/endika/ws_moveit2/install/moveit_servo:/home/endika/ws_moveit2/install/moveit_ros:/home/endika/ws_moveit2/install/moveit_ros_visualization:/home/endika/ws_moveit2/install/moveit_hybrid_planning:/home/endika/ws_moveit2/install/moveit_ros_planning_interface:/home/endika/ws_moveit2/install/moveit_ros_benchmarks:/home/endika/ws_moveit2/install/moveit_ros_warehouse:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction:/home/endika/ws_moveit2/install/moveit_ros_perception:/home/endika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/endika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/endika/ws_moveit2/install/moveit_ros_move_group:/home/endika/ws_moveit2/install/moveit_planners_ompl:/home/endika/ws_moveit2/install/moveit_ros_planning:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/endika/ws_moveit2/install/moveit_planners_chomp:/home/endika/ws_moveit2/install/moveit_kinematics:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/endika/ws_moveit2/install/chomp_motion_planner:/home/endika/ws_moveit2/install/moveit_core:/home/endika/ws_moveit2/install/srdfdom:/home/endika/ws_moveit2/install/rviz_marker_tools:/home/endika/ws_moveit2/install/rosparam_shortcuts:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs:/home/endika/ws_moveit2/install/moveit_resources_prbt_support:/home/endika/ws_moveit2/install/moveit_resources:/home/endika/ws_moveit2/install/moveit_resources_pr2_description:/home/endika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_panda_description:/home/endika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_fanuc_description:/home/endika/ws_moveit2/install/moveit_common:/home/endika/ws_moveit2/install/moveit_configs_utils:/home/endika/ws_moveit2/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[0.102182] (-) TimerEvent: {}
+[0.210491] (-) TimerEvent: {}
+[0.311228] (-) TimerEvent: {}
+[0.415658] (-) TimerEvent: {}
+[0.518628] (-) TimerEvent: {}
+[0.622327] (-) TimerEvent: {}
+[0.729381] (-) TimerEvent: {}
+[0.738939] (openarm_p_p) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target openarm_p_p\x1b[0m\n'}
+[0.831865] (-) TimerEvent: {}
+[0.934865] (-) TimerEvent: {}
+[1.039231] (-) TimerEvent: {}
+[1.056026] (openarm_p_p) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/openarm_p_p.dir/src/openarm_p_p.cpp.o\x1b[0m\n'}
+[1.142459] (-) TimerEvent: {}
+[1.243596] (-) TimerEvent: {}
+[1.359854] (-) TimerEvent: {}
+[1.467537] (-) TimerEvent: {}
+[1.585881] (-) TimerEvent: {}
+[1.687744] (-) TimerEvent: {}
+[1.790941] (-) TimerEvent: {}
+[1.891837] (-) TimerEvent: {}
+[1.996301] (-) TimerEvent: {}
+[2.097138] (-) TimerEvent: {}
+[2.205418] (-) TimerEvent: {}
+[2.312196] (-) TimerEvent: {}
+[2.416768] (-) TimerEvent: {}
+[2.519713] (-) TimerEvent: {}
+[2.622793] (-) TimerEvent: {}
+[2.728696] (-) TimerEvent: {}
+[2.835284] (-) TimerEvent: {}
+[2.941760] (-) TimerEvent: {}
+[3.049147] (-) TimerEvent: {}
+[3.149933] (-) TimerEvent: {}
+[3.257322] (-) TimerEvent: {}
+[3.361461] (-) TimerEvent: {}
+[3.462044] (-) TimerEvent: {}
+[3.567855] (-) TimerEvent: {}
+[3.671696] (-) TimerEvent: {}
+[3.772822] (-) TimerEvent: {}
+[3.877643] (-) TimerEvent: {}
+[3.980804] (-) TimerEvent: {}
+[4.081777] (-) TimerEvent: {}
+[4.187871] (-) TimerEvent: {}
+[4.292509] (-) TimerEvent: {}
+[4.393386] (-) TimerEvent: {}
+[4.496703] (-) TimerEvent: {}
+[4.597506] (-) TimerEvent: {}
+[4.703042] (-) TimerEvent: {}
+[4.803638] (-) TimerEvent: {}
+[4.909225] (-) TimerEvent: {}
+[5.013734] (-) TimerEvent: {}
+[5.114649] (-) TimerEvent: {}
+[5.215650] (-) TimerEvent: {}
+[5.319307] (-) TimerEvent: {}
+[5.422703] (-) TimerEvent: {}
+[5.528528] (-) TimerEvent: {}
+[5.634724] (-) TimerEvent: {}
+[5.752405] (-) TimerEvent: {}
+[5.853069] (-) TimerEvent: {}
+[5.955176] (-) TimerEvent: {}
+[6.059398] (-) TimerEvent: {}
+[6.161600] (-) TimerEvent: {}
+[6.262810] (-) TimerEvent: {}
+[6.364384] (-) TimerEvent: {}
+[6.467636] (-) TimerEvent: {}
+[6.571107] (-) TimerEvent: {}
+[6.673002] (-) TimerEvent: {}
+[6.779688] (-) TimerEvent: {}
+[6.881824] (-) TimerEvent: {}
+[6.985457] (-) TimerEvent: {}
+[7.090467] (-) TimerEvent: {}
+[7.191323] (-) TimerEvent: {}
+[7.292300] (-) TimerEvent: {}
+[7.395429] (-) TimerEvent: {}
+[7.498819] (-) TimerEvent: {}
+[7.603121] (-) TimerEvent: {}
+[7.704866] (-) TimerEvent: {}
+[7.806970] (-) TimerEvent: {}
+[7.907464] (-) TimerEvent: {}
+[8.007933] (-) TimerEvent: {}
+[8.108448] (-) TimerEvent: {}
+[8.208920] (-) TimerEvent: {}
+[8.309434] (-) TimerEvent: {}
+[8.409845] (-) TimerEvent: {}
+[8.510258] (-) TimerEvent: {}
+[8.610744] (-) TimerEvent: {}
+[8.711212] (-) TimerEvent: {}
+[8.811694] (-) TimerEvent: {}
+[8.912177] (-) TimerEvent: {}
+[9.012657] (-) TimerEvent: {}
+[9.113163] (-) TimerEvent: {}
+[9.213671] (-) TimerEvent: {}
+[9.314150] (-) TimerEvent: {}
+[9.415469] (-) TimerEvent: {}
+[9.516237] (-) TimerEvent: {}
+[9.616853] (-) TimerEvent: {}
+[9.717488] (-) TimerEvent: {}
+[9.818391] (-) TimerEvent: {}
+[9.918840] (-) TimerEvent: {}
+[10.019320] (-) TimerEvent: {}
+[10.119902] (-) TimerEvent: {}
+[10.220423] (-) TimerEvent: {}
+[10.321011] (-) TimerEvent: {}
+[10.421560] (-) TimerEvent: {}
+[10.522045] (-) TimerEvent: {}
+[10.622560] (-) TimerEvent: {}
+[10.723048] (-) TimerEvent: {}
+[10.823527] (-) TimerEvent: {}
+[10.924114] (-) TimerEvent: {}
+[11.025230] (-) TimerEvent: {}
+[11.125754] (-) TimerEvent: {}
+[11.226218] (-) TimerEvent: {}
+[11.326872] (-) TimerEvent: {}
+[11.427381] (-) TimerEvent: {}
+[11.527823] (-) TimerEvent: {}
+[11.628313] (-) TimerEvent: {}
+[11.728876] (-) TimerEvent: {}
+[11.829345] (-) TimerEvent: {}
+[11.929861] (-) TimerEvent: {}
+[12.030398] (-) TimerEvent: {}
+[12.130866] (-) TimerEvent: {}
+[12.231334] (-) TimerEvent: {}
+[12.331793] (-) TimerEvent: {}
+[12.432314] (-) TimerEvent: {}
+[12.532937] (-) TimerEvent: {}
+[12.633549] (-) TimerEvent: {}
+[12.734370] (-) TimerEvent: {}
+[12.835391] (-) TimerEvent: {}
+[12.936484] (-) TimerEvent: {}
+[13.037037] (-) TimerEvent: {}
+[13.137580] (-) TimerEvent: {}
+[13.238160] (-) TimerEvent: {}
+[13.338659] (-) TimerEvent: {}
+[13.439081] (-) TimerEvent: {}
+[13.539561] (-) TimerEvent: {}
+[13.639998] (-) TimerEvent: {}
+[13.740458] (-) TimerEvent: {}
+[13.841021] (-) TimerEvent: {}
+[13.941586] (-) TimerEvent: {}
+[14.042109] (-) TimerEvent: {}
+[14.142545] (-) TimerEvent: {}
+[14.242993] (-) TimerEvent: {}
+[14.343421] (-) TimerEvent: {}
+[14.443926] (-) TimerEvent: {}
+[14.546171] (-) TimerEvent: {}
+[14.646773] (-) TimerEvent: {}
+[14.747336] (-) TimerEvent: {}
+[14.847898] (-) TimerEvent: {}
+[14.948389] (-) TimerEvent: {}
+[15.048846] (-) TimerEvent: {}
+[15.149335] (-) TimerEvent: {}
+[15.251154] (-) TimerEvent: {}
+[15.351711] (-) TimerEvent: {}
+[15.452142] (-) TimerEvent: {}
+[15.552660] (-) TimerEvent: {}
+[15.653077] (-) TimerEvent: {}
+[15.753462] (-) TimerEvent: {}
+[15.854146] (-) TimerEvent: {}
+[15.956108] (-) TimerEvent: {}
+[16.056611] (-) TimerEvent: {}
+[16.157002] (-) TimerEvent: {}
+[16.257477] (-) TimerEvent: {}
+[16.358458] (-) TimerEvent: {}
+[16.458881] (-) TimerEvent: {}
+[16.559414] (-) TimerEvent: {}
+[16.659919] (-) TimerEvent: {}
+[16.760448] (-) TimerEvent: {}
+[16.860924] (-) TimerEvent: {}
+[16.961386] (-) TimerEvent: {}
+[17.061844] (-) TimerEvent: {}
+[17.162376] (-) TimerEvent: {}
+[17.263261] (-) TimerEvent: {}
+[17.364018] (-) TimerEvent: {}
+[17.466087] (-) TimerEvent: {}
+[17.568213] (-) TimerEvent: {}
+[17.668752] (-) TimerEvent: {}
+[17.769194] (-) TimerEvent: {}
+[17.869713] (-) TimerEvent: {}
+[17.970628] (-) TimerEvent: {}
+[18.071207] (-) TimerEvent: {}
+[18.171713] (-) TimerEvent: {}
+[18.272201] (-) TimerEvent: {}
+[18.372697] (-) TimerEvent: {}
+[18.473195] (-) TimerEvent: {}
+[18.573827] (-) TimerEvent: {}
+[18.675748] (-) TimerEvent: {}
+[18.776292] (-) TimerEvent: {}
+[18.876852] (-) TimerEvent: {}
+[18.977412] (-) TimerEvent: {}
+[19.077950] (-) TimerEvent: {}
+[19.178433] (-) TimerEvent: {}
+[19.278999] (-) TimerEvent: {}
+[19.379539] (-) TimerEvent: {}
+[19.479961] (-) TimerEvent: {}
+[19.580459] (-) TimerEvent: {}
+[19.680991] (-) TimerEvent: {}
+[19.781533] (-) TimerEvent: {}
+[19.882045] (-) TimerEvent: {}
+[19.982623] (-) TimerEvent: {}
+[20.083157] (-) TimerEvent: {}
+[20.184608] (-) TimerEvent: {}
+[20.285210] (-) TimerEvent: {}
+[20.385730] (-) TimerEvent: {}
+[20.486231] (-) TimerEvent: {}
+[20.586846] (-) TimerEvent: {}
+[20.687383] (-) TimerEvent: {}
+[20.787868] (-) TimerEvent: {}
+[20.888314] (-) TimerEvent: {}
+[20.988768] (-) TimerEvent: {}
+[21.089302] (-) TimerEvent: {}
+[21.189867] (-) TimerEvent: {}
+[21.290399] (-) TimerEvent: {}
+[21.391379] (-) TimerEvent: {}
+[21.491816] (-) TimerEvent: {}
+[21.592365] (-) TimerEvent: {}
+[21.692888] (-) TimerEvent: {}
+[21.793427] (-) TimerEvent: {}
+[21.894004] (-) TimerEvent: {}
+[21.995406] (-) TimerEvent: {}
+[22.096147] (-) TimerEvent: {}
+[22.197109] (-) TimerEvent: {}
+[22.298127] (-) TimerEvent: {}
+[22.398618] (-) TimerEvent: {}
+[22.499090] (-) TimerEvent: {}
+[22.599572] (-) TimerEvent: {}
+[22.700128] (-) TimerEvent: {}
+[22.800856] (-) TimerEvent: {}
+[22.901431] (-) TimerEvent: {}
+[23.001898] (-) TimerEvent: {}
+[23.102430] (-) TimerEvent: {}
+[23.202918] (-) TimerEvent: {}
+[23.303426] (-) TimerEvent: {}
+[23.403922] (-) TimerEvent: {}
+[23.506155] (-) TimerEvent: {}
+[23.606839] (-) TimerEvent: {}
+[23.707386] (-) TimerEvent: {}
+[23.807911] (-) TimerEvent: {}
+[23.908365] (-) TimerEvent: {}
+[24.008874] (-) TimerEvent: {}
+[24.109331] (-) TimerEvent: {}
+[24.209925] (-) TimerEvent: {}
+[24.310529] (-) TimerEvent: {}
+[24.410939] (-) TimerEvent: {}
+[24.511325] (-) TimerEvent: {}
+[24.611759] (-) TimerEvent: {}
+[24.712193] (-) TimerEvent: {}
+[24.812654] (-) TimerEvent: {}
+[24.913199] (-) TimerEvent: {}
+[25.013832] (-) TimerEvent: {}
+[25.117327] (-) TimerEvent: {}
+[25.217886] (-) TimerEvent: {}
+[25.319756] (-) TimerEvent: {}
+[25.420814] (-) TimerEvent: {}
+[25.524591] (-) TimerEvent: {}
+[25.627428] (-) TimerEvent: {}
+[25.727933] (-) TimerEvent: {}
+[25.829156] (-) TimerEvent: {}
+[25.930202] (-) TimerEvent: {}
+[26.030720] (-) TimerEvent: {}
+[26.131645] (-) TimerEvent: {}
+[26.232190] (-) TimerEvent: {}
+[26.332777] (-) TimerEvent: {}
+[26.433400] (-) TimerEvent: {}
+[26.533883] (-) TimerEvent: {}
+[26.635633] (-) TimerEvent: {}
+[26.736136] (-) TimerEvent: {}
+[26.836586] (-) TimerEvent: {}
+[26.937146] (-) TimerEvent: {}
+[27.037649] (-) TimerEvent: {}
+[27.138137] (-) TimerEvent: {}
+[27.153118] (openarm_p_p) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable openarm_p_p\x1b[0m\n'}
+[27.238250] (-) TimerEvent: {}
+[27.339578] (-) TimerEvent: {}
+[27.440926] (-) TimerEvent: {}
+[27.542888] (-) TimerEvent: {}
+[27.643991] (-) TimerEvent: {}
+[27.747388] (-) TimerEvent: {}
+[27.848813] (-) TimerEvent: {}
+[27.950548] (-) TimerEvent: {}
+[28.054162] (-) TimerEvent: {}
+[28.155607] (-) TimerEvent: {}
+[28.256025] (-) TimerEvent: {}
+[28.356774] (-) TimerEvent: {}
+[28.457958] (-) TimerEvent: {}
+[28.558613] (-) TimerEvent: {}
+[28.569731] (openarm_p_p) StdoutLine: {'line': b'[100%] Built target openarm_p_p\n'}
+[28.616059] (openarm_p_p) CommandEnded: {'returncode': 0}
+[28.618832] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'install'}
+[28.648651] (openarm_p_p) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/endika/Documents/openarm_ros2/build/openarm_p_p'], 'cwd': '/home/endika/Documents/openarm_ros2/build/openarm_p_p', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'endika'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_hardware/lib:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/endika/ws_moveit2/install/moveit_visual_tools/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/endika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/endika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/endika/ws_moveit2/install/moveit_setup_assistant/lib:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_controllers/lib:/home/endika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/endika/ws_moveit2/install/moveit_setup_framework/lib:/home/endika/ws_moveit2/install/moveit_servo/lib:/home/endika/ws_moveit2/install/moveit_ros_visualization/lib:/home/endika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/endika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/endika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/endika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/endika/ws_moveit2/install/moveit_ros_perception/lib:/home/endika/ws_moveit2/install/moveit_ros_move_group/lib:/home/endika/ws_moveit2/install/moveit_planners_ompl/lib:/home/endika/ws_moveit2/install/moveit_ros_planning/lib:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/endika/ws_moveit2/install/moveit_planners_chomp/lib:/home/endika/ws_moveit2/install/moveit_kinematics/lib:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/endika/ws_moveit2/install/chomp_motion_planner/lib:/home/endika/ws_moveit2/install/moveit_core/lib:/home/endika/ws_moveit2/install/srdfdom/lib:/home/endika/ws_moveit2/install/rviz_marker_tools/lib:/home/endika/ws_moveit2/install/rosparam_shortcuts/lib:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia'), ('HOME', '/home/endika'), ('CHROME_DESKTOP', 'code.desktop'), ('CYCLONEDDS_URI', '/home/endika/unitree_mujoco_ros/cyclonedds.xml'), ('OLDPWD', '/home/endika'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1402'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1747'), ('BUNDLED_DEBUGPY_PATH', '/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '351735'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install:/home/endika/ws_moveit2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'endika'), ('JOURNAL_STREAM', '8:14657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'endika'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/endika/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/endika-Ubuntu:@/tmp/.ICE-unix/1533,unix/endika-Ubuntu:/tmp/.ICE-unix/1533'), ('INVOCATION_ID', '425911d63110448592d476e26dd643d5'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/endika/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-990a3e52794dfc40.txt'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/endika/.config/Code/User/workspaceStorage/49aab8731be56f94ebda47ffb28165f0/ms-python.python/pythonrc.py'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GH5MD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9caccb8879.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_p_p:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/endika/ws_moveit2/install/moveit_runtime:/home/endika/ws_moveit2/install/moveit2_tutorials:/home/endika/ws_moveit2/install/moveit:/home/endika/ws_moveit2/install/moveit_planners:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner:/home/endika/ws_moveit2/install/moveit_visual_tools:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization:/home/endika/ws_moveit2/install/moveit_task_constructor_demo:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/endika/ws_moveit2/install/moveit_task_constructor_core:/home/endika/ws_moveit2/install/moveit_ros_control_interface:/home/endika/ws_moveit2/install/moveit_plugins:/home/endika/ws_moveit2/install/moveit_simple_controller_manager:/home/endika/ws_moveit2/install/moveit_setup_assistant:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/endika/ws_moveit2/install/moveit_setup_core_plugins:/home/endika/ws_moveit2/install/moveit_setup_controllers:/home/endika/ws_moveit2/install/moveit_setup_app_plugins:/home/endika/ws_moveit2/install/moveit_setup_framework:/home/endika/ws_moveit2/install/moveit_servo:/home/endika/ws_moveit2/install/moveit_ros:/home/endika/ws_moveit2/install/moveit_ros_visualization:/home/endika/ws_moveit2/install/moveit_hybrid_planning:/home/endika/ws_moveit2/install/moveit_ros_planning_interface:/home/endika/ws_moveit2/install/moveit_ros_benchmarks:/home/endika/ws_moveit2/install/moveit_ros_warehouse:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction:/home/endika/ws_moveit2/install/moveit_ros_perception:/home/endika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/endika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/endika/ws_moveit2/install/moveit_ros_move_group:/home/endika/ws_moveit2/install/moveit_planners_ompl:/home/endika/ws_moveit2/install/moveit_ros_planning:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/endika/ws_moveit2/install/moveit_planners_chomp:/home/endika/ws_moveit2/install/moveit_kinematics:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/endika/ws_moveit2/install/chomp_motion_planner:/home/endika/ws_moveit2/install/moveit_core:/home/endika/ws_moveit2/install/moveit_configs_utils:/home/endika/ws_moveit2/install/srdfdom:/home/endika/ws_moveit2/install/rviz_marker_tools:/home/endika/ws_moveit2/install/rosparam_shortcuts:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs:/home/endika/ws_moveit2/install/moveit_resources_prbt_support:/home/endika/ws_moveit2/install/moveit_resources:/home/endika/ws_moveit2/install/moveit_resources_pr2_description:/home/endika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_panda_description:/home/endika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_fanuc_description:/home/endika/ws_moveit2/install/moveit_common:/home/endika/ws_moveit2/install/launch_param_builder:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a4dce0c1-761e-4785-abfb-abd38464711f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/endika/ws_moveit2/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/endika/Documents/openarm_ros2/build/openarm_p_p'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/endika/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/endika/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/endika/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/endika/Documents/openarm_ros2/install/openarm_p_p:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_can:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/endika/ws_moveit2/install/moveit_runtime:/home/endika/ws_moveit2/install/moveit2_tutorials:/home/endika/ws_moveit2/install/moveit:/home/endika/ws_moveit2/install/moveit_planners:/home/endika/ws_moveit2/install/pilz_industrial_motion_planner:/home/endika/ws_moveit2/install/moveit_visual_tools:/home/endika/ws_moveit2/install/moveit_task_constructor_visualization:/home/endika/ws_moveit2/install/moveit_task_constructor_demo:/home/endika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/endika/ws_moveit2/install/moveit_task_constructor_core:/home/endika/ws_moveit2/install/moveit_ros_control_interface:/home/endika/ws_moveit2/install/moveit_plugins:/home/endika/ws_moveit2/install/moveit_simple_controller_manager:/home/endika/ws_moveit2/install/moveit_setup_assistant:/home/endika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/endika/ws_moveit2/install/moveit_setup_core_plugins:/home/endika/ws_moveit2/install/moveit_setup_controllers:/home/endika/ws_moveit2/install/moveit_setup_app_plugins:/home/endika/ws_moveit2/install/moveit_setup_framework:/home/endika/ws_moveit2/install/moveit_servo:/home/endika/ws_moveit2/install/moveit_ros:/home/endika/ws_moveit2/install/moveit_ros_visualization:/home/endika/ws_moveit2/install/moveit_hybrid_planning:/home/endika/ws_moveit2/install/moveit_ros_planning_interface:/home/endika/ws_moveit2/install/moveit_ros_benchmarks:/home/endika/ws_moveit2/install/moveit_ros_warehouse:/home/endika/ws_moveit2/install/moveit_ros_robot_interaction:/home/endika/ws_moveit2/install/moveit_ros_perception:/home/endika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/endika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/endika/ws_moveit2/install/moveit_ros_move_group:/home/endika/ws_moveit2/install/moveit_planners_ompl:/home/endika/ws_moveit2/install/moveit_ros_planning:/home/endika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/endika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/endika/ws_moveit2/install/moveit_planners_chomp:/home/endika/ws_moveit2/install/moveit_kinematics:/home/endika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/endika/ws_moveit2/install/chomp_motion_planner:/home/endika/ws_moveit2/install/moveit_core:/home/endika/ws_moveit2/install/srdfdom:/home/endika/ws_moveit2/install/rviz_marker_tools:/home/endika/ws_moveit2/install/rosparam_shortcuts:/home/endika/ws_moveit2/install/moveit_task_constructor_msgs:/home/endika/ws_moveit2/install/moveit_resources_prbt_support:/home/endika/ws_moveit2/install/moveit_resources:/home/endika/ws_moveit2/install/moveit_resources_pr2_description:/home/endika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_panda_description:/home/endika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/endika/ws_moveit2/install/moveit_resources_fanuc_description:/home/endika/ws_moveit2/install/moveit_common:/home/endika/ws_moveit2/install/moveit_configs_utils:/home/endika/ws_moveit2/install/launch_param_builder:/opt/ros/humble')]), 'shell': False}
+[28.658762] (-) TimerEvent: {}
+[28.681056] (openarm_p_p) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.683656] (openarm_p_p) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[28.685261] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/openarm_p_p/openarm_p_p\n'}
+[28.690024] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py\n'}
+[28.691718] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p\n'}
+[28.692784] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p\n'}
+[28.693215] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh\n'}
+[28.693644] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv\n'}
+[28.693949] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/path.sh\n'}
+[28.697605] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/environment/path.dsv\n'}
+[28.698179] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.bash\n'}
+[28.700684] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.sh\n'}
+[28.701087] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.zsh\n'}
+[28.701827] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/local_setup.dsv\n'}
+[28.702313] (openarm_p_p) StdoutLine: {'line': b'-- Symlinking: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/package.dsv\n'}
+[28.731780] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p\n'}
+[28.732416] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake\n'}
+[28.732805] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake\n'}
+[28.733300] (openarm_p_p) StdoutLine: {'line': b'-- Up-to-date symlink: /home/endika/Documents/openarm_ros2/install/openarm_p_p/share/openarm_p_p/package.xml\n'}
+[28.737592] (openarm_p_p) CommandEnded: {'returncode': 0}
+[28.759131] (-) TimerEvent: {}
+[28.803197] (openarm_p_p) JobEnded: {'identifier': 'openarm_p_p', 'rc': 0}
+[28.805490] (-) EventReactorShutdown: {}

@@ -1,0 +1,27 @@
+chomp:
+  planning_plugin: chomp_interface/CHOMPPlanner
+  request_adapters: >-
+    default_planner_request_adapters/AddTimeParameterization
+    default_planner_request_adapters/FixWorkspaceBounds
+    default_planner_request_adapters/FixStartStateBounds
+    default_planner_request_adapters/FixStartStateCollision
+    default_planner_request_adapters/FixStartStatePathConstraints
+  start_state_max_bounds_error: 0.1
+
+  left_arm:
+    planning_time_limit: 10.0
+    max_iterations: 200
+    max_iterations_after_collision_free: 5
+    smoothness_cost_weight: 0.1
+    obstacle_cost_weight: 1.0
+    learning_rate: 0.01
+    animate_path: false
+
+  right_arm:
+    planning_time_limit: 10.0
+    max_iterations: 200
+    max_iterations_after_collision_free: 5
+    smoothness_cost_weight: 0.1
+    obstacle_cost_weight: 1.0
+    learning_rate: 0.01
+    animate_path: false

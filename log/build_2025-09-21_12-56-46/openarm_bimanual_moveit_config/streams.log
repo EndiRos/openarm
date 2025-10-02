@@ -1,0 +1,41 @@
+[0.303s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description CMAKE_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config -- -j4 -l4
+[0.627s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description CMAKE_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config -- -j4 -l4
+[0.651s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description CMAKE_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config
+[0.715s] -- Install configuration: ""
+[0.724s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/ament_index/resource_index/package_run_dependencies/openarm_bimanual_moveit_config
+[0.727s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/ament_index/resource_index/parent_prefix_path/openarm_bimanual_moveit_config
+[0.728s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/environment/ament_prefix_path.sh
+[0.728s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/environment/ament_prefix_path.dsv
+[0.729s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/environment/path.sh
+[0.733s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/environment/path.dsv
+[0.734s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/local_setup.bash
+[0.734s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/local_setup.sh
+[0.741s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/local_setup.zsh
+[0.741s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/local_setup.dsv
+[0.744s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv
+[0.745s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/ament_index/resource_index/packages/openarm_bimanual_moveit_config
+[0.745s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/cmake/openarm_bimanual_moveit_configConfig.cmake
+[0.745s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/cmake/openarm_bimanual_moveit_configConfig-version.cmake
+[0.746s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.xml
+[0.746s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch
+[0.746s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/__pycache__
+[0.759s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/__pycache__/demo.launch.cpython-310.pyc
+[0.760s] -- Installing: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/demo.launch.py
+[0.760s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/moveit_rviz.launch.py
+[0.760s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/spawn_controllers.launch.py
+[0.760s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[0.761s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/setup_assistant.launch.py
+[0.761s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/launch/move_group.launch.py
+[0.761s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config
+[0.762s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/openarm_bimanual.urdf.xacro
+[0.763s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/ros2_controllers.yaml
+[0.763s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/pilz_cartesian_limits.yaml
+[0.763s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/openarm.srdf
+[0.764s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/sensors_3d.yaml
+[0.764s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/joint_limits.yaml
+[0.764s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/kinematics.yaml
+[0.764s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/moveit_controllers.yaml
+[0.765s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/moveit.rviz
+[0.765s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/config/initial_positions.yaml
+[0.777s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/.setup_assistant
+[0.783s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description CMAKE_PREFIX_PATH=/home/endika/Documents/openarm_ros2/install/openarm_description /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config

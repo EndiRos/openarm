@@ -1,0 +1,4 @@
+Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_can': /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_can -- -j4 -l4
+Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_can' returned '0': /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_can -- -j4 -l4
+Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_can': /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_can
+Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_can' returned '0': /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_can

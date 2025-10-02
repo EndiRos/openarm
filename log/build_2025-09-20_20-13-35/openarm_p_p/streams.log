@@ -1,0 +1,21 @@
+[3.221s] Invoking command in '/home/endika/Documents/openarm_ros2/openarm_p_p': PYTHONPATH=/home/endika/Documents/openarm_ros2/build/openarm_p_p/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/openarm_p_p build --build-base /home/endika/Documents/openarm_ros2/build/openarm_p_p/build install --record /home/endika/Documents/openarm_ros2/build/openarm_p_p/install.log --single-version-externally-managed install_data
+[4.126s] running egg_info
+[4.129s] writing ../build/openarm_p_p/openarm_p_p.egg-info/PKG-INFO
+[4.130s] writing dependency_links to ../build/openarm_p_p/openarm_p_p.egg-info/dependency_links.txt
+[4.130s] writing entry points to ../build/openarm_p_p/openarm_p_p.egg-info/entry_points.txt
+[4.131s] writing requirements to ../build/openarm_p_p/openarm_p_p.egg-info/requires.txt
+[4.131s] writing top-level names to ../build/openarm_p_p/openarm_p_p.egg-info/top_level.txt
+[4.135s] reading manifest file '../build/openarm_p_p/openarm_p_p.egg-info/SOURCES.txt'
+[4.137s] writing manifest file '../build/openarm_p_p/openarm_p_p.egg-info/SOURCES.txt'
+[4.138s] running build
+[4.139s] running build_py
+[4.139s] running install
+[4.140s] running install_lib
+[4.144s] running install_data
+[4.145s] running install_egg_info
+[4.152s] removing '/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages/openarm_p_p-0.0.0-py3.10.egg-info' (and everything under it)
+[4.153s] Copying ../build/openarm_p_p/openarm_p_p.egg-info to /home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages/openarm_p_p-0.0.0-py3.10.egg-info
+[4.155s] running install_scripts
+[4.227s] Installing move_group_python script to /home/endika/Documents/openarm_ros2/install/openarm_p_p/bin
+[4.230s] writing list of installed files to '/home/endika/Documents/openarm_ros2/build/openarm_p_p/install.log'
+[4.324s] Invoked command in '/home/endika/Documents/openarm_ros2/openarm_p_p' returned '0': PYTHONPATH=/home/endika/Documents/openarm_ros2/build/openarm_p_p/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/endika/Documents/openarm_ros2/install/openarm_p_p/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/openarm_p_p build --build-base /home/endika/Documents/openarm_ros2/build/openarm_p_p/build install --record /home/endika/Documents/openarm_ros2/build/openarm_p_p/install.log --single-version-externally-managed install_data

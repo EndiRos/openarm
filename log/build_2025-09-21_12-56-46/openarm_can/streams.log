@@ -1,0 +1,30 @@
+[0.134s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_can': /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_can -- -j4 -l4
+[0.807s] [ 71%] Built target openarm_can
+[0.863s] [ 85%] Built target motor-check
+[1.081s] [100%] Built target openarm-demo
+[1.357s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_can' returned '0': /usr/bin/cmake --build /home/endika/Documents/openarm_ros2/build/openarm_can -- -j4 -l4
+[1.373s] Invoking command in '/home/endika/Documents/openarm_ros2/build/openarm_can': /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_can
+[1.478s] -- Install configuration: ""
+[1.479s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/libopenarm_can.a
+[1.479s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm
+[1.498s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor
+[1.505s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor/dm_motor_constants.hpp
+[1.511s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor/dm_motor.hpp
+[1.511s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor/dm_motor_control.hpp
+[1.514s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor/dm_motor_device.hpp
+[1.515s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/damiao_motor/dm_motor_device_collection.hpp
+[1.515s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/canbus
+[1.515s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/canbus/can_device_collection.hpp
+[1.516s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/canbus/can_socket.hpp
+[1.516s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/canbus/can_device.hpp
+[1.516s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/can
+[1.517s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/can/socket
+[1.517s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/can/socket/arm_component.hpp
+[1.522s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/can/socket/gripper_component.hpp
+[1.522s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/include/openarm/can/socket/openarm.hpp
+[1.522s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake
+[1.523s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake
+[1.523s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANConfig.cmake
+[1.523s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANVersion.cmake
+[1.524s] -- Up-to-date: /home/endika/Documents/openarm_ros2/install/openarm_can/lib/pkgconfig/openarm-can.pc
+[1.533s] Invoked command in '/home/endika/Documents/openarm_ros2/build/openarm_can' returned '0': /usr/bin/cmake --install /home/endika/Documents/openarm_ros2/build/openarm_can
