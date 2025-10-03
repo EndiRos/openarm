@@ -1,0 +1,93 @@
+[0.048s] Invoking command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/endika/openarm_ros2/src/openarm_p_p -DCMAKE_INSTALL_PREFIX=/home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p
+[0.237s] -- The C compiler identification is GNU 11.4.0
+[0.424s] -- The CXX compiler identification is GNU 11.4.0
+[0.451s] -- Detecting C compiler ABI info
+[0.690s] -- Detecting C compiler ABI info - done
+[0.719s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.720s] -- Detecting C compile features
+[0.722s] -- Detecting C compile features - done
+[0.736s] -- Detecting CXX compiler ABI info
+[0.988s] -- Detecting CXX compiler ABI info - done
+[1.010s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.011s] -- Detecting CXX compile features
+[1.013s] -- Detecting CXX compile features - done
+[1.028s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.576s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.936s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.091s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.109s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.141s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.181s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.234s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.395s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.408s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.489s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.520s] -- Looking for pthread.h
+[2.748s] -- Looking for pthread.h - found
+[2.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.973s] -- Found Threads: TRUE  
+[3.171s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[3.301s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[3.760s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[3.918s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.147s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[4.198s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.282s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[4.602s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[4.729s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.729s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.206s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[5.223s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[5.307s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[5.323s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[5.375s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[5.647s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[5.788s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.199s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.212s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.216s] -- Configured cppcheck include dirs: /home/endika/openarm_ros2/src/openarm_p_p/include
+[6.216s] -- Configured cppcheck exclude dirs and/or files: 
+[6.233s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.233s] -- Configured cpplint exclude dirs and/or files: 
+[6.236s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.240s] -- Added test 'lint_cmake' to check CMake code style
+[6.244s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.262s] -- Added test 'uncrustify' to check C / C++ code style
+[6.263s] -- Configured uncrustify additional arguments: 
+[6.266s] -- Added test 'xmllint' to check XML markup files
+[6.271s] -- Configuring done
+[6.379s] -- Generating done
+[6.402s] -- Build files have been written to: /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p
+[6.457s] Invoked command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/endika/openarm_ros2/src/openarm_p_p -DCMAKE_INSTALL_PREFIX=/home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p
+[6.464s] Invoking command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p -- -j4 -l4
+[6.637s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_p_p.dir/src/openarm_p_p.cpp.o[0m
+[23.524s] [01m[K/home/endika/openarm_ros2/src/openarm_p_p/src/openarm_p_p.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[23.524s] [01m[K/home/endika/openarm_ros2/src/openarm_p_p/src/openarm_p_p.cpp:85:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_model_group[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[23.524s]    85 |   const moveit::core::JointModelGroup* [01;35m[Kjoint_model_group[m[K =
+[23.525s]       |                                        [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[32.887s] [100%] [32m[1mLinking CXX executable openarm_p_p[0m
+[34.129s] [100%] Built target openarm_p_p
+[34.169s] Invoked command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p -- -j4 -l4
+[34.203s] Invoking command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p
+[34.228s] -- Install configuration: ""
+[34.229s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/lib/openarm_p_p/openarm_p_p
+[34.230s] -- Set runtime path of "/home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/lib/openarm_p_p/openarm_p_p" to ""
+[34.231s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p//launch
+[34.231s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py
+[34.232s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p
+[34.233s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p
+[34.234s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh
+[34.235s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv
+[34.235s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/path.sh
+[34.236s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/path.dsv
+[34.236s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.bash
+[34.236s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.sh
+[34.237s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.zsh
+[34.237s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.dsv
+[34.237s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/package.dsv
+[34.238s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p
+[34.238s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake
+[34.238s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake
+[34.239s] -- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/package.xml
+[34.244s] Invoked command in '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p

@@ -1,0 +1,441 @@
+[0.000000] (-) TimerEvent: {}
+[0.001228] (openarm_p_p) JobQueued: {'identifier': 'openarm_p_p', 'dependencies': OrderedDict()}
+[0.001395] (openarm_p_p) JobStarted: {'identifier': 'openarm_p_p'}
+[0.035386] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'cmake'}
+[0.036607] (openarm_p_p) Command: {'cmd': ['/usr/bin/cmake', '/home/endika/openarm_ros2/src/openarm_p_p', '-DCMAKE_INSTALL_PREFIX=/home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p'], 'cwd': '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'endika'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/endika/openarm_ros2/install/openarm_hardware/lib:/home/endika/Documents/openarm_ros2/install/openarm_hardware/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia'), ('HOME', '/home/endika'), ('CYCLONEDDS_URI', '/home/endika/unitree_mujoco_ros/cyclonedds.xml'), ('OLDPWD', '/home/endika/openarm_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1548'), ('SYSTEMD_EXEC_PID', '1886'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2396'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/endika/openarm_ros2/install:/home/endika/Documents/openarm_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'endika'), ('JOURNAL_STREAM', '8:13237'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'endika'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/endika-Ubuntu:@/tmp/.ICE-unix/1682,unix/endika-Ubuntu:/tmp/.ICE-unix/1682'), ('INVOCATION_ID', 'aac6ec6d6a3148669cd4433590cba676'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MG0MD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:50dd858e-ebb3-4c49-94a5-5c2557e365ac'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_can:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble')]), 'shell': False}
+[0.099210] (-) TimerEvent: {}
+[0.200427] (-) TimerEvent: {}
+[0.237426] (openarm_p_p) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300698] (-) TimerEvent: {}
+[0.401738] (-) TimerEvent: {}
+[0.424979] (openarm_p_p) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.451907] (openarm_p_p) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501916] (-) TimerEvent: {}
+[0.603144] (-) TimerEvent: {}
+[0.691431] (openarm_p_p) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.703305] (-) TimerEvent: {}
+[0.719977] (openarm_p_p) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.721080] (openarm_p_p) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.722758] (openarm_p_p) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.736210] (openarm_p_p) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.803608] (-) TimerEvent: {}
+[0.905153] (-) TimerEvent: {}
+[0.989018] (openarm_p_p) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.005416] (-) TimerEvent: {}
+[1.010759] (openarm_p_p) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.012014] (openarm_p_p) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.013734] (openarm_p_p) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.028885] (openarm_p_p) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.105530] (-) TimerEvent: {}
+[1.206643] (-) TimerEvent: {}
+[1.307685] (-) TimerEvent: {}
+[1.408711] (-) TimerEvent: {}
+[1.509206] (-) TimerEvent: {}
+[1.576824] (openarm_p_p) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.609476] (-) TimerEvent: {}
+[1.710598] (-) TimerEvent: {}
+[1.811816] (-) TimerEvent: {}
+[1.912960] (-) TimerEvent: {}
+[1.936517] (openarm_p_p) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.013075] (-) TimerEvent: {}
+[2.092227] (openarm_p_p) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.109937] (openarm_p_p) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.113203] (-) TimerEvent: {}
+[2.141789] (openarm_p_p) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.181924] (openarm_p_p) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.213570] (-) TimerEvent: {}
+[2.235253] (openarm_p_p) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.313742] (-) TimerEvent: {}
+[2.396008] (openarm_p_p) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.409008] (openarm_p_p) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[2.413994] (-) TimerEvent: {}
+[2.489968] (openarm_p_p) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[2.514260] (-) TimerEvent: {}
+[2.520842] (openarm_p_p) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.614332] (-) TimerEvent: {}
+[2.714816] (-) TimerEvent: {}
+[2.749369] (openarm_p_p) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.749842] (openarm_p_p) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.814939] (-) TimerEvent: {}
+[2.915914] (-) TimerEvent: {}
+[2.972489] (openarm_p_p) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.974513] (openarm_p_p) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.016338] (-) TimerEvent: {}
+[3.117147] (-) TimerEvent: {}
+[3.171579] (openarm_p_p) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[3.217429] (-) TimerEvent: {}
+[3.301317] (openarm_p_p) StdoutLine: {'line': b'-- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)\n'}
+[3.317666] (-) TimerEvent: {}
+[3.418677] (-) TimerEvent: {}
+[3.519099] (-) TimerEvent: {}
+[3.620015] (-) TimerEvent: {}
+[3.721156] (-) TimerEvent: {}
+[3.761280] (openarm_p_p) StdoutLine: {'line': b'-- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[3.821426] (-) TimerEvent: {}
+[3.918943] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[3.921570] (-) TimerEvent: {}
+[4.022218] (-) TimerEvent: {}
+[4.123121] (-) TimerEvent: {}
+[4.148490] (openarm_p_p) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[4.198733] (openarm_p_p) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[4.223322] (-) TimerEvent: {}
+[4.283218] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[4.323429] (-) TimerEvent: {}
+[4.424043] (-) TimerEvent: {}
+[4.525403] (-) TimerEvent: {}
+[4.603263] (openarm_p_p) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[4.625700] (-) TimerEvent: {}
+[4.726911] (-) TimerEvent: {}
+[4.729886] (openarm_p_p) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.730336] (openarm_p_p) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.827050] (-) TimerEvent: {}
+[4.927568] (-) TimerEvent: {}
+[5.028040] (-) TimerEvent: {}
+[5.128812] (-) TimerEvent: {}
+[5.206481] (openarm_p_p) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[5.224399] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[5.228990] (-) TimerEvent: {}
+[5.308491] (openarm_p_p) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[5.323646] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[5.329291] (-) TimerEvent: {}
+[5.376054] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[5.429521] (-) TimerEvent: {}
+[5.530343] (-) TimerEvent: {}
+[5.630739] (-) TimerEvent: {}
+[5.647580] (openarm_p_p) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[5.730892] (-) TimerEvent: {}
+[5.789428] (openarm_p_p) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.831059] (-) TimerEvent: {}
+[5.931877] (-) TimerEvent: {}
+[6.032722] (-) TimerEvent: {}
+[6.133714] (-) TimerEvent: {}
+[6.199701] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.212416] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.216704] (openarm_p_p) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/endika/openarm_ros2/src/openarm_p_p/include\n'}
+[6.217443] (openarm_p_p) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.233769] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.234354] (-) TimerEvent: {}
+[6.234683] (openarm_p_p) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.237202] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.241147] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.244615] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.262439] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.263781] (openarm_p_p) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.267079] (openarm_p_p) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.271964] (openarm_p_p) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.334503] (-) TimerEvent: {}
+[6.379855] (openarm_p_p) StdoutLine: {'line': b'-- Generating done\n'}
+[6.403094] (openarm_p_p) StdoutLine: {'line': b'-- Build files have been written to: /home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p\n'}
+[6.434894] (-) TimerEvent: {}
+[6.457869] (openarm_p_p) CommandEnded: {'returncode': 0}
+[6.459290] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'build'}
+[6.463738] (openarm_p_p) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p', '--', '-j4', '-l4'], 'cwd': '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'endika'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/endika/openarm_ros2/install/openarm_hardware/lib:/home/endika/Documents/openarm_ros2/install/openarm_hardware/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia'), ('HOME', '/home/endika'), ('CYCLONEDDS_URI', '/home/endika/unitree_mujoco_ros/cyclonedds.xml'), ('OLDPWD', '/home/endika/openarm_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1548'), ('SYSTEMD_EXEC_PID', '1886'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2396'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/endika/openarm_ros2/install:/home/endika/Documents/openarm_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'endika'), ('JOURNAL_STREAM', '8:13237'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'endika'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/endika-Ubuntu:@/tmp/.ICE-unix/1682,unix/endika-Ubuntu:/tmp/.ICE-unix/1682'), ('INVOCATION_ID', 'aac6ec6d6a3148669cd4433590cba676'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MG0MD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:50dd858e-ebb3-4c49-94a5-5c2557e365ac'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_can:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble')]), 'shell': False}
+[6.537462] (-) TimerEvent: {}
+[6.637563] (openarm_p_p) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/openarm_p_p.dir/src/openarm_p_p.cpp.o\x1b[0m\n'}
+[6.638353] (-) TimerEvent: {}
+[6.739188] (-) TimerEvent: {}
+[6.840769] (-) TimerEvent: {}
+[6.941946] (-) TimerEvent: {}
+[7.042492] (-) TimerEvent: {}
+[7.143217] (-) TimerEvent: {}
+[7.244437] (-) TimerEvent: {}
+[7.345790] (-) TimerEvent: {}
+[7.446781] (-) TimerEvent: {}
+[7.547491] (-) TimerEvent: {}
+[7.648171] (-) TimerEvent: {}
+[7.748842] (-) TimerEvent: {}
+[7.850302] (-) TimerEvent: {}
+[7.951106] (-) TimerEvent: {}
+[8.051841] (-) TimerEvent: {}
+[8.152642] (-) TimerEvent: {}
+[8.253701] (-) TimerEvent: {}
+[8.354132] (-) TimerEvent: {}
+[8.454803] (-) TimerEvent: {}
+[8.556178] (-) TimerEvent: {}
+[8.657515] (-) TimerEvent: {}
+[8.758432] (-) TimerEvent: {}
+[8.859161] (-) TimerEvent: {}
+[8.959649] (-) TimerEvent: {}
+[9.060261] (-) TimerEvent: {}
+[9.161181] (-) TimerEvent: {}
+[9.262596] (-) TimerEvent: {}
+[9.363801] (-) TimerEvent: {}
+[9.465181] (-) TimerEvent: {}
+[9.565750] (-) TimerEvent: {}
+[9.666291] (-) TimerEvent: {}
+[9.767373] (-) TimerEvent: {}
+[9.868834] (-) TimerEvent: {}
+[9.970006] (-) TimerEvent: {}
+[10.071046] (-) TimerEvent: {}
+[10.171700] (-) TimerEvent: {}
+[10.272135] (-) TimerEvent: {}
+[10.372888] (-) TimerEvent: {}
+[10.474311] (-) TimerEvent: {}
+[10.575275] (-) TimerEvent: {}
+[10.676312] (-) TimerEvent: {}
+[10.777349] (-) TimerEvent: {}
+[10.877828] (-) TimerEvent: {}
+[10.978318] (-) TimerEvent: {}
+[11.078796] (-) TimerEvent: {}
+[11.179660] (-) TimerEvent: {}
+[11.280537] (-) TimerEvent: {}
+[11.381665] (-) TimerEvent: {}
+[11.482709] (-) TimerEvent: {}
+[11.583149] (-) TimerEvent: {}
+[11.683680] (-) TimerEvent: {}
+[11.784352] (-) TimerEvent: {}
+[11.885766] (-) TimerEvent: {}
+[11.986922] (-) TimerEvent: {}
+[12.087665] (-) TimerEvent: {}
+[12.188339] (-) TimerEvent: {}
+[12.288748] (-) TimerEvent: {}
+[12.389549] (-) TimerEvent: {}
+[12.491079] (-) TimerEvent: {}
+[12.592501] (-) TimerEvent: {}
+[12.693644] (-) TimerEvent: {}
+[12.794750] (-) TimerEvent: {}
+[12.895546] (-) TimerEvent: {}
+[12.996716] (-) TimerEvent: {}
+[13.097891] (-) TimerEvent: {}
+[13.199066] (-) TimerEvent: {}
+[13.299929] (-) TimerEvent: {}
+[13.400699] (-) TimerEvent: {}
+[13.501139] (-) TimerEvent: {}
+[13.601609] (-) TimerEvent: {}
+[13.702297] (-) TimerEvent: {}
+[13.803320] (-) TimerEvent: {}
+[13.904325] (-) TimerEvent: {}
+[14.004986] (-) TimerEvent: {}
+[14.106061] (-) TimerEvent: {}
+[14.206551] (-) TimerEvent: {}
+[14.307036] (-) TimerEvent: {}
+[14.408006] (-) TimerEvent: {}
+[14.508881] (-) TimerEvent: {}
+[14.609724] (-) TimerEvent: {}
+[14.710324] (-) TimerEvent: {}
+[14.810761] (-) TimerEvent: {}
+[14.911858] (-) TimerEvent: {}
+[15.012587] (-) TimerEvent: {}
+[15.114166] (-) TimerEvent: {}
+[15.215612] (-) TimerEvent: {}
+[15.316496] (-) TimerEvent: {}
+[15.417152] (-) TimerEvent: {}
+[15.518157] (-) TimerEvent: {}
+[15.618624] (-) TimerEvent: {}
+[15.719403] (-) TimerEvent: {}
+[15.820658] (-) TimerEvent: {}
+[15.921653] (-) TimerEvent: {}
+[16.022428] (-) TimerEvent: {}
+[16.123326] (-) TimerEvent: {}
+[16.224080] (-) TimerEvent: {}
+[16.324721] (-) TimerEvent: {}
+[16.426367] (-) TimerEvent: {}
+[16.527557] (-) TimerEvent: {}
+[16.628463] (-) TimerEvent: {}
+[16.729443] (-) TimerEvent: {}
+[16.829883] (-) TimerEvent: {}
+[16.930357] (-) TimerEvent: {}
+[17.031057] (-) TimerEvent: {}
+[17.132218] (-) TimerEvent: {}
+[17.233206] (-) TimerEvent: {}
+[17.334675] (-) TimerEvent: {}
+[17.435788] (-) TimerEvent: {}
+[17.536320] (-) TimerEvent: {}
+[17.637188] (-) TimerEvent: {}
+[17.738294] (-) TimerEvent: {}
+[17.839106] (-) TimerEvent: {}
+[17.939952] (-) TimerEvent: {}
+[18.041084] (-) TimerEvent: {}
+[18.141751] (-) TimerEvent: {}
+[18.242253] (-) TimerEvent: {}
+[18.343631] (-) TimerEvent: {}
+[18.445299] (-) TimerEvent: {}
+[18.546309] (-) TimerEvent: {}
+[18.647116] (-) TimerEvent: {}
+[18.748087] (-) TimerEvent: {}
+[18.848654] (-) TimerEvent: {}
+[18.949246] (-) TimerEvent: {}
+[19.050032] (-) TimerEvent: {}
+[19.151122] (-) TimerEvent: {}
+[19.252196] (-) TimerEvent: {}
+[19.353349] (-) TimerEvent: {}
+[19.454858] (-) TimerEvent: {}
+[19.555664] (-) TimerEvent: {}
+[19.656284] (-) TimerEvent: {}
+[19.757199] (-) TimerEvent: {}
+[19.858032] (-) TimerEvent: {}
+[19.958893] (-) TimerEvent: {}
+[20.059599] (-) TimerEvent: {}
+[20.160111] (-) TimerEvent: {}
+[20.260804] (-) TimerEvent: {}
+[20.361672] (-) TimerEvent: {}
+[20.462464] (-) TimerEvent: {}
+[20.563258] (-) TimerEvent: {}
+[20.663866] (-) TimerEvent: {}
+[20.764932] (-) TimerEvent: {}
+[20.865715] (-) TimerEvent: {}
+[20.966653] (-) TimerEvent: {}
+[21.067751] (-) TimerEvent: {}
+[21.168895] (-) TimerEvent: {}
+[21.270078] (-) TimerEvent: {}
+[21.371082] (-) TimerEvent: {}
+[21.471539] (-) TimerEvent: {}
+[21.572167] (-) TimerEvent: {}
+[21.673365] (-) TimerEvent: {}
+[21.774814] (-) TimerEvent: {}
+[21.875930] (-) TimerEvent: {}
+[21.977159] (-) TimerEvent: {}
+[22.077799] (-) TimerEvent: {}
+[22.178459] (-) TimerEvent: {}
+[22.279579] (-) TimerEvent: {}
+[22.380112] (-) TimerEvent: {}
+[22.480983] (-) TimerEvent: {}
+[22.581894] (-) TimerEvent: {}
+[22.682828] (-) TimerEvent: {}
+[22.783539] (-) TimerEvent: {}
+[22.884180] (-) TimerEvent: {}
+[22.985321] (-) TimerEvent: {}
+[23.086588] (-) TimerEvent: {}
+[23.187725] (-) TimerEvent: {}
+[23.288768] (-) TimerEvent: {}
+[23.389194] (-) TimerEvent: {}
+[23.489625] (-) TimerEvent: {}
+[23.524622] (openarm_p_p) StderrLine: {'line': b'\x1b[01m\x1b[K/home/endika/openarm_ros2/src/openarm_p_p/src/openarm_p_p.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.525108] (openarm_p_p) StderrLine: {'line': b'\x1b[01m\x1b[K/home/endika/openarm_ros2/src/openarm_p_p/src/openarm_p_p.cpp:85:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kjoint_model_group\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.525462] (openarm_p_p) StderrLine: {'line': b'   85 |   const moveit::core::JointModelGroup* \x1b[01;35m\x1b[Kjoint_model_group\x1b[m\x1b[K =\n'}
+[23.525817] (openarm_p_p) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.589936] (-) TimerEvent: {}
+[23.691094] (-) TimerEvent: {}
+[23.792275] (-) TimerEvent: {}
+[23.893345] (-) TimerEvent: {}
+[23.994123] (-) TimerEvent: {}
+[24.094658] (-) TimerEvent: {}
+[24.195211] (-) TimerEvent: {}
+[24.296522] (-) TimerEvent: {}
+[24.397470] (-) TimerEvent: {}
+[24.498492] (-) TimerEvent: {}
+[24.599366] (-) TimerEvent: {}
+[24.700609] (-) TimerEvent: {}
+[24.801029] (-) TimerEvent: {}
+[24.901732] (-) TimerEvent: {}
+[25.003006] (-) TimerEvent: {}
+[25.104578] (-) TimerEvent: {}
+[25.206134] (-) TimerEvent: {}
+[25.307642] (-) TimerEvent: {}
+[25.408584] (-) TimerEvent: {}
+[25.509211] (-) TimerEvent: {}
+[25.610725] (-) TimerEvent: {}
+[25.711917] (-) TimerEvent: {}
+[25.813062] (-) TimerEvent: {}
+[25.913984] (-) TimerEvent: {}
+[26.014582] (-) TimerEvent: {}
+[26.115276] (-) TimerEvent: {}
+[26.216373] (-) TimerEvent: {}
+[26.317495] (-) TimerEvent: {}
+[26.418642] (-) TimerEvent: {}
+[26.519785] (-) TimerEvent: {}
+[26.620609] (-) TimerEvent: {}
+[26.721056] (-) TimerEvent: {}
+[26.821762] (-) TimerEvent: {}
+[26.922830] (-) TimerEvent: {}
+[27.023868] (-) TimerEvent: {}
+[27.124470] (-) TimerEvent: {}
+[27.225213] (-) TimerEvent: {}
+[27.325711] (-) TimerEvent: {}
+[27.426453] (-) TimerEvent: {}
+[27.527859] (-) TimerEvent: {}
+[27.629397] (-) TimerEvent: {}
+[27.730834] (-) TimerEvent: {}
+[27.832308] (-) TimerEvent: {}
+[27.932753] (-) TimerEvent: {}
+[28.033192] (-) TimerEvent: {}
+[28.133826] (-) TimerEvent: {}
+[28.235224] (-) TimerEvent: {}
+[28.337193] (-) TimerEvent: {}
+[28.437989] (-) TimerEvent: {}
+[28.538847] (-) TimerEvent: {}
+[28.639258] (-) TimerEvent: {}
+[28.739652] (-) TimerEvent: {}
+[28.840391] (-) TimerEvent: {}
+[28.941796] (-) TimerEvent: {}
+[29.042641] (-) TimerEvent: {}
+[29.143274] (-) TimerEvent: {}
+[29.243897] (-) TimerEvent: {}
+[29.344332] (-) TimerEvent: {}
+[29.444965] (-) TimerEvent: {}
+[29.546364] (-) TimerEvent: {}
+[29.647078] (-) TimerEvent: {}
+[29.747847] (-) TimerEvent: {}
+[29.848746] (-) TimerEvent: {}
+[29.949157] (-) TimerEvent: {}
+[30.049667] (-) TimerEvent: {}
+[30.150281] (-) TimerEvent: {}
+[30.250965] (-) TimerEvent: {}
+[30.351821] (-) TimerEvent: {}
+[30.452749] (-) TimerEvent: {}
+[30.553432] (-) TimerEvent: {}
+[30.653829] (-) TimerEvent: {}
+[30.754424] (-) TimerEvent: {}
+[30.855310] (-) TimerEvent: {}
+[30.956351] (-) TimerEvent: {}
+[31.057198] (-) TimerEvent: {}
+[31.158139] (-) TimerEvent: {}
+[31.259036] (-) TimerEvent: {}
+[31.359498] (-) TimerEvent: {}
+[31.460119] (-) TimerEvent: {}
+[31.561079] (-) TimerEvent: {}
+[31.662270] (-) TimerEvent: {}
+[31.763493] (-) TimerEvent: {}
+[31.864634] (-) TimerEvent: {}
+[31.965130] (-) TimerEvent: {}
+[32.065699] (-) TimerEvent: {}
+[32.166494] (-) TimerEvent: {}
+[32.267505] (-) TimerEvent: {}
+[32.368428] (-) TimerEvent: {}
+[32.469372] (-) TimerEvent: {}
+[32.570226] (-) TimerEvent: {}
+[32.670651] (-) TimerEvent: {}
+[32.771378] (-) TimerEvent: {}
+[32.872809] (-) TimerEvent: {}
+[32.888032] (openarm_p_p) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable openarm_p_p\x1b[0m\n'}
+[32.973006] (-) TimerEvent: {}
+[33.073885] (-) TimerEvent: {}
+[33.174779] (-) TimerEvent: {}
+[33.275861] (-) TimerEvent: {}
+[33.376726] (-) TimerEvent: {}
+[33.477430] (-) TimerEvent: {}
+[33.578501] (-) TimerEvent: {}
+[33.679685] (-) TimerEvent: {}
+[33.780715] (-) TimerEvent: {}
+[33.881859] (-) TimerEvent: {}
+[33.982257] (-) TimerEvent: {}
+[34.082855] (-) TimerEvent: {}
+[34.129971] (openarm_p_p) StdoutLine: {'line': b'[100%] Built target openarm_p_p\n'}
+[34.169887] (openarm_p_p) CommandEnded: {'returncode': 0}
+[34.171281] (openarm_p_p) JobProgress: {'identifier': 'openarm_p_p', 'progress': 'install'}
+[34.183159] (-) TimerEvent: {}
+[34.202983] (openarm_p_p) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p'], 'cwd': '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'endika'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/endika/openarm_ros2/install/openarm_hardware/lib:/home/endika/Documents/openarm_ros2/install/openarm_hardware/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia'), ('HOME', '/home/endika'), ('CYCLONEDDS_URI', '/home/endika/unitree_mujoco_ros/cyclonedds.xml'), ('OLDPWD', '/home/endika/openarm_ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1548'), ('SYSTEMD_EXEC_PID', '1886'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2396'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/endika/openarm_ros2/install:/home/endika/Documents/openarm_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'endika'), ('JOURNAL_STREAM', '8:13237'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'endika'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/unitree_robotics/lib:/home/endika//mujoco-3.2.7/build/bin:/usr/lib/nvidia:/home/endika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/endika-Ubuntu:@/tmp/.ICE-unix/1682,unix/endika-Ubuntu:/tmp/.ICE-unix/1682'), ('INVOCATION_ID', 'aac6ec6d6a3148669cd4433590cba676'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MG0MD3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:50dd858e-ebb3-4c49-94a5-5c2557e365ac'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/endika/openarm_ros2/src/openarm_p_p/build/openarm_p_p'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/endika/openarm_ros2/install/openarm:/home/endika/openarm_ros2/install/openarm_hardware:/home/endika/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/openarm_ros2/install/openarm_description:/home/endika/openarm_ros2/install/openarm_bringup:/home/endika/Documents/openarm_ros2/install/openarm:/home/endika/Documents/openarm_ros2/install/openarm_hardware:/home/endika/Documents/openarm_ros2/install/openarm_bimanual_moveit_config:/home/endika/Documents/openarm_ros2/install/openarm_description:/home/endika/Documents/openarm_ros2/install/openarm_can:/home/endika/Documents/openarm_ros2/install/openarm_bringup:/opt/ros/humble')]), 'shell': False}
+[34.228772] (openarm_p_p) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.229911] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/lib/openarm_p_p/openarm_p_p\n'}
+[34.231367] (openarm_p_p) StdoutLine: {'line': b'-- Set runtime path of "/home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/lib/openarm_p_p/openarm_p_p" to ""\n'}
+[34.232153] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p//launch\n'}
+[34.232766] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py\n'}
+[34.233118] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p\n'}
+[34.233842] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p\n'}
+[34.234963] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh\n'}
+[34.235896] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv\n'}
+[34.236258] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/path.sh\n'}
+[34.236831] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/environment/path.dsv\n'}
+[34.237136] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.bash\n'}
+[34.237459] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.sh\n'}
+[34.237835] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.zsh\n'}
+[34.238178] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/local_setup.dsv\n'}
+[34.238519] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/package.dsv\n'}
+[34.238829] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p\n'}
+[34.239206] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake\n'}
+[34.239561] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake\n'}
+[34.239878] (openarm_p_p) StdoutLine: {'line': b'-- Installing: /home/endika/openarm_ros2/src/openarm_p_p/install/openarm_p_p/share/openarm_p_p/package.xml\n'}
+[34.243554] (openarm_p_p) CommandEnded: {'returncode': 0}
+[34.283581] (-) TimerEvent: {}
+[34.303551] (openarm_p_p) JobEnded: {'identifier': 'openarm_p_p', 'rc': 0}
+[34.305680] (-) EventReactorShutdown: {}
