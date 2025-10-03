@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000908] (-) JobUnselected: {'identifier': 'openarm'}
-[0.001420] (-) JobUnselected: {'identifier': 'openarm_bimanual_moveit_config'}
-[0.001502] (-) JobUnselected: {'identifier': 'openarm_bringup'}
-[0.001568] (-) JobUnselected: {'identifier': 'openarm_can'}
-[0.001634] (-) JobUnselected: {'identifier': 'openarm_description'}
-[0.001697] (-) JobUnselected: {'identifier': 'openarm_hardware'}
-[0.001756] (-) JobUnselected: {'identifier': 'openarm_p_p'}
-[0.002624] (-) EventReactorShutdown: {}

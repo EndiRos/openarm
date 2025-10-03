@@ -1,2 +1,0 @@
-planning_pipelines:
-  pipeline_names: ["ompl", "pilz_industrial_motion_planner"]

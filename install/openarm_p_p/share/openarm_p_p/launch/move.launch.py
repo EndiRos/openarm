@@ -1,1 +1,0 @@
-/home/endika/Documents/openarm_ros2/openarm_p_p/launch/move.launch.py

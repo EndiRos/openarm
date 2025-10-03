@@ -1,1 +1,0 @@
-/home/endika/Documents/openarm_ros2/build/openarm_bimanual_moveit_config/ament_cmake_core/openarm_bimanual_moveit_configConfig-version.cmake
