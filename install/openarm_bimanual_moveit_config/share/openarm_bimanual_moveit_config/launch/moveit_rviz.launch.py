@@ -1,1 +1,0 @@
-/home/endika/Documents/openarm_ros2/openarm_bimanual_moveit_config/launch/moveit_rviz.launch.py
