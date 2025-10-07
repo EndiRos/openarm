@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/openarm-demo.dir/examples/demo.cpp.o -o openarm-demo  libopenarm_can.a 

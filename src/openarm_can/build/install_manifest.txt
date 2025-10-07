@@ -1,0 +1,17 @@
+/usr/local/lib/libopenarm_can.a
+/usr/local/include/openarm/can/socket/arm_component.hpp
+/usr/local/include/openarm/can/socket/gripper_component.hpp
+/usr/local/include/openarm/can/socket/openarm.hpp
+/usr/local/include/openarm/canbus/can_device.hpp
+/usr/local/include/openarm/canbus/can_device_collection.hpp
+/usr/local/include/openarm/canbus/can_socket.hpp
+/usr/local/include/openarm/damiao_motor/dm_motor.hpp
+/usr/local/include/openarm/damiao_motor/dm_motor_constants.hpp
+/usr/local/include/openarm/damiao_motor/dm_motor_control.hpp
+/usr/local/include/openarm/damiao_motor/dm_motor_device.hpp
+/usr/local/include/openarm/damiao_motor/dm_motor_device_collection.hpp
+/usr/local/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake
+/usr/local/lib/cmake/OpenArmCAN/OpenArmCANTargets-release.cmake
+/usr/local/lib/cmake/OpenArmCAN/OpenArmCANConfig.cmake
+/usr/local/lib/cmake/OpenArmCAN/OpenArmCANVersion.cmake
+/usr/local/lib/pkgconfig/openarm-can.pc

@@ -1,0 +1,17 @@
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/libopenarm_can.a
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/arm_component.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/gripper_component.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/openarm.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device_collection.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_socket.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_constants.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_control.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device_collection.hpp
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANConfig.cmake
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANVersion.cmake
+/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/pkgconfig/openarm-can.pc
