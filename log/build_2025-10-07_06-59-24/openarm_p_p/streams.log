@@ -1,0 +1,30 @@
+[0.056s] Invoking command in '/root/workspace/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_p_p -- -j6 -l6
+[0.175s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_p_p.dir/src/openarm_p_p.cpp.o[0m
+[8.253s] [01m[K/root/workspace/openarm/src/openarm_p_p/src/openarm_p_p.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[8.253s] [01m[K/root/workspace/openarm/src/openarm_p_p/src/openarm_p_p.cpp:85:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_model_group[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[8.254s]    85 |   const moveit::core::JointModelGroup* [01;35m[Kjoint_model_group[m[K =
+[8.254s]       |                                        [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[10.948s] [100%] [32m[1mLinking CXX executable openarm_p_p[0m
+[12.713s] [100%] Built target openarm_p_p
+[12.732s] Invoked command in '/root/workspace/openarm/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_p_p -- -j6 -l6
+[12.736s] Invoking command in '/root/workspace/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_p_p
+[12.751s] -- Install configuration: ""
+[12.756s] -- Execute custom install script
+[12.762s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/lib/openarm_p_p/openarm_p_p
+[12.783s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py
+[12.802s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p
+[12.820s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p
+[12.837s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh
+[12.852s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv
+[12.866s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/path.sh
+[12.881s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/path.dsv
+[12.895s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.bash
+[12.910s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.sh
+[12.924s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.zsh
+[12.939s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.dsv
+[12.953s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/package.dsv
+[12.971s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p
+[12.988s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake
+[13.003s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake
+[13.018s] -- Symlinking: /root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/package.xml
+[13.034s] Invoked command in '/root/workspace/openarm/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_p_p

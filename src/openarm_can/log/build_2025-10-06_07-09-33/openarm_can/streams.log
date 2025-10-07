@@ -1,0 +1,62 @@
+[0.032s] Invoking command in '/root/workspace/openarm/src/openarm_can/build/openarm_can': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/src/openarm_can/install/openarm_can
+[0.147s] -- The C compiler identification is GNU 11.4.0
+[0.241s] -- The CXX compiler identification is GNU 11.4.0
+[0.259s] -- Detecting C compiler ABI info
+[0.471s] -- Detecting C compiler ABI info - done
+[0.487s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.487s] -- Detecting C compile features
+[0.488s] -- Detecting C compile features - done
+[0.498s] -- Detecting CXX compiler ABI info
+[0.709s] -- Detecting CXX compiler ABI info - done
+[0.723s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.724s] -- Detecting CXX compile features
+[0.724s] -- Detecting CXX compile features - done
+[0.779s] -- Configuring done
+[1.460s] -- Generating done
+[1.707s] -- Build files have been written to: /root/workspace/openarm/src/openarm_can/build/openarm_can
+[1.710s] Invoked command in '/root/workspace/openarm/src/openarm_can/build/openarm_can' returned '0': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/src/openarm_can/install/openarm_can
+[1.713s] Invoking command in '/root/workspace/openarm/src/openarm_can/build/openarm_can': /usr/bin/cmake --build /root/workspace/openarm/src/openarm_can/build/openarm_can -- -j6 -l6
+[1.840s] [ 35%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/gripper_component.cpp.o[0m
+[1.843s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/arm_component.cpp.o[0m
+[1.843s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_device_collection.cpp.o[0m
+[1.843s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/openarm.cpp.o[0m
+[1.843s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_socket.cpp.o[0m
+[1.843s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor.cpp.o[0m
+[2.187s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_control.cpp.o[0m
+[2.198s] [ 57%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device.cpp.o[0m
+[2.320s] [ 64%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device_collection.cpp.o[0m
+[2.914s] [ 71%] [32m[1mLinking CXX static library libopenarm_can.a[0m
+[3.094s] [ 71%] Built target openarm_can
+[3.144s] [ 85%] [32mBuilding CXX object CMakeFiles/motor-check.dir/setup/motor_check.cpp.o[0m
+[3.144s] [ 85%] [32mBuilding CXX object CMakeFiles/openarm-demo.dir/examples/demo.cpp.o[0m
+[3.810s] [ 92%] [32m[1mLinking CXX executable motor-check[0m
+[3.834s] [100%] [32m[1mLinking CXX executable openarm-demo[0m
+[3.969s] [100%] Built target motor-check
+[3.981s] [100%] Built target openarm-demo
+[4.007s] Invoked command in '/root/workspace/openarm/src/openarm_can/build/openarm_can' returned '0': /usr/bin/cmake --build /root/workspace/openarm/src/openarm_can/build/openarm_can -- -j6 -l6
+[4.027s] Invoking command in '/root/workspace/openarm/src/openarm_can/build/openarm_can': /usr/bin/cmake --install /root/workspace/openarm/src/openarm_can/build/openarm_can
+[4.040s] -- Install configuration: ""
+[4.040s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/libopenarm_can.a
+[4.055s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm
+[4.057s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can
+[4.058s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket
+[4.060s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/arm_component.hpp
+[4.060s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/gripper_component.hpp
+[4.061s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/openarm.hpp
+[4.062s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus
+[4.063s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device.hpp
+[4.064s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device_collection.hpp
+[4.064s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_socket.hpp
+[4.065s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor
+[4.066s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor.hpp
+[4.067s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_constants.hpp
+[4.068s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_control.hpp
+[4.069s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device.hpp
+[4.069s] -- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device_collection.hpp
+[4.070s] -- Old export file "/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake" will be replaced.  Removing files [/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake].
+[4.072s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake
+[4.078s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake
+[4.082s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANConfig.cmake
+[4.087s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANVersion.cmake
+[4.094s] -- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/pkgconfig/openarm-can.pc
+[4.101s] Invoked command in '/root/workspace/openarm/src/openarm_can/build/openarm_can' returned '0': /usr/bin/cmake --install /root/workspace/openarm/src/openarm_can/build/openarm_can

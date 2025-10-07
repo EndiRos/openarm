@@ -1,1 +1,1 @@
-/home/endika/Documents/openarm/build/openarm_hardware/ament_cmake_environment_hooks/local_setup.sh
+/root/workspace/openarm/build/openarm_hardware/ament_cmake_environment_hooks/local_setup.sh

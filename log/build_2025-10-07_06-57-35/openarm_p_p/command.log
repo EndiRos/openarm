@@ -1,0 +1,1 @@
+Invoking command in '/root/workspace/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_p_p -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_p_p

@@ -1,8 +1,8 @@
-# Install script for directory: /home/endika/Documents/openarm/src/openarm
+# Install script for directory: /root/workspace/openarm/src/openarm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/endika/Documents/openarm/install/openarm")
+  set(CMAKE_INSTALL_PREFIX "/root/workspace/openarm/install/openarm")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/endika/Documents/openarm/build/openarm/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/root/workspace/openarm/build/openarm/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/endika/Documents/openarm/build/openarm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/workspace/openarm/build/openarm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

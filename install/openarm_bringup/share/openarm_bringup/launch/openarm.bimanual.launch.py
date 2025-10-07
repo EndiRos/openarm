@@ -1,1 +1,1 @@
-/home/endika/Documents/openarm/src/openarm_bringup/launch/openarm.bimanual.launch.py
+/root/workspace/openarm/src/openarm_bringup/launch/openarm.bimanual.launch.py

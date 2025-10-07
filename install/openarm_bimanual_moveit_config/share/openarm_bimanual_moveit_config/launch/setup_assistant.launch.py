@@ -1,1 +1,1 @@
-/home/endika/Documents/openarm/src/openarm_bimanual_moveit_config/launch/setup_assistant.launch.py
+/root/workspace/openarm/src/openarm_bimanual_moveit_config/launch/setup_assistant.launch.py

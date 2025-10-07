@@ -1,0 +1,51 @@
+[0.095s] Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bringup
+[2.106s] -- The C compiler identification is GNU 11.4.0
+[2.682s] -- The CXX compiler identification is GNU 11.4.0
+[2.734s] -- Detecting C compiler ABI info
+[3.102s] -- Detecting C compiler ABI info - done
+[3.115s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.116s] -- Detecting C compile features
+[3.134s] -- Detecting C compile features - done
+[3.148s] -- Detecting CXX compiler ABI info
+[3.401s] -- Detecting CXX compiler ABI info - done
+[3.414s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.415s] -- Detecting CXX compile features
+[3.415s] -- Detecting CXX compile features - done
+[3.534s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.821s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.964s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.243s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.549s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.556s] -- Added test 'lint_cmake' to check CMake code style
+[4.561s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.581s] -- Added test 'xmllint' to check XML markup files
+[4.605s] -- Configuring done
+[4.672s] -- Generating done
+[4.702s] -- Build files have been written to: /root/workspace/openarm/build/openarm_bringup
+[4.706s] Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bringup
+[4.709s] Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bringup -- -j6 -l6
+[4.776s] Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bringup -- -j6 -l6
+[4.794s] Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bringup
+[4.808s] -- Install configuration: ""
+[4.811s] -- Execute custom install script
+[4.819s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/launch/openarm.bimanual.launch.py
+[4.834s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/launch/openarm.launch.py
+[4.854s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/config/v10_controllers/openarm_v10_bimanual_controllers.yaml
+[4.869s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/config/v10_controllers/openarm_v10_bimanual_controllers_namespaced.yaml
+[4.884s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/config/v10_controllers/openarm_v10_controllers.yaml
+[4.904s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/ament_index/resource_index/package_run_dependencies/openarm_bringup
+[4.921s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/ament_index/resource_index/parent_prefix_path/openarm_bringup
+[4.937s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/environment/ament_prefix_path.sh
+[4.952s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/environment/ament_prefix_path.dsv
+[4.968s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/environment/path.sh
+[4.986s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/environment/path.dsv
+[5.001s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/local_setup.bash
+[5.016s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/local_setup.sh
+[5.032s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/local_setup.zsh
+[5.047s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/local_setup.dsv
+[5.062s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.dsv
+[5.081s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/ament_index/resource_index/packages/openarm_bringup
+[5.099s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/cmake/openarm_bringupConfig.cmake
+[5.114s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/cmake/openarm_bringupConfig-version.cmake
+[5.130s] -- Symlinking: /root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.xml
+[5.146s] Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bringup

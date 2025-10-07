@@ -1,1 +1,1 @@
-/home/endika/Documents/openarm/src/openarm_bimanual_moveit_config/launch/move_group.launch.py
+/root/workspace/openarm/src/openarm_bimanual_moveit_config/launch/move_group.launch.py

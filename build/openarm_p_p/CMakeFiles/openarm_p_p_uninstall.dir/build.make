@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/endika/Documents/openarm/src/openarm_p_p
+CMAKE_SOURCE_DIR = /root/workspace/openarm/src/openarm_p_p
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/endika/Documents/openarm/build/openarm_p_p
+CMAKE_BINARY_DIR = /root/workspace/openarm/build/openarm_p_p
 
 # Utility rule file for openarm_p_p_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/openarm_p_p_uninstall.dir/compiler_depend.make
 include CMakeFiles/openarm_p_p_uninstall.dir/progress.make
 
 CMakeFiles/openarm_p_p_uninstall:
-	/usr/bin/cmake -P /home/endika/Documents/openarm/build/openarm_p_p/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/workspace/openarm/build/openarm_p_p/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 openarm_p_p_uninstall: CMakeFiles/openarm_p_p_uninstall
 openarm_p_p_uninstall: CMakeFiles/openarm_p_p_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/openarm_p_p_uninstall.dir/clean:
 .PHONY : CMakeFiles/openarm_p_p_uninstall.dir/clean
 
 CMakeFiles/openarm_p_p_uninstall.dir/depend:
-	cd /home/endika/Documents/openarm/build/openarm_p_p && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/endika/Documents/openarm/src/openarm_p_p /home/endika/Documents/openarm/src/openarm_p_p /home/endika/Documents/openarm/build/openarm_p_p /home/endika/Documents/openarm/build/openarm_p_p /home/endika/Documents/openarm/build/openarm_p_p/CMakeFiles/openarm_p_p_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/workspace/openarm/build/openarm_p_p && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/openarm/src/openarm_p_p /root/workspace/openarm/src/openarm_p_p /root/workspace/openarm/build/openarm_p_p /root/workspace/openarm/build/openarm_p_p /root/workspace/openarm/build/openarm_p_p/CMakeFiles/openarm_p_p_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/openarm_p_p_uninstall.dir/depend
 

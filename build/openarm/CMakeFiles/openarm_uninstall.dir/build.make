@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/endika/Documents/openarm/src/openarm
+CMAKE_SOURCE_DIR = /root/workspace/openarm/src/openarm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/endika/Documents/openarm/build/openarm
+CMAKE_BINARY_DIR = /root/workspace/openarm/build/openarm
 
 # Utility rule file for openarm_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/openarm_uninstall.dir/compiler_depend.make
 include CMakeFiles/openarm_uninstall.dir/progress.make
 
 CMakeFiles/openarm_uninstall:
-	/usr/bin/cmake -P /home/endika/Documents/openarm/build/openarm/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/workspace/openarm/build/openarm/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 openarm_uninstall: CMakeFiles/openarm_uninstall
 openarm_uninstall: CMakeFiles/openarm_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/openarm_uninstall.dir/clean:
 .PHONY : CMakeFiles/openarm_uninstall.dir/clean
 
 CMakeFiles/openarm_uninstall.dir/depend:
-	cd /home/endika/Documents/openarm/build/openarm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/endika/Documents/openarm/src/openarm /home/endika/Documents/openarm/src/openarm /home/endika/Documents/openarm/build/openarm /home/endika/Documents/openarm/build/openarm /home/endika/Documents/openarm/build/openarm/CMakeFiles/openarm_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/workspace/openarm/build/openarm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/workspace/openarm/src/openarm /root/workspace/openarm/src/openarm /root/workspace/openarm/build/openarm /root/workspace/openarm/build/openarm /root/workspace/openarm/build/openarm/CMakeFiles/openarm_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/openarm_uninstall.dir/depend
 

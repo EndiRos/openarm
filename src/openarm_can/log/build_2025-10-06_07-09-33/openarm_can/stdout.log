@@ -1,0 +1,56 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/workspace/openarm/src/openarm_can/build/openarm_can
+[ 35%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/gripper_component.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/arm_component.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_device_collection.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/openarm.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_socket.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_control.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device_collection.cpp.o[0m
+[ 71%] [32m[1mLinking CXX static library libopenarm_can.a[0m
+[ 71%] Built target openarm_can
+[ 85%] [32mBuilding CXX object CMakeFiles/motor-check.dir/setup/motor_check.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/openarm-demo.dir/examples/demo.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable motor-check[0m
+[100%] [32m[1mLinking CXX executable openarm-demo[0m
+[100%] Built target motor-check
+[100%] Built target openarm-demo
+-- Install configuration: ""
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/libopenarm_can.a
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/arm_component.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/gripper_component.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/can/socket/openarm.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_device_collection.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/canbus/can_socket.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_constants.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_control.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device.hpp
+-- Up-to-date: /root/workspace/openarm/src/openarm_can/install/openarm_can/include/openarm/damiao_motor/dm_motor_device_collection.hpp
+-- Old export file "/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake" will be replaced.  Removing files [/root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake].
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets.cmake
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANTargets-noconfig.cmake
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANConfig.cmake
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/cmake/OpenArmCAN/OpenArmCANVersion.cmake
+-- Installing: /root/workspace/openarm/src/openarm_can/install/openarm_can/lib/pkgconfig/openarm-can.pc

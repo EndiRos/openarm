@@ -1,0 +1,4 @@
+Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake --build /root/workspace/openarm/build/openarm_can -- -j6 -l6
+Invoked command in '/root/workspace/openarm/build/openarm_can' returned '0': /usr/bin/cmake --build /root/workspace/openarm/build/openarm_can -- -j6 -l6
+Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake --install /root/workspace/openarm/build/openarm_can
+Invoked command in '/root/workspace/openarm/build/openarm_can' returned '0': /usr/bin/cmake --install /root/workspace/openarm/build/openarm_can

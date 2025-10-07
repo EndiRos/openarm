@@ -1,1 +1,1 @@
-/home/endika/Documents/openarm/build/openarm_bringup/ament_cmake_core/openarm_bringupConfig.cmake
+/root/workspace/openarm/build/openarm_bringup/ament_cmake_core/openarm_bringupConfig.cmake
