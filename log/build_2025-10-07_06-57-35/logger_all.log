@@ -1,0 +1,410 @@
+[1.737s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.737s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73c4651af040>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73c4652a3f70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73c4652a3f70>>, mixin_verb=('build',))
+[3.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.248s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[3.248s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[3.249s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[3.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/workspace/openarm'
+[3.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[3.328s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.328s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.328s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.329s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['ignore', 'ignore_ament_install']
+[3.329s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ignore'
+[3.330s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ignore_ament_install'
+[3.330s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['colcon_pkg']
+[3.330s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'colcon_pkg'
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['colcon_meta']
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'colcon_meta'
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['ros']
+[3.331s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ros'
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['cmake', 'python']
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'cmake'
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'python'
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['python_setup_py']
+[3.333s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'python_setup_py'
+[3.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['ignore', 'ignore_ament_install']
+[3.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ignore'
+[3.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ignore_ament_install'
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['colcon_pkg']
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'colcon_pkg'
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['colcon_meta']
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'colcon_meta'
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['ros']
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ros'
+[3.348s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm' with type 'ros.ament_cmake' and name 'openarm'
+[3.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[3.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ignore'
+[3.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ignore_ament_install'
+[3.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['colcon_pkg']
+[3.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'colcon_pkg'
+[3.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['colcon_meta']
+[3.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'colcon_meta'
+[3.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['ros']
+[3.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ros'
+[3.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_bimanual_moveit_config' with type 'ros.ament_cmake' and name 'openarm_bimanual_moveit_config'
+[3.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[3.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ignore'
+[3.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ignore_ament_install'
+[3.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['colcon_pkg']
+[3.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'colcon_pkg'
+[3.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['colcon_meta']
+[3.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'colcon_meta'
+[3.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['ros']
+[3.359s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ros'
+[3.361s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_bringup' with type 'ros.ament_cmake' and name 'openarm_bringup'
+[3.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['ignore', 'ignore_ament_install']
+[3.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ignore'
+[3.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ignore_ament_install'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['colcon_pkg']
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'colcon_pkg'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['colcon_meta']
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'colcon_meta'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['ros']
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ros'
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['cmake', 'python']
+[3.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'cmake'
+[3.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'python'
+[3.711s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_can' with type 'cmake' and name 'openarm_can'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ignore', 'ignore_ament_install']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore_ament_install'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_pkg']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_pkg'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_meta']
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_meta'
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ros']
+[3.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ros'
+[3.718s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_description' with type 'ros.ament_cmake' and name 'openarm_description'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['ignore', 'ignore_ament_install']
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ignore'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ignore_ament_install'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['colcon_pkg']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'colcon_pkg'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['colcon_meta']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'colcon_meta'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['ros']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ros'
+[3.723s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_hardware' with type 'ros.ament_cmake' and name 'openarm_hardware'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['ignore', 'ignore_ament_install']
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ignore'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ignore_ament_install'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['colcon_pkg']
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'colcon_pkg'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['colcon_meta']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'colcon_meta'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['ros']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ros'
+[3.730s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_p_p' with type 'ros.ament_cmake' and name 'openarm_p_p'
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_args' from command line to 'None'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target' from command line to 'None'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[3.931s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.932s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_bringup', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_bringup', 'symlink_install': True, 'test_result_base': None}
+[3.932s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_args' from command line to 'None'
+[3.932s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_target' from command line to 'None'
+[3.932s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.932s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_clean_cache' from command line to 'False'
+[3.932s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_clean_first' from command line to 'False'
+[3.933s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'cmake_force_configure' from command line to 'False'
+[3.933s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'ament_cmake_args' from command line to 'None'
+[3.933s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'catkin_cmake_args' from command line to 'None'
+[3.933s] Level 5:colcon.colcon_core.verb:set package 'openarm_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.933s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_can', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_can', 'symlink_install': True, 'test_result_base': None}
+[3.934s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_args' from command line to 'None'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_target' from command line to 'None'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_clean_first' from command line to 'False'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'cmake_force_configure' from command line to 'False'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'ament_cmake_args' from command line to 'None'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[3.935s] Level 5:colcon.colcon_core.verb:set package 'openarm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.935s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_description', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_description', 'symlink_install': True, 'test_result_base': None}
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_args' from command line to 'None'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_target' from command line to 'None'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[3.936s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.937s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_hardware', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_hardware', 'symlink_install': True, 'test_result_base': None}
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_args' from command line to 'None'
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_target' from command line to 'None'
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_clean_cache' from command line to 'False'
+[3.937s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_clean_first' from command line to 'False'
+[3.938s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_force_configure' from command line to 'False'
+[3.938s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'ament_cmake_args' from command line to 'None'
+[3.938s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'catkin_cmake_args' from command line to 'None'
+[3.938s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.938s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_p_p' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_p_p', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_p_p', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_p_p', 'symlink_install': True, 'test_result_base': None}
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_args' from command line to 'None'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target' from command line to 'None'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_cache' from command line to 'False'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_first' from command line to 'False'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_force_configure' from command line to 'False'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'ament_cmake_args' from command line to 'None'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_cmake_args' from command line to 'None'
+[3.939s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.940s] DEBUG:colcon.colcon_core.verb:Building package 'openarm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm', 'symlink_install': True, 'test_result_base': None}
+[3.940s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_args' from command line to 'None'
+[3.941s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target' from command line to 'None'
+[3.941s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.941s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[3.941s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[3.942s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[3.942s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[3.942s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[3.943s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.943s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bimanual_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/workspace/openarm/build/openarm_bimanual_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/workspace/openarm/install/openarm_bimanual_moveit_config', 'merge_install': False, 'path': '/root/workspace/openarm/src/openarm_bimanual_moveit_config', 'symlink_install': True, 'test_result_base': None}
+[3.944s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.945s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.945s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/workspace/openarm/src/openarm_description' with build type 'ament_cmake'
+[3.946s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_description'
+[3.970s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.970s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.011s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/workspace/openarm/src/openarm_bringup' with build type 'ament_cmake'
+[4.012s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_bringup'
+[4.012s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.012s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.022s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/workspace/openarm/src/openarm_hardware' with build type 'ament_cmake'
+[4.022s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_hardware'
+[4.022s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.022s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.031s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_can'
+[4.032s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.032s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.041s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/workspace/openarm/src/openarm_p_p' with build type 'ament_cmake'
+[4.041s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_p_p'
+[4.042s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_description
+[4.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bringup
+[4.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_hardware
+[4.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_can
+[4.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_p_p -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_p_p
+[8.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_can' returned '0': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_can
+[8.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake --build /root/workspace/openarm/build/openarm_can -- -j6 -l6
+[8.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bringup
+[8.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bringup -- -j6 -l6
+[8.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bringup -- -j6 -l6
+[8.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bringup
+[8.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_description
+[8.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_description -- -j6 -l6
+[8.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_description -- -j6 -l6
+[8.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_description
+[9.158s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[9.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bringup
+[9.545s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup' for CMake module files
+[9.549s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup' for CMake config files
+[9.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[9.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[9.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[9.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[9.599s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/bin'
+[9.599s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[9.600s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/lib/python3.10/site-packages'
+[9.600s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/bin'
+[9.601s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[9.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[9.613s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.sh'
+[9.616s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.bash'
+[9.618s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[9.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[9.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[9.631s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup' for CMake module files
+[9.633s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup' for CMake config files
+[9.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[9.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[9.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[9.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[9.645s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/bin'
+[9.645s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[9.645s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/lib/python3.10/site-packages'
+[9.646s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bringup/bin'
+[9.646s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[9.648s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[9.650s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.sh'
+[9.652s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.bash'
+[9.654s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[9.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[10.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_description)
+[10.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_description
+[10.315s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description' for CMake module files
+[10.321s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description' for CMake config files
+[10.357s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_description', 'cmake_prefix_path')
+[10.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.ps1'
+[10.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.dsv'
+[10.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.sh'
+[10.377s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/bin'
+[10.377s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/lib/pkgconfig/openarm_description.pc'
+[10.377s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/lib/python3.10/site-packages'
+[10.378s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/bin'
+[10.378s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.ps1'
+[10.385s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.dsv'
+[10.388s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.sh'
+[10.392s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.bash'
+[10.395s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.zsh'
+[10.399s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_description/share/colcon-core/packages/openarm_description)
+[10.405s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_description)
+[10.405s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description' for CMake module files
+[10.410s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description' for CMake config files
+[10.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_description', 'cmake_prefix_path')
+[10.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.ps1'
+[10.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.dsv'
+[10.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_description/share/openarm_description/hook/cmake_prefix_path.sh'
+[10.458s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/bin'
+[10.458s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/lib/pkgconfig/openarm_description.pc'
+[10.458s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/lib/python3.10/site-packages'
+[10.459s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_description/bin'
+[10.460s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.ps1'
+[10.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.dsv'
+[10.469s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.sh'
+[10.473s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.bash'
+[10.478s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_description/share/openarm_description/package.zsh'
+[10.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_description/share/colcon-core/packages/openarm_description)
+[10.483s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/workspace/openarm/src/openarm_bimanual_moveit_config' with build type 'ament_cmake'
+[10.483s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/workspace/openarm/src/openarm_bimanual_moveit_config'
+[10.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bimanual_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bimanual_moveit_config
+[12.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_bimanual_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_bimanual_moveit_config
+[12.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bimanual_moveit_config -- -j6 -l6
+[12.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_bimanual_moveit_config -- -j6 -l6
+[12.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bimanual_moveit_config
+[12.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[12.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_bimanual_moveit_config' returned '0': AMENT_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspace/openarm/install/openarm_description:/root/ws_moveit/install/pilz_industrial_motion_planner_testutils:/root/ws_moveit/install/moveit_runtime:/root/ws_moveit/install/moveit2_tutorials:/root/ws_moveit/install/moveit:/root/ws_moveit/install/moveit_planners:/root/ws_moveit/install/pilz_industrial_motion_planner:/root/ws_moveit/install/moveit_visual_tools:/root/ws_moveit/install/moveit_task_constructor_visualization:/root/ws_moveit/install/moveit_task_constructor_demo:/root/ws_moveit/install/moveit_task_constructor_capabilities:/root/ws_moveit/install/moveit_task_constructor_core:/root/ws_moveit/install/moveit_ros_control_interface:/root/ws_moveit/install/moveit_plugins:/root/ws_moveit/install/moveit_simple_controller_manager:/root/ws_moveit/install/moveit_setup_assistant:/root/ws_moveit/install/moveit_setup_srdf_plugins:/root/ws_moveit/install/moveit_setup_core_plugins:/root/ws_moveit/install/moveit_setup_controllers:/root/ws_moveit/install/moveit_setup_app_plugins:/root/ws_moveit/install/moveit_setup_framework:/root/ws_moveit/install/moveit_servo:/root/ws_moveit/install/moveit_ros:/root/ws_moveit/install/moveit_ros_visualization:/root/ws_moveit/install/moveit_hybrid_planning:/root/ws_moveit/install/moveit_ros_planning_interface:/root/ws_moveit/install/moveit_ros_benchmarks:/root/ws_moveit/install/moveit_ros_warehouse:/root/ws_moveit/install/moveit_ros_robot_interaction:/root/ws_moveit/install/moveit_ros_perception:/root/ws_moveit/install/moveit_resources_prbt_pg70_support:/root/ws_moveit/install/moveit_resources_prbt_moveit_config:/root/ws_moveit/install/moveit_ros_move_group:/root/ws_moveit/install/moveit_planners_ompl:/root/ws_moveit/install/moveit_ros_planning:/root/ws_moveit/install/moveit_ros_occupancy_map_monitor:/root/ws_moveit/install/moveit_resources_prbt_ikfast_manipulator_plugin:/root/ws_moveit/install/moveit_planners_chomp:/root/ws_moveit/install/moveit_kinematics:/root/ws_moveit/install/moveit_chomp_optimizer_adapter:/root/ws_moveit/install/chomp_motion_planner:/root/ws_moveit/install/moveit_core:/root/ws_moveit/install/srdfdom:/root/ws_moveit/install/rviz_marker_tools:/root/ws_moveit/install/rosparam_shortcuts:/root/ws_moveit/install/moveit_task_constructor_msgs:/root/ws_moveit/install/moveit_resources_prbt_support:/root/ws_moveit/install/moveit_resources:/root/ws_moveit/install/moveit_resources_pr2_description:/root/ws_moveit/install/moveit_resources_panda_moveit_config:/root/ws_moveit/install/moveit_resources_panda_description:/root/ws_moveit/install/moveit_resources_fanuc_moveit_config:/root/ws_moveit/install/moveit_resources_fanuc_description:/root/ws_moveit/install/moveit_common:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_bimanual_moveit_config
+[12.844s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config' for CMake module files
+[12.848s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config' for CMake config files
+[12.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[12.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[12.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[12.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[12.863s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/bin'
+[12.863s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[12.864s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[12.864s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/bin'
+[12.865s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[12.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[12.869s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[12.872s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[12.874s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[12.876s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[12.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[12.881s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config' for CMake module files
+[12.883s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config' for CMake config files
+[12.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[12.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[12.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[12.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[12.895s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/bin'
+[12.895s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[12.896s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[12.896s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_bimanual_moveit_config/bin'
+[12.896s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[12.899s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[12.902s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[12.904s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[12.905s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[12.907s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[13.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/workspace/openarm/build/openarm_hardware' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_hardware
+[13.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_hardware)
+[13.483s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware' for CMake module files
+[13.483s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware' for CMake config files
+[13.484s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware/bin'
+[13.484s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware/lib/pkgconfig/openarm_hardware.pc'
+[13.484s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware/lib/python3.10/site-packages'
+[13.485s] Level 1:colcon.colcon_core.environment:checking '/root/workspace/openarm/install/openarm_hardware/bin'
+[13.485s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.ps1'
+[13.490s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.dsv'
+[13.493s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.sh'
+[13.495s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.bash'
+[13.498s] INFO:colcon.colcon_core.shell:Creating package script '/root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.zsh'
+[13.500s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/workspace/openarm/install/openarm_hardware/share/colcon-core/packages/openarm_hardware)
+[19.151s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.152s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.152s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[19.152s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[19.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.478s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.479s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.583s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[19.583s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/workspace/openarm/install/local_setup.ps1'
+[19.626s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/workspace/openarm/install/_local_setup_util_ps1.py'
+[19.657s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/workspace/openarm/install/setup.ps1'
+[19.663s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/workspace/openarm/install/local_setup.sh'
+[19.672s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/workspace/openarm/install/_local_setup_util_sh.py'
+[19.675s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/workspace/openarm/install/setup.sh'
+[19.682s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/workspace/openarm/install/local_setup.bash'
+[19.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/workspace/openarm/install/setup.bash'
+[19.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/workspace/openarm/install/local_setup.zsh'
+[19.704s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/workspace/openarm/install/setup.zsh'

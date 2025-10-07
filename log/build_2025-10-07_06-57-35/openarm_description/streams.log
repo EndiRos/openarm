@@ -1,0 +1,105 @@
+[0.119s] Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_description
+[2.171s] -- The C compiler identification is GNU 11.4.0
+[2.751s] -- The CXX compiler identification is GNU 11.4.0
+[2.800s] -- Detecting C compiler ABI info
+[3.169s] -- Detecting C compiler ABI info - done
+[3.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.183s] -- Detecting C compile features
+[3.201s] -- Detecting C compile features - done
+[3.214s] -- Detecting CXX compiler ABI info
+[3.467s] -- Detecting CXX compiler ABI info - done
+[3.480s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.481s] -- Detecting CXX compile features
+[3.481s] -- Detecting CXX compile features - done
+[3.601s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.887s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.031s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.309s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.719s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.741s] -- Added test 'lint_cmake' to check CMake code style
+[4.752s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.838s] -- Added test 'xmllint' to check XML markup files
+[4.862s] -- Configuring done
+[4.929s] -- Generating done
+[4.961s] -- Build files have been written to: /root/workspace/openarm/build/openarm_description
+[4.966s] Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_description
+[4.969s] Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_description -- -j6 -l6
+[5.036s] Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_description -- -j6 -l6
+[5.039s] Invoking command in '/root/workspace/openarm/build/openarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_description
+[5.055s] -- Install configuration: ""
+[5.060s] -- Execute custom install script
+[5.071s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/launch/display_openarm.launch.py
+[5.098s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link0_symp.stl
+[5.113s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link1_symp.stl
+[5.130s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link2_symp.stl
+[5.144s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link3_symp.stl
+[5.160s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link4_symp.stl
+[5.175s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link5_symp.stl
+[5.191s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link6_symp.stl
+[5.208s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/collision/link7_symp.stl
+[5.226s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link0.dae
+[5.241s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link0.stl
+[5.255s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link1.dae
+[5.270s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link1.stl
+[5.285s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link2.dae
+[5.300s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link2.stl
+[5.315s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link3.dae
+[5.330s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link3.stl
+[5.345s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link4.dae
+[5.360s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link4.stl
+[5.375s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link5.dae
+[5.390s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link5.stl
+[5.405s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link6.dae
+[5.420s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link6.stl
+[5.435s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link7.dae
+[5.450s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/arm/v10/visual/link7.stl
+[5.469s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/body/v10/collision/body_link0_symp.stl
+[5.487s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/body/v10/visual/body_link0.dae
+[5.502s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/body/v10/visual/body_link0.stl
+[5.521s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/collision/finger.stl
+[5.536s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/collision/hand.stl
+[5.569s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/finger.dae
+[5.591s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/finger.stl
+[5.606s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/meshes/ee/openarm_hand/visual/hand.dae
+[5.629s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/rviz/arm_only.rviz
+[5.644s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/rviz/bimanual.rviz
+[5.665s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/arm/openarm_arm.xacro
+[5.680s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/arm/openarm_macro.xacro
+[5.697s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/body/openarm_body.xacro
+[5.711s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/body/openarm_body_macro.xacro
+[5.729s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ee/ee_with_one_link.xacro
+[5.744s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand.xacro
+[5.759s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand_arguments.xacro
+[5.774s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ee/openarm_hand_macro.xacro
+[5.791s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/robot/openarm_robot.xacro
+[5.806s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/robot/v10.urdf.xacro
+[5.823s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ros2_control/openarm.bimanual.ros2_control.xacro
+[5.839s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/urdf/ros2_control/openarm.ros2_control.xacro
+[5.861s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/arm/v10/inertials.yaml
+[5.876s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/arm/v10/joint_limits.yaml
+[5.891s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/arm/v10/kinematics.yaml
+[5.905s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/arm/v10/kinematics_link.yaml
+[5.920s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/arm/v10/kinematics_offset.yaml
+[5.938s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/body/v10/inertials.yaml
+[5.953s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/body/v10/kinematics.yaml
+[5.968s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/body/v10/kinematics_link.yaml
+[5.987s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/hand/openarm_hand/inertials.yaml
+[6.003s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/hand/openarm_hand/joint_limits.yaml
+[6.019s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/hand/openarm_hand/kinematics.yaml
+[6.034s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/config/hand/openarm_hand/kinematics_link.yaml
+[6.053s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/ament_index/resource_index/package_run_dependencies/openarm_description
+[6.072s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/ament_index/resource_index/parent_prefix_path/openarm_description
+[6.089s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/environment/ament_prefix_path.sh
+[6.104s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/environment/ament_prefix_path.dsv
+[6.118s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/environment/path.sh
+[6.133s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/environment/path.dsv
+[6.148s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/local_setup.bash
+[6.164s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/local_setup.sh
+[6.179s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/local_setup.zsh
+[6.195s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/local_setup.dsv
+[6.212s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/package.dsv
+[6.246s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/ament_index/resource_index/packages/openarm_description
+[6.280s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/cmake/openarm_descriptionConfig.cmake
+[6.307s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/cmake/openarm_descriptionConfig-version.cmake
+[6.331s] -- Symlinking: /root/workspace/openarm/install/openarm_description/share/openarm_description/package.xml
+[6.368s] Invoked command in '/root/workspace/openarm/build/openarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_description

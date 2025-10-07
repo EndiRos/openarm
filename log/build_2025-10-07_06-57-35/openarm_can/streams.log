@@ -1,0 +1,35 @@
+[0.094s] Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_can
+[2.086s] -- The C compiler identification is GNU 11.4.0
+[2.665s] -- The CXX compiler identification is GNU 11.4.0
+[2.714s] -- Detecting C compiler ABI info
+[3.083s] -- Detecting C compiler ABI info - done
+[3.097s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.097s] -- Detecting C compile features
+[3.115s] -- Detecting C compile features - done
+[3.127s] -- Detecting CXX compiler ABI info
+[3.386s] -- Detecting CXX compiler ABI info - done
+[3.398s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.399s] -- Detecting CXX compile features
+[3.399s] -- Detecting CXX compile features - done
+[3.520s] -- Configuring done
+[4.115s] -- Generating done
+[4.324s] -- Build files have been written to: /root/workspace/openarm/build/openarm_can
+[4.327s] Invoked command in '/root/workspace/openarm/build/openarm_can' returned '0': /usr/bin/cmake /root/workspace/openarm/src/openarm_can -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_can
+[4.330s] Invoking command in '/root/workspace/openarm/build/openarm_can': /usr/bin/cmake --build /root/workspace/openarm/build/openarm_can -- -j6 -l6
+[4.451s] [  7%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/arm_component.cpp.o[0m
+[4.456s] [ 14%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_device_collection.cpp.o[0m
+[4.465s] [ 28%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/canbus/can_socket.cpp.o[0m
+[4.465s] [ 28%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/gripper_component.cpp.o[0m
+[4.466s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/can/socket/openarm.cpp.o[0m
+[4.466s] [ 42%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor.cpp.o[0m
+[6.599s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_control.cpp.o[0m
+[6.687s] [ 57%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device.cpp.o[0m
+[6.807s] [ 64%] [32mBuilding CXX object CMakeFiles/openarm_can.dir/src/openarm/damiao_motor/dm_motor_device_collection.cpp.o[0m
+[7.518s] [ 71%] [32m[1mLinking CXX static library libopenarm_can.a[0m
+[11.601s] [ 71%] Built target openarm_can
+[11.650s] [ 85%] [32mBuilding CXX object CMakeFiles/motor-check.dir/setup/motor_check.cpp.o[0m
+[11.651s] [ 85%] [32mBuilding CXX object CMakeFiles/openarm-demo.dir/examples/demo.cpp.o[0m
+[12.340s] [ 92%] [32m[1mLinking CXX executable motor-check[0m
+[12.512s] [ 92%] Built target motor-check
+[12.518s] [100%] [32m[1mLinking CXX executable openarm-demo[0m
+[12.674s] [100%] Built target openarm-demo

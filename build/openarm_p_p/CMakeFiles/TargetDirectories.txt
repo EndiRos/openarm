@@ -1,0 +1,10 @@
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/uninstall.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/openarm_p_p_uninstall.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/openarm_p_p.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/test.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/edit_cache.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/rebuild_cache.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/list_install_components.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/install.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/install/local.dir
+/root/workspace/openarm/build/openarm_p_p/CMakeFiles/install/strip.dir

@@ -1,0 +1,1 @@
+/root/workspace/openarm/src/openarm_bimanual_moveit_config/launch/spawn_controllers.launch.py

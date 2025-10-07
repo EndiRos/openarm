@@ -1,0 +1,17 @@
+/root/workspace/openarm/install/openarm_p_p/lib/openarm_p_p/openarm_p_p
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p//launch/move.launch.py
+/root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/package_run_dependencies/openarm_p_p
+/root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/parent_prefix_path/openarm_p_p
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.sh
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/ament_prefix_path.dsv
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/path.sh
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/environment/path.dsv
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.bash
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.sh
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.zsh
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/local_setup.dsv
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/package.dsv
+/root/workspace/openarm/install/openarm_p_p/share/ament_index/resource_index/packages/openarm_p_p
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig.cmake
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/cmake/openarm_p_pConfig-version.cmake
+/root/workspace/openarm/install/openarm_p_p/share/openarm_p_p/package.xml

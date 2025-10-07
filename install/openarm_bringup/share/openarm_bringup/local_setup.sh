@@ -1,0 +1,1 @@
+/root/workspace/openarm/build/openarm_bringup/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,15 @@
+/root/workspace/openarm/install/openarm/share/ament_index/resource_index/package_run_dependencies/openarm
+/root/workspace/openarm/install/openarm/share/ament_index/resource_index/parent_prefix_path/openarm
+/root/workspace/openarm/install/openarm/share/openarm/environment/ament_prefix_path.sh
+/root/workspace/openarm/install/openarm/share/openarm/environment/ament_prefix_path.dsv
+/root/workspace/openarm/install/openarm/share/openarm/environment/path.sh
+/root/workspace/openarm/install/openarm/share/openarm/environment/path.dsv
+/root/workspace/openarm/install/openarm/share/openarm/local_setup.bash
+/root/workspace/openarm/install/openarm/share/openarm/local_setup.sh
+/root/workspace/openarm/install/openarm/share/openarm/local_setup.zsh
+/root/workspace/openarm/install/openarm/share/openarm/local_setup.dsv
+/root/workspace/openarm/install/openarm/share/openarm/package.dsv
+/root/workspace/openarm/install/openarm/share/ament_index/resource_index/packages/openarm
+/root/workspace/openarm/install/openarm/share/openarm/cmake/openarmConfig.cmake
+/root/workspace/openarm/install/openarm/share/openarm/cmake/openarmConfig-version.cmake
+/root/workspace/openarm/install/openarm/share/openarm/package.xml

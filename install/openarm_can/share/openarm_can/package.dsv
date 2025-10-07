@@ -1,0 +1,3 @@
+source;share/openarm_can/hook/cmake_prefix_path.ps1
+source;share/openarm_can/hook/cmake_prefix_path.dsv
+source;share/openarm_can/hook/cmake_prefix_path.sh

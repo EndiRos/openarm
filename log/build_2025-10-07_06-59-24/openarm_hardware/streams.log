@@ -1,0 +1,54 @@
+[0.053s] Invoking command in '/root/workspace/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_hardware
+[0.069s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.205s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.232s] -- Found hardware_interface: 2.50.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.258s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.261s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.267s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.280s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.297s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.476s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.479s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.498s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.508s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.525s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.535s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.548s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.913s] -- Configuring done
+[2.106s] -- Generating done
+[2.147s] -- Build files have been written to: /root/workspace/openarm/build/openarm_hardware
+[2.154s] Invoked command in '/root/workspace/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /root/workspace/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/workspace/openarm/install/openarm_hardware
+[2.156s] Invoking command in '/root/workspace/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_hardware -- -j6 -l6
+[2.263s] [ 50%] [32mBuilding CXX object CMakeFiles/openarm_hardware.dir/src/v10_simple_hardware.cpp.o[0m
+[7.036s] [100%] [32m[1mLinking CXX shared library libopenarm_hardware.so[0m
+[7.991s] [100%] Built target openarm_hardware
+[8.014s] Invoked command in '/root/workspace/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /root/workspace/openarm/build/openarm_hardware -- -j6 -l6
+[8.019s] Invoking command in '/root/workspace/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_hardware
+[8.035s] -- Install configuration: ""
+[8.039s] -- Execute custom install script
+[8.043s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware//openarm_hardware.xml
+[8.063s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/lib/libopenarm_hardware.so
+[8.086s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/include/openarm_hardware/v10_simple_hardware.hpp
+[8.102s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/include/openarm_hardware/visibility_control.h
+[8.120s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/library_path.sh
+[8.139s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/library_path.dsv
+[8.163s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/ament_index/resource_index/package_run_dependencies/openarm_hardware
+[8.196s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/ament_index/resource_index/parent_prefix_path/openarm_hardware
+[8.211s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/ament_prefix_path.sh
+[8.231s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/ament_prefix_path.dsv
+[8.249s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/path.sh
+[8.266s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/environment/path.dsv
+[8.282s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/local_setup.bash
+[8.299s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/local_setup.sh
+[8.315s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/local_setup.zsh
+[8.331s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/local_setup.dsv
+[8.347s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.dsv
+[8.366s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/ament_index/resource_index/packages/openarm_hardware
+[8.385s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/openarm_hardware
+[8.403s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.421s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[8.437s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.453s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/cmake/openarm_hardwareConfig.cmake
+[8.469s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/cmake/openarm_hardwareConfig-version.cmake
+[8.484s] -- Symlinking: /root/workspace/openarm/install/openarm_hardware/share/openarm_hardware/package.xml
+[8.501s] Invoked command in '/root/workspace/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ws_moveit/install/moveit_configs_utils:/root/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /root/workspace/openarm/build/openarm_hardware
