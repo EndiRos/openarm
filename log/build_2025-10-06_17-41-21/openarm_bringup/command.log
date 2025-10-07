@@ -1,0 +1,6 @@
+Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bringup
+Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bringup
+Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bringup -- -j4 -l4
+Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bringup -- -j4 -l4
+Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bringup
+Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bringup

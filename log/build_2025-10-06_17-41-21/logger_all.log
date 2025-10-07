@@ -1,0 +1,464 @@
+[0.487s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.487s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71d13e757160>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71d13e89c160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71d13e89c160>>, mixin_verb=('build',))
+[1.679s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.681s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/endika/Documents/openarm'
+[1.681s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['ignore', 'ignore_ament_install']
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ignore'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ignore_ament_install'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['colcon_pkg']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'colcon_pkg'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['colcon_meta']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'colcon_meta'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['ros']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'ros'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['cmake', 'python']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'cmake'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'python'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extensions ['python_setup_py']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(dev) by extension 'python_setup_py'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['ignore', 'ignore_ament_install']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ignore'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ignore_ament_install'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['colcon_pkg']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'colcon_pkg'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['colcon_meta']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'colcon_meta'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extensions ['ros']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm) by extension 'ros'
+[1.840s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm' with type 'ros.ament_cmake' and name 'openarm'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ignore'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ignore_ament_install'
+[1.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['colcon_pkg']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'colcon_pkg'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['colcon_meta']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'colcon_meta'
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extensions ['ros']
+[1.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bimanual_moveit_config) by extension 'ros'
+[1.844s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_bimanual_moveit_config' with type 'ros.ament_cmake' and name 'openarm_bimanual_moveit_config'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ignore'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ignore_ament_install'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['colcon_pkg']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'colcon_pkg'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['colcon_meta']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'colcon_meta'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extensions ['ros']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_bringup) by extension 'ros'
+[1.847s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_bringup' with type 'ros.ament_cmake' and name 'openarm_bringup'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['ignore', 'ignore_ament_install']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ignore'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ignore_ament_install'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['colcon_pkg']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'colcon_pkg'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['colcon_meta']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'colcon_meta'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['ros']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'ros'
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['cmake', 'python']
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'cmake'
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'python'
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extensions ['python_setup_py']
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_can) by extension 'python_setup_py'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ignore', 'ignore_ament_install']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ignore_ament_install'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_pkg']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_pkg'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['colcon_meta']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'colcon_meta'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['ros']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'ros'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['cmake', 'python']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'cmake'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'python'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extensions ['python_setup_py']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_description) by extension 'python_setup_py'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ignore'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ignore_ament_install'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['colcon_pkg']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'colcon_pkg'
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['colcon_meta']
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'colcon_meta'
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extensions ['ros']
+[1.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_hardware) by extension 'ros'
+[1.858s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_hardware' with type 'ros.ament_cmake' and name 'openarm_hardware'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['ignore', 'ignore_ament_install']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ignore'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ignore_ament_install'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['colcon_pkg']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'colcon_pkg'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['colcon_meta']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'colcon_meta'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extensions ['ros']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/openarm_p_p) by extension 'ros'
+[1.867s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openarm_p_p' with type 'ros.ament_cmake' and name 'openarm_p_p'
+[1.867s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.868s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.973s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 374 installed packages in /opt/ros/humble
+[1.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_args' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'openarm_bimanual_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.143s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bimanual_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config', 'merge_install': False, 'path': '/home/endika/Documents/openarm/src/openarm_bimanual_moveit_config', 'symlink_install': True, 'test_result_base': None}
+[2.144s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_args' from command line to 'None'
+[2.144s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target' from command line to 'None'
+[2.144s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.144s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.144s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.145s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.145s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.145s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.145s] Level 5:colcon.colcon_core.verb:set package 'openarm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.145s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/endika/Documents/openarm/build/openarm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/endika/Documents/openarm/install/openarm_bringup', 'merge_install': False, 'path': '/home/endika/Documents/openarm/src/openarm_bringup', 'symlink_install': True, 'test_result_base': None}
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_args' from command line to 'None'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_target' from command line to 'None'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'openarm_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.146s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/endika/Documents/openarm/build/openarm_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/endika/Documents/openarm/install/openarm_hardware', 'merge_install': False, 'path': '/home/endika/Documents/openarm/src/openarm_hardware', 'symlink_install': True, 'test_result_base': None}
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_args' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_target' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_clean_cache' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_clean_first' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'cmake_force_configure' from command line to 'False'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'ament_cmake_args' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'catkin_cmake_args' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'openarm_p_p' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.149s] DEBUG:colcon.colcon_core.verb:Building package 'openarm_p_p' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/endika/Documents/openarm/build/openarm_p_p', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/endika/Documents/openarm/install/openarm_p_p', 'merge_install': False, 'path': '/home/endika/Documents/openarm/src/openarm_p_p', 'symlink_install': True, 'test_result_base': None}
+[2.151s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_args' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_cache' from command line to 'False'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_clean_first' from command line to 'False'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'cmake_force_configure' from command line to 'False'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'ament_cmake_args' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_cmake_args' from command line to 'None'
+[2.152s] Level 5:colcon.colcon_core.verb:set package 'openarm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.152s] DEBUG:colcon.colcon_core.verb:Building package 'openarm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/endika/Documents/openarm/build/openarm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/endika/Documents/openarm/install/openarm', 'merge_install': False, 'path': '/home/endika/Documents/openarm/src/openarm', 'symlink_install': True, 'test_result_base': None}
+[2.153s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.156s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/endika/Documents/openarm/src/openarm_bringup' with build type 'ament_cmake'
+[2.156s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/endika/Documents/openarm/src/openarm_bringup'
+[2.169s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.170s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/endika/Documents/openarm/src/openarm_hardware' with build type 'ament_cmake'
+[2.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/endika/Documents/openarm/src/openarm_hardware'
+[2.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/endika/Documents/openarm/src/openarm_bimanual_moveit_config' with build type 'ament_cmake'
+[2.202s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/endika/Documents/openarm/src/openarm_bimanual_moveit_config'
+[2.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.218s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/endika/Documents/openarm/src/openarm_p_p' with build type 'ament_cmake'
+[2.219s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/endika/Documents/openarm/src/openarm_p_p'
+[2.220s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bringup
+[2.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_hardware
+[2.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bimanual_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config
+[2.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_p_p -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_p_p
+[7.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bimanual_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config
+[7.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bimanual_moveit_config -- -j4 -l4
+[7.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bimanual_moveit_config -- -j4 -l4
+[7.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bimanual_moveit_config
+[8.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_bringup
+[8.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bringup -- -j4 -l4
+[8.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_bringup -- -j4 -l4
+[8.509s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bringup
+[10.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[10.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bringup
+[10.742s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup' for CMake module files
+[10.750s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup' for CMake config files
+[10.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[10.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[10.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[10.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[10.811s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/bin'
+[10.811s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[10.816s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/lib/python3.10/site-packages'
+[10.821s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/bin'
+[10.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[10.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[10.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.sh'
+[10.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.bash'
+[10.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[10.878s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[10.884s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bringup)
+[10.886s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup' for CMake module files
+[10.894s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup' for CMake config files
+[10.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bringup', 'cmake_prefix_path')
+[10.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.ps1'
+[10.908s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.dsv'
+[10.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/hook/cmake_prefix_path.sh'
+[10.919s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/bin'
+[10.919s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/lib/pkgconfig/openarm_bringup.pc'
+[10.931s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/lib/python3.10/site-packages'
+[10.932s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bringup/bin'
+[10.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.ps1'
+[10.945s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.dsv'
+[10.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.sh'
+[10.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.bash'
+[10.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bringup/share/openarm_bringup/package.zsh'
+[10.980s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_bringup/share/colcon-core/packages/openarm_bringup)
+[10.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[10.995s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config' for CMake module files
+[11.009s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config' for CMake config files
+[11.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_bimanual_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_bimanual_moveit_config
+[11.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[11.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[11.028s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[11.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[11.047s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/bin'
+[11.047s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[11.050s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[11.052s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/bin'
+[11.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[11.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[11.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[11.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[11.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[11.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[11.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_bimanual_moveit_config)
+[11.088s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config' for CMake module files
+[11.095s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config' for CMake config files
+[11.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_bimanual_moveit_config', 'cmake_prefix_path')
+[11.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.ps1'
+[11.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.dsv'
+[11.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/hook/cmake_prefix_path.sh'
+[11.128s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/bin'
+[11.128s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/lib/pkgconfig/openarm_bimanual_moveit_config.pc'
+[11.129s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/lib/python3.10/site-packages'
+[11.130s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/bin'
+[11.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.ps1'
+[11.134s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.dsv'
+[11.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.sh'
+[11.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.bash'
+[11.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/openarm_bimanual_moveit_config/package.zsh'
+[11.144s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_bimanual_moveit_config/share/colcon-core/packages/openarm_bimanual_moveit_config)
+[12.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_hardware
+[12.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_hardware -- -j4 -l4
+[18.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/endika/Documents/openarm/src/openarm_p_p -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm_p_p
+[18.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_p_p -- -j4 -l4
+[37.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_hardware -- -j4 -l4
+[37.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_hardware
+[38.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_hardware)
+[38.964s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware' for CMake module files
+[38.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_hardware
+[38.968s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware' for CMake config files
+[38.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_hardware', 'cmake_prefix_path')
+[38.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.ps1'
+[38.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.dsv'
+[38.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.sh'
+[38.976s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib'
+[38.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_hardware', 'ld_library_path_lib')
+[38.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.ps1'
+[38.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.dsv'
+[38.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.sh'
+[38.984s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/bin'
+[38.984s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib/pkgconfig/openarm_hardware.pc'
+[38.985s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib/python3.10/site-packages'
+[38.986s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/bin'
+[38.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.ps1'
+[38.990s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.dsv'
+[38.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.sh'
+[38.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.bash'
+[38.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.zsh'
+[38.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_hardware/share/colcon-core/packages/openarm_hardware)
+[39.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_hardware)
+[39.001s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware' for CMake module files
+[39.003s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware' for CMake config files
+[39.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_hardware', 'cmake_prefix_path')
+[39.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.ps1'
+[39.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.dsv'
+[39.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/cmake_prefix_path.sh'
+[39.011s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib'
+[39.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_hardware', 'ld_library_path_lib')
+[39.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.ps1'
+[39.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.dsv'
+[39.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/hook/ld_library_path_lib.sh'
+[39.020s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/bin'
+[39.020s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib/pkgconfig/openarm_hardware.pc'
+[39.022s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/lib/python3.10/site-packages'
+[39.022s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_hardware/bin'
+[39.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.ps1'
+[39.026s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.dsv'
+[39.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.sh'
+[39.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.bash'
+[39.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_hardware/share/openarm_hardware/package.zsh'
+[39.036s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_hardware/share/colcon-core/packages/openarm_hardware)
+[39.038s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/endika/Documents/openarm/src/openarm' with build type 'ament_cmake'
+[39.039s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/endika/Documents/openarm/src/openarm'
+[39.040s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.040s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[39.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/endika/Documents/openarm/src/openarm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm
+[42.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/endika/Documents/openarm/src/openarm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm
+[42.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm -- -j4 -l4
+[43.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm -- -j4 -l4
+[43.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm
+[43.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm)
+[43.876s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm' for CMake module files
+[43.879s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm' for CMake config files
+[43.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm
+[43.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm', 'cmake_prefix_path')
+[43.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.ps1'
+[43.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.dsv'
+[43.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.sh'
+[43.889s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/bin'
+[43.889s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/lib/pkgconfig/openarm.pc'
+[43.890s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/lib/python3.10/site-packages'
+[43.891s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/bin'
+[43.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.ps1'
+[43.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm/share/openarm/package.dsv'
+[43.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.sh'
+[43.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.bash'
+[43.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.zsh'
+[43.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm/share/colcon-core/packages/openarm)
+[43.905s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm)
+[43.906s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm' for CMake module files
+[43.909s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm' for CMake config files
+[43.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm', 'cmake_prefix_path')
+[43.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.ps1'
+[43.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.dsv'
+[43.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm/share/openarm/hook/cmake_prefix_path.sh'
+[43.924s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/bin'
+[43.924s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/lib/pkgconfig/openarm.pc'
+[43.925s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/lib/python3.10/site-packages'
+[43.926s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm/bin'
+[43.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.ps1'
+[43.929s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm/share/openarm/package.dsv'
+[43.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.sh'
+[43.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.bash'
+[43.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm/share/openarm/package.zsh'
+[43.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm/share/colcon-core/packages/openarm)
+[59.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm_p_p -- -j4 -l4
+[59.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/endika/Documents/openarm/build/openarm_p_p': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_p_p
+[60.053s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_p_p)
+[60.055s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p' for CMake module files
+[60.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/endika/Documents/openarm/build/openarm_p_p' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm_p_p
+[60.059s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p' for CMake config files
+[60.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_p_p', 'cmake_prefix_path')
+[60.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.ps1'
+[60.063s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.dsv'
+[60.064s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.sh'
+[60.066s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib'
+[60.066s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/bin'
+[60.066s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib/pkgconfig/openarm_p_p.pc'
+[60.067s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib/python3.10/site-packages'
+[60.068s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/bin'
+[60.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.ps1'
+[60.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.dsv'
+[60.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.sh'
+[60.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.bash'
+[60.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.zsh'
+[60.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_p_p/share/colcon-core/packages/openarm_p_p)
+[60.079s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openarm_p_p)
+[60.080s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p' for CMake module files
+[60.081s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p' for CMake config files
+[60.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('openarm_p_p', 'cmake_prefix_path')
+[60.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.ps1'
+[60.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.dsv'
+[60.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/hook/cmake_prefix_path.sh'
+[60.088s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib'
+[60.088s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/bin'
+[60.088s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib/pkgconfig/openarm_p_p.pc'
+[60.089s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/lib/python3.10/site-packages'
+[60.090s] Level 1:colcon.colcon_core.environment:checking '/home/endika/Documents/openarm/install/openarm_p_p/bin'
+[60.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.ps1'
+[60.094s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.dsv'
+[60.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.sh'
+[60.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.bash'
+[60.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/endika/Documents/openarm/install/openarm_p_p/share/openarm_p_p/package.zsh'
+[60.100s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/endika/Documents/openarm/install/openarm_p_p/share/colcon-core/packages/openarm_p_p)
+[60.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[60.101s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[60.102s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[60.103s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[60.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[60.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[60.138s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[60.205s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[60.206s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/endika/Documents/openarm/install/local_setup.ps1'
+[60.210s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/endika/Documents/openarm/install/_local_setup_util_ps1.py'
+[60.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/endika/Documents/openarm/install/setup.ps1'
+[60.221s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/endika/Documents/openarm/install/local_setup.sh'
+[60.224s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/endika/Documents/openarm/install/_local_setup_util_sh.py'
+[60.226s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/endika/Documents/openarm/install/setup.sh'
+[60.231s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/endika/Documents/openarm/install/local_setup.bash'
+[60.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/endika/Documents/openarm/install/setup.bash'
+[60.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/endika/Documents/openarm/install/local_setup.zsh'
+[60.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/endika/Documents/openarm/install/setup.zsh'

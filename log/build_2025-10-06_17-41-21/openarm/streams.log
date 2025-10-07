@@ -1,0 +1,41 @@
+[0.054s] Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/endika/Documents/openarm/src/openarm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm
+[0.355s] -- The C compiler identification is GNU 11.4.0
+[0.920s] -- The CXX compiler identification is GNU 11.4.0
+[0.993s] -- Detecting C compiler ABI info
+[1.433s] -- Detecting C compiler ABI info - done
+[1.484s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.484s] -- Detecting C compile features
+[1.484s] -- Detecting C compile features - done
+[1.500s] -- Detecting CXX compiler ABI info
+[1.902s] -- Detecting CXX compiler ABI info - done
+[1.941s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.948s] -- Detecting CXX compile features
+[1.949s] -- Detecting CXX compile features - done
+[1.966s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.656s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.974s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.762s] -- Configuring done
+[3.778s] -- Generating done
+[3.798s] -- Build files have been written to: /home/endika/Documents/openarm/build/openarm
+[3.822s] Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/endika/Documents/openarm/src/openarm -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/endika/Documents/openarm/install/openarm
+[3.827s] Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm -- -j4 -l4
+[3.966s] Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/endika/Documents/openarm/build/openarm -- -j4 -l4
+[3.968s] Invoking command in '/home/endika/Documents/openarm/build/openarm': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm
+[4.004s] -- Install configuration: ""
+[4.008s] -- Execute custom install script
+[4.009s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/ament_index/resource_index/package_run_dependencies/openarm
+[4.049s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/ament_index/resource_index/parent_prefix_path/openarm
+[4.108s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/environment/ament_prefix_path.sh
+[4.196s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/environment/ament_prefix_path.dsv
+[4.231s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/environment/path.sh
+[4.275s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/environment/path.dsv
+[4.321s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/local_setup.bash
+[4.388s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/local_setup.sh
+[4.445s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/local_setup.zsh
+[4.531s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/local_setup.dsv
+[4.618s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/package.dsv
+[4.671s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/ament_index/resource_index/packages/openarm
+[4.707s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/cmake/openarmConfig.cmake
+[4.742s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/cmake/openarmConfig-version.cmake
+[4.782s] -- Symlinking: /home/endika/Documents/openarm/install/openarm/share/openarm/package.xml
+[4.836s] Invoked command in '/home/endika/Documents/openarm/build/openarm' returned '0': AMENT_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/endika/Documents/openarm/install/openarm_hardware:/home/endika/Documents/openarm/install/openarm_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/endika/Documents/openarm/install/openarm_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/endika/Documents/openarm/build/openarm

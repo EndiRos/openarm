@@ -1,0 +1,1 @@
+/home/endika/Documents/openarm/build/openarm_p_p/ament_cmake_environment_hooks/local_setup.zsh

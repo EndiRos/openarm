@@ -1,0 +1,9 @@
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/uninstall.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/openarm_uninstall.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/test.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/edit_cache.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/rebuild_cache.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/list_install_components.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/install.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/install/local.dir
+/home/endika/Documents/openarm/build/openarm/CMakeFiles/install/strip.dir
