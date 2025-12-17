@@ -1,0 +1,9 @@
+.vscode
+blender
+.docker
+.venv
+log
+install
+build
+openarm
+isaac

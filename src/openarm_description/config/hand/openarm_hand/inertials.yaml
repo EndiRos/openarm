@@ -1,0 +1,52 @@
+hand:
+  origin:
+    x: 0.0
+    y: 0.002
+    z: 0.03
+    roll: 0
+    pitch: 0
+    yaw: 0
+  mass: 0.35
+  inertia:
+    xx: 0.0002473
+    yy: 1.763e-05
+    zz: 0.0002521
+    xy: 1e-06
+    xz: 1e-06
+    yz: 1e-06
+
+left_finger:
+  origin:
+    x: 0.0064528
+    y: 0.017020
+    z: 0.0219685
+    roll: 0
+    pitch: 0
+    yaw: 0
+  mass: 0.03602545343277134
+  inertia:
+    xx: 1.0e-04
+    yy: 1.0e-04
+    zz: 5.0e-05
+    xy: 1e-06
+    xz: 1e-06
+    yz: 1e-06
+
+right_finger:
+  origin:
+    x: 0.0064528
+    y: -0.017020
+    z: 0.0219685
+    roll: 0
+    pitch: 0
+    yaw: 0
+  mass: 0.03602545343277134
+  inertia:
+    xx: 1.0e-04
+    yy: 1.0e-04
+    zz: 5.0e-05
+    xy: 1e-06
+    xz: 1e-06
+    yz: 1e-06
+
+

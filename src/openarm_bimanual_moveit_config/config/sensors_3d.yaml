@@ -1,0 +1,13 @@
+# This file is used to configure the 3D sensors for the robot.
+# It is a placeholder for now. Configure the sensors to use the correct topics and parameters.
+sensors:
+  - realsense_d435
+
+realsense_d435:
+    sensor_plugin: moveit_ros_occupancy_map_monitor/PointCloudOctomapUpdater
+    point_cloud_topic: /realsense/depth
+    filtered_cloud_topic: /realsense/depth
+    frame: openarm_body_link0_realsense_camera_link
+    max_range: 5.0
+    point_subsample: 1
+    max_update_rate: 1.0

@@ -1,0 +1,50 @@
+move_group:
+  planning_pipelines:
+    pipeline_names: [ompl]   # solo OMPL
+  default_planning_pipeline: ompl
+
+ompl:
+  planning_plugin: ompl_interface/OMPLPlanner
+  request_adapters: >-
+    default_planner_request_adapters/AddTimeOptimalParameterization
+    default_planner_request_adapters/ResolveConstraintFrames
+    default_planner_request_adapters/FixWorkspaceBounds
+    default_planner_request_adapters/FixStartStateBounds
+    default_planner_request_adapters/FixStartStateCollision
+    default_planner_request_adapters/FixStartStatePathConstraints
+  planner_configs:
+    RRTConnect:
+      type: geometric::RRTConnect
+      range: 0.0  # Max motion length
+    RRTstarkConfigDefault:
+      type: geometric::RRTstar
+      range: 0.0
+  
+  # Configuración específica por grupo para mejorar la precisión
+  left_arm:
+    default_planner_config: RRTConnect
+    planner_configs:
+      - RRTConnect
+      - RRTstarkConfigDefault
+    longest_valid_segment_fraction: 0.005  # Pasos más pequeños (0.5%)
+  
+  right_arm:
+    default_planner_config: RRTConnect
+    planner_configs:
+      - RRTConnect
+      - RRTstarkConfigDefault
+    longest_valid_segment_fraction: 0.005
+
+  left_arm_full:
+    default_planner_config: RRTConnect
+    planner_configs:
+      - RRTConnect
+      - RRTstarkConfigDefault
+    longest_valid_segment_fraction: 0.005
+
+  right_arm_full:
+    default_planner_config: RRTConnect
+    planner_configs:
+      - RRTConnect
+      - RRTstarkConfigDefault
+    longest_valid_segment_fraction: 0.005

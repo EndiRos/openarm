@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="realsense_d405" params="parent name xyz:='0 0 0' rpy:='0 0 0' no_prefix:='false' body_prefix:=''" >
+    <!-- prefix será vacío si no_prefix=='true', sino toma body_prefix tal cual -->
+    <xacro:property name="prefix" value="${'' if no_prefix == 'true' else body_prefix}"/>
+    <link name="${prefix}${name}_camera_link">
+      <visual>
+        <origin xyz="0.0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://openarm_description/meshes/sensors/realsense405.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://openarm_description/meshes/sensors/realsense405.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.05"/>
+        <inertia ixx="0.00001" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00001"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}${name}_camera_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${prefix}${name}_camera_link"/>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+    </joint>
+  </xacro:macro>
+</robot>
