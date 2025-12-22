@@ -124,3 +124,15 @@ void OpenArmMove::setParam(moveit::planning_interface::MoveGroupInterface *group
     group->setPlanningTime(PlanningTime_);
     group->setGoalJointTolerance(0.01);
 }
+
+void OpenArmMove::PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose)
+{
+    RCLCPP_INFO(LOGGER, "Pose name: %s", pose_name.c_str());
+    RCLCPP_INFO(LOGGER, "Position: x:%f y:%f z:%f",
+        pose.position.x, pose.position.y, pose.position.z);
+    RCLCPP_INFO(LOGGER, "Orientation (Quaternion) x:%f, y:%f, z:%f, w:%f",
+        pose.orientation.x,
+        pose.orientation.y,
+        pose.orientation.z,
+        pose.orientation.w);
+}

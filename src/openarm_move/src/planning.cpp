@@ -82,16 +82,24 @@ void OpenArmMove::PlanArm(moveit::planning_interface::MoveGroupInterface *group,
     pose.orientation.w = q.w();
 
     // Asegurarse de partir del estado actual y dar más intentos/tiempo para planificar
-    group->setMaxVelocityScalingFactor(MaxVelocityScalingFactor_);
-    group->setMaxAccelerationScalingFactor(MaxAccelerationScalingFactor_);
-    group->setNumPlanningAttempts(NumPlanningAttempts_);
-    group->setPlanningTime(PlanningTime_);
+    setParam(group);
 
     group->setStartStateToCurrentState();
 
     group->setPoseTarget(pose,ee_link);
     //moveit::core::MoveItErrorCode result = group->plan(my_plan);
 
+}
+
+void OpenArmMove::PlanGripper(moveit::planning_interface::MoveGroupInterface* group, double gripper_state){
+    
+    if (gripper_state < 0.0f) gripper_state = 0.0f;
+    if (gripper_state > 0.044f) gripper_state = 0.044f;
+    setParam(group);
+    group->setStartStateToCurrentState();
+    std::vector<double> target_values;
+    target_values.resize(group->getVariableCount(), gripper_state);
+    group->setJointValueTarget(target_values);
 }
 
 bool OpenArmMove::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
@@ -219,6 +227,8 @@ bool OpenArmMove::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, floa
 
 bool OpenArmMove::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
 {
+    
+    // verifica la inicializacion de los movegroups
     RCLCPP_INFO(LOGGER, "=== PlanRightFull (IK right_armfull) == -> joint-space right_arm_=");
 
     if (!right_arm_ || !left_arm_full_){
@@ -282,10 +292,7 @@ bool OpenArmMove::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, flo
     }
 
     
-    right_arm_full_-> setMaxVelocityScalingFactor(MaxVelocityScalingFactor_);
-    right_arm_full_->setMaxAccelerationScalingFactor(MaxAccelerationScalingFactor_);
-    right_arm_full_->setNumPlanningAttempts(NumPlanningAttempts_);
-    right_arm_full_->setNumPlanningAttempts(NumPlanningAttempts_);
+    setParam(right_arm_full_);
 
     right_arm_full_->setStartStateToCurrentState();
     right_arm_full_->setJointValueTarget(full_position);
@@ -350,10 +357,7 @@ bool OpenArmMove::PlanJointTarget(moveit::planning_interface::MoveGroupInterface
     RCLCPP_INFO(LOGGER, "Planificando movimiento joint-space para '%s'...", group->getName().c_str());
 
     // Configurar parámetros de planificación
-    group->setMaxVelocityScalingFactor(MaxVelocityScalingFactor_);
-    group->setMaxAccelerationScalingFactor(MaxAccelerationScalingFactor_);
-    group->setNumPlanningAttempts(NumPlanningAttempts_);
-    group->setPlanningTime(PlanningTime_);
+    setParam(group);
     
     group->setStartStateToCurrentState();
     

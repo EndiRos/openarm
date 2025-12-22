@@ -49,7 +49,7 @@ OpenArmMove::OpenArmMove(rclcpp::Node::SharedPtr node): node_(node) {
     MaxAccelerationScalingFactor_ = 0.1;
     MaxVelocityScalingFactor_ = 0.1;
     NumPlanningAttempts_ = 20;
-    PlanningTime_= 20;
+    PlanningTime_= 5.0;
 	left_arm_ = new moveit::planning_interface::MoveGroupInterface(node_,"left_arm");
     right_arm_ = new moveit::planning_interface::MoveGroupInterface(node_,"right_arm");
     left_arm_full_ = new moveit::planning_interface::MoveGroupInterface(node_,"left_arm_full");
@@ -74,31 +74,31 @@ OpenArmMove::~OpenArmMove()
 
 void OpenArmMove::CloseLeftGripper(){
     RCLCPP_INFO(LOGGER, "Closing left gripper");
-    std::vector<double> gripper_joint_positions(1);
-    gripper_joint_positions[0] = 0.00;  // Posición cerrada
-    left_gripper_->setJointValueTarget(gripper_joint_positions);
+    PlanGripper(left_gripper_, 0.0);
+    left_gripper_->plan(left_gripper_plan_);
+    left_gripper_->execute(left_gripper_plan_);
 }
 
 void OpenArmMove::CloseRightGripper(){
     RCLCPP_INFO(LOGGER, "Closing right gripper");
-    std::vector<double> gripper_joint_positions(1);
-    gripper_joint_positions[0] = 0.0;  // Posición cerrada
-    right_gripper_->setJointValueTarget(gripper_joint_positions);
+    PlanGripper(right_gripper_, 0.0);
+    right_gripper_->plan(right_gripper_plan_);
+    right_gripper_->execute(right_gripper_plan_);
 }
 
 void OpenArmMove::OpenLeftGripper()
 {
     RCLCPP_INFO(LOGGER, "Opening left gripper");
-    std::vector<double> gripper_joint_positions(1);
-    gripper_joint_positions[0] = 0.04;  // Posición cerrada
-    left_gripper_->setJointValueTarget(gripper_joint_positions);
+    PlanGripper(left_gripper_, 0.04);
+    left_gripper_->plan(left_gripper_plan_);
+    left_gripper_->execute(left_gripper_plan_);
 }
 
 void OpenArmMove::OpenRightGripper(){
     RCLCPP_INFO(LOGGER, "Opening right gripper");
-    std::vector<double> gripper_joint_positions(1);
-    gripper_joint_positions[0] = 0.04;  // Posición cerrada
-    right_gripper_->setJointValueTarget(gripper_joint_positions);
+    PlanGripper(right_gripper_, 0.04);
+    right_gripper_->plan(right_gripper_plan_);
+    right_gripper_->execute(right_gripper_plan_);
 }
 
 
@@ -139,6 +139,32 @@ void OpenArmMove::PtpBimanual(std::string pose_left,
     RCLCPP_INFO(LOGGER, "Init PtpBimanual POSE POSE");
     BimanualNamedPose(pose_left, pose_right);
     BimanualExec();
+}
+
+void OpenArmMove::CalculateOffset(geometry_msgs::msg::Pose target_virtual){
+    
+    moveit::core::RobotStatePtr left_state = left_arm_full_->getCurrentState();
+    moveit::core::RobotStatePtr right_state = right_arm_full_->getCurrentState();
+    
+    Eigen::Isometry3d T_base_left = left_state->getGlobalLinkTransform(left_arm_full_->getEndEffector());
+    Eigen::Isometry3d T_base_right = right_state->getGlobalLinkTransform(right_arm_full_->getEndEffector());
+
+    Eigen::Vector3d p_virtual =( T_base_left.translation() + T_base_right.translation()) * 0.5;
+    Eigen::Quaterniond q_virtual = Eigen::Quaterniond(T_base_left.rotation()).slerp(0.5, Eigen::Quaterniond(T_base_right.rotation()));
+
+    Eigen::Isometry3d T_base_virtual = Eigen::Isometry3d::Identity();
+    T_base_virtual.translation()= p_virtual;
+    T_base_virtual.linear() = q_virtual.toRotationMatrix();
+
+    Eigen::Isometry3d offset_left = T_base_virtual.inverse() * T_base_left;
+    Eigen::Isometry3d offset_right = T_base_right.inverse() * T_base_right;
+}
+
+void OpenArmMove::PtpBimanual(geometry_msgs::msg::Pose target_virtual){
+
+    Eigen::Isometry3d offset_left, offset_right;
+    CalculateOffset(target_virtual);
+
 }
 
 void OpenArmMove::PtpLeft(const geometry_msgs::msg::Pose &target, float gripper)

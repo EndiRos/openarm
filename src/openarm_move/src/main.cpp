@@ -7,6 +7,9 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <Topics_utils.hpp>
 #include <tf2_ros/static_transform_broadcaster.h> 
+#include <geometric_shapes/shapes.h>
+#include <geometric_shapes/mesh_operations.h>
+#include <geometric_shapes/shape_operations.h> 
 
 geometry_msgs::msg::Pose createpose(const std::vector<double>& pos, const std::vector<double>& rot)
 {
@@ -45,25 +48,39 @@ void create_obstacle(rclcpp::Node::SharedPtr node,
     moveit_msgs::msg::CollisionObject co;
     co.header.frame_id = "world"; 
     co.header.stamp = node->now(); // Importante poner timestamp actual
-    co.id = "obst_box_1";
+    co.id = "conveyor";
     
-    RCLCPP_INFO(node->get_logger(), "[STEP 2] Definiendo geometría...");
-    shape_msgs::msg::SolidPrimitive box;
-    box.type = box.BOX;
-    box.dimensions.resize(3);
-    box.dimensions[0] = 0.95; // x
-    box.dimensions[1] = 1.5;  // y
-    box.dimensions[2] = 0.02; // z (altura)
-    RCLCPP_INFO(node->get_logger(), "[STEP 3] Configurando pose...");
-    geometry_msgs::msg::Pose box_pose;
-    box_pose.orientation.w = 1.0;
-    box_pose.position.x = 1.08735;
-    box_pose.position.y = 0.0;
-    // centrar la caja sobre el suelo: z = height/2
-    box_pose.position.z = 0.75171;
+    RCLCPP_INFO(node->get_logger(), "[STEP 2] Cargando STL...");
+    // CAMBIAR ESTA RUTA POR LA DE TU ARCHIVO STL
+    // Puede ser una ruta absoluta "file:///home/user/..." o de paquete "package://paquete/meshes/..."/home/enetxeba/Documents/robotica/openarm_isaac_env/collisions
+    std::string stl_path = "file:///home/enetxeba/Documents/robotica/openarm_isaac_env/collisions/conveyor_col.stl"; 
+    
+    shapes::Mesh* m = shapes::createMeshFromResource(stl_path);
+    if (!m) {
+        RCLCPP_ERROR(node->get_logger(), "No se pudo cargar el mesh desde: %s", stl_path.c_str());
+        return;
+    }
 
-    co.primitives.push_back(box);
-    co.primitive_poses.push_back(box_pose);
+    // Escalar si es necesario (opcional)
+    // shapes::scaleShape(m, {1.0, 1.0, 1.0});
+
+    shapes::ShapeMsg mesh_msg;
+    shapes::constructMsgFromShape(m, mesh_msg);
+    shape_msgs::msg::Mesh mesh = boost::get<shape_msgs::msg::Mesh>(mesh_msg);
+    
+    RCLCPP_INFO(node->get_logger(), "[STEP 3] Configurando pose...");
+    geometry_msgs::msg::Pose mesh_pose;
+    mesh_pose.orientation.w = 0.70711;
+    mesh_pose.orientation.z = 0.70711;
+    mesh_pose.orientation.x = 0.0;
+    mesh_pose.orientation.y = 0.0;
+
+    mesh_pose.position.x = 5.01204;
+    mesh_pose.position.y = -3.24295;
+    mesh_pose.position.z = 0.0;
+
+    co.meshes.push_back(mesh);
+    co.mesh_poses.push_back(mesh_pose);
     co.operation = moveit_msgs::msg::CollisionObject::ADD;
 
     std::vector<moveit_msgs::msg::CollisionObject> objects;
@@ -71,10 +88,12 @@ void create_obstacle(rclcpp::Node::SharedPtr node,
 
     // Usar applyCollisionObjects que es síncrono y devuelve bool
     if (planning_scene_interface.applyCollisionObjects(objects)) {
-        RCLCPP_INFO(node->get_logger(), "[OK] Objeto agregado correctamente a la escena.");
+        RCLCPP_INFO(node->get_logger(), "[OK] Objeto STL agregado correctamente a la escena.");
     } else {
-        RCLCPP_ERROR(node->get_logger(), "[ERROR] Falló al agregar el objeto.");
+        RCLCPP_ERROR(node->get_logger(), "[ERROR] Falló al agregar el objeto STL.");
     }
+    
+    delete m; // Liberar memoria del mesh cargado
 }
 
 int main(int argc, char** argv)
@@ -127,48 +146,72 @@ int main(int argc, char** argv)
 
     oa.PtpBimanual("stand_up","stand_up");
     geometry_msgs::msg::Pose pose, inter_pose, interchangeL, interchangeR, finalR;
-    pose = reader->ReadPose("/tcp",5.0);
+    tf2_msgs::msg::TFMessage pos = reader->ReadTf("/tf_bootle", 5.0);
+    if (pos.transforms.empty()) {
+        RCLCPP_ERROR(move_group_node->get_logger(), "No se recibió TF de /tf_bootle");
+        return 1;
+    }
+         
+    geometry_msgs::msg::TransformStamped t = pos.transforms[0];
+    pose.position.x = t.transform.translation.x;
+    pose.position.y = t.transform.translation.y;
+    pose.position.z =t.transform.translation.z;
+     tf2::Quaternion q(t.transform.rotation.x,
+                        t.transform.rotation.y,
+                        t.transform.rotation.z,
+                        t.transform.rotation.w);
 
+    q.normalize();
+    pose.orientation= tf2::toMsg(q);
     std::cout << "FIN NAMED POSE" << std::endl;
     
-    interchangeL = createpose({0.1638, 0.0, 0.4977},
-                             {0.64224, -0.64224, 0.29585, 0.29585});
-    interchangeR = createpose({0.15708, 0.019, 0.47148},
-                             {-0.5, -0.5, -0.5, 0.5});        
-    finalR = createpose({0.35, -0.21, 0.4},
-                             {0.70711, -0.0, 0.70711, 0.0}); 
-   
+    //pose = createpose({0.28, 0.15, 0.44}, {0.87464, -0.23436, 0.4099, 0.10983});
+    interchangeL = createpose({0.18425, 0.02312, 0.55979}, {0.59773, -0.54450, 0.39626, 0.43499});
     
-    inter_pose = oa.PrevPose(pose, 0.1);
+    interchangeR = createpose({0.18425, 0.03668, 0.61}, {0.51542, 0.51542, 0.48409, -0.48409});     
+    
+    finalR = createpose({0.34436, -0.34298, 0.45341}, {0.71484, -0.14253, 0.67139, 0.13387});
 
+    /* oa.PtpLeft(interchangeL,CLOSE);
+    oa.PtpRight(interchangeR, CLOSE); */
+    
+    
+    
+    //oa.PrintPose("pose 1", pose);
+    inter_pose = oa.PrevPose(pose, 0.07);
     oa.PtpLeft(inter_pose, OPEN);
     oa.PtpLeft(pose, OPEN);
  
     oa.PtpLeft(pose, CLOSE);
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpBimanual(interchangeL,oa.PrevPose(interchangeR, 0.1), CLOSE, OPEN );
+    
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    pose.position.z += .05;
+    oa.PtpLeft(pose,CLOSE);
+    
+    oa.PtpBimanual(interchangeL, oa.PrevPose(interchangeR, 0.1), CLOSE, OPEN);
     
     oa.PtpRight(interchangeR,OPEN);
-    
+    std::this_thread::sleep_for(std::chrono::seconds(1));
     oa.PtpRight(interchangeR,CLOSE);
-    
     std::this_thread::sleep_for(std::chrono::seconds(1));
     oa.PtpLeft(interchangeL, OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
     oa.PtpBimanual(oa.PrevPose(interchangeL, .05), 
                     oa.PrevPose(interchangeR, 0.1),
                     OPEN, CLOSE);
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpBimanual("stand_up", finalR, CLOSE, CLOSE);
+    geometry_msgs::msg::Pose final_up(finalR);
+    final_up.position.z += 0.05;
+    oa.PtpBimanual("stand_up", final_up, CLOSE, CLOSE);
+    oa.PtpRight(finalR, CLOSE);
 
-    std::this_thread::sleep_for(std::chrono::seconds(2));
     oa.PtpRight(finalR, OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpRight(oa.PrevPose(finalR, .1), OPEN);
+    finalR.position.z += .1;
+    oa.PtpRight(finalR, OPEN);
     oa.PtpBimanual("stand_up","stand_up");
 
-    oa.PtpBimanual("pose_T","pose_T");
-    oa.PtpBimanual("home","home");
+   // oa.PtpBimanual("pose_T","pose_T");
+    //oa.PtpBimanual("home","home"); 
  
 
     // limpiar
