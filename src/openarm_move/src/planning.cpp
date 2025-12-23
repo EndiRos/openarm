@@ -36,7 +36,7 @@
 
 #include "openarm_move.hpp"
 
-void OpenArmMove::PlanArm(moveit::planning_interface::MoveGroupInterface *group,                     
+void Ptp::PlanArm(moveit::planning_interface::MoveGroupInterface *group,                     
                         const geometry_msgs::msg::Pose& target_pos, std::string ee_link)
 {
     if (!group) {
@@ -91,7 +91,7 @@ void OpenArmMove::PlanArm(moveit::planning_interface::MoveGroupInterface *group,
 
 }
 
-void OpenArmMove::PlanGripper(moveit::planning_interface::MoveGroupInterface* group, double gripper_state){
+void Ptp::PlanGripper(moveit::planning_interface::MoveGroupInterface* group, double gripper_state){
     
     if (gripper_state < 0.0f) gripper_state = 0.0f;
     if (gripper_state > 0.044f) gripper_state = 0.044f;
@@ -102,7 +102,7 @@ void OpenArmMove::PlanGripper(moveit::planning_interface::MoveGroupInterface* gr
     group->setJointValueTarget(target_values);
 }
 
-bool OpenArmMove::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
+bool Ptp::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
     PlanArm(left_arm_, target_pos, "openarm_left_hand_tcp");
     bool result = (left_arm_->plan(left_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
      if(result){
@@ -113,7 +113,7 @@ bool OpenArmMove::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
     return result;
 }
 
-bool OpenArmMove::PlanRightArm(const geometry_msgs::msg::Pose& target_pos){
+bool Ptp::PlanRightArm(const geometry_msgs::msg::Pose& target_pos){
      PlanArm(right_arm_, target_pos, "openarm_right_hand_tcp");
      bool result = (right_arm_->plan(right_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
      if(result){
@@ -125,7 +125,7 @@ bool OpenArmMove::PlanRightArm(const geometry_msgs::msg::Pose& target_pos){
 }
 
 
-bool OpenArmMove::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
+bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
 {
 
     RCLCPP_INFO(LOGGER, "=== PlanLeftFull (IK left_arm -> joint-space left_arm_full) ===");
@@ -225,7 +225,7 @@ bool OpenArmMove::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, floa
     }
 }
 
-bool OpenArmMove::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
+bool Ptp::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
 {
     
     // verifica la inicializacion de los movegroups
@@ -317,7 +317,7 @@ bool OpenArmMove::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, flo
 }
 
 
-bool OpenArmMove::PlanBimanual(const geometry_msgs::msg::Pose &target_Left,
+bool Ptp::PlanBimanual(const geometry_msgs::msg::Pose &target_Left,
                                const geometry_msgs::msg::Pose &target_Right,
                                float gripper_left, float gripper_right)
 {
@@ -337,7 +337,7 @@ bool OpenArmMove::PlanBimanual(const geometry_msgs::msg::Pose &target_Left,
     return ok_left && ok_right;
 }
 
-bool OpenArmMove::PlanJointTarget(moveit::planning_interface::MoveGroupInterface *group, 
+bool Ptp::PlanJointTarget(moveit::planning_interface::MoveGroupInterface *group, 
                                   moveit::planning_interface::MoveGroupInterface::Plan &plan,
                                   const std::vector<double> &joint_values)
 {

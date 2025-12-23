@@ -36,7 +36,7 @@
 
 #include "openarm_move.hpp"
 
-bool OpenArmMove::BimanualNamedPose(std::string left_pose, std::string right_pose)
+bool Ptp::BimanualNamedPose(std::string left_pose, std::string right_pose)
 {
     // --- BRAZO IZQUIERDO ---
     setParam(left_arm_full_);
@@ -83,7 +83,7 @@ bool OpenArmMove::BimanualNamedPose(std::string left_pose, std::string right_pos
 
 }
 
-bool OpenArmMove::PlanToNamedPose(moveit::planning_interface::MoveGroupInterface *group,
+bool Ptp::PlanToNamedPose(moveit::planning_interface::MoveGroupInterface *group,
     moveit::planning_interface::MoveGroupInterface::Plan &my_plan,
     const std::string pose_name)
 {
@@ -108,22 +108,22 @@ bool OpenArmMove::PlanToNamedPose(moveit::planning_interface::MoveGroupInterface
     };
 }
 
-bool OpenArmMove::LeftToNamedPose(const std::string &pose_name)
+bool Ptp::LeftToNamedPose(const std::string &pose_name)
 {
     return PlanToNamedPose(left_arm_, left_plan_ ,pose_name);
 }
 
-bool OpenArmMove::RightToNamedPose(const std::string &pose_name)
+bool Ptp::RightToNamedPose(const std::string &pose_name)
 {
     return PlanToNamedPose(right_arm_, right_plan_, pose_name);
 }
 
-bool OpenArmMove::RightFullToNamedPose(const std::string &pose_name)
+bool Ptp::RightFullToNamedPose(const std::string &pose_name)
 {
     return PlanToNamedPose(right_arm_full_, right_plan_, pose_name);
 }
 
-bool OpenArmMove::LeftFullToNamedPose(const std::string &pose_name)
+bool Ptp::LeftFullToNamedPose(const std::string &pose_name)
 {
     return PlanToNamedPose(left_arm_full_, left_plan_,  pose_name);
 }

@@ -56,7 +56,7 @@ static double sample_joint_from_traj(const trajectory_msgs::msg::JointTrajectory
 }
 
 // Función principal: fusiona left_plan y right_plan en out_plan; right_delay permite retrasar inicio del derecho.
-bool OpenArmMove::mergePlansWithInterpolation(
+bool Ptp::mergePlansWithInterpolation(
     const moveit::planning_interface::MoveGroupInterface::Plan &left_plan,
     const moveit::planning_interface::MoveGroupInterface::Plan &right_plan,
     moveit::planning_interface::MoveGroupInterface::Plan &out_plan,

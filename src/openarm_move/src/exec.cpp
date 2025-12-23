@@ -37,7 +37,7 @@
 #include "openarm_move.hpp"
 
 
-void OpenArmMove::LeftArmExec()
+void Ptp::LeftArmExec()
 {
     // reparametrizar en el tiempo la trayectoria para evitar puntos con time_from_start duplicado
     try {
@@ -55,7 +55,7 @@ void OpenArmMove::LeftArmExec()
     left_arm_full_->execute(left_plan_);
 }
 
-void OpenArmMove::RightArmExec()
+void Ptp::RightArmExec()
 {
     try {
         robot_trajectory::RobotTrajectory rt(right_arm_full_->getCurrentState()->getRobotModel(), right_arm_full_->getName());
@@ -72,7 +72,7 @@ void OpenArmMove::RightArmExec()
     right_arm_full_->execute(right_plan_);
 }
 
-bool OpenArmMove::BimanualExec()
+bool Ptp::BimanualExec()
 {
     bool ok_merge = mergePlansWithInterpolation(left_plan_, right_plan_, bimanual_plan_, /*right_delay_seconds=*/0.0, /*min_dt=*/0.02);
     if (!ok_merge) {

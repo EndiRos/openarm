@@ -1,6 +1,40 @@
+/*********************************************************************
+ * Software License Agreement (BSD License)
+ *
+ *  Copyright (c) 2013, SRI International
+ *  All rights reserved.
+ *
+ *  Redistribution and use in source and binary forms, with or without
+ *  modification, are permitted provided that the following conditions
+ *  are met:
+ *
+ *   * Redistributions of source code must retain the above copyright
+ *     notice, this list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above
+ *     copyright notice, this list of conditions and the following
+ *     disclaimer in the documentation and/or other materials provided
+ *     with the distribution.
+ *   * Neither the name of SRI International nor the names of its
+ *     contributors may be used to endorse or promote products derived
+ *     from this software without specific prior written permission.
+ *
+ *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ *  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE PtpODS OR SERVICES;
+ *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ *  POSSIBILITY OF SUCH DAMAGE.
+ *********************************************************************/
+
+/* Author: Endika Etxebarrieta */
 
 #pragma once
-
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 
@@ -16,16 +50,56 @@
 #include <moveit/trajectory_processing/iterative_time_parameterization.h>
 
 #include <logger.hpp>
-#include "Ptp.hpp"
+
 
 #define OPEN 0.044f
 #define CLOSE 0.0f
 
-class OpenArmMove : public Ptp
-{
-    private:
+class Ptp{
+    public:
+        Ptp(rclcpp::Node::SharedPtr node);
+        ~Ptp();
+
+        void PtpBimanual(const geometry_msgs::msg::Pose& target_left,
+                         const geometry_msgs::msg::Pose& target_right,
+                         float gripper_l, float gripper_r);
+        void PtpBimanual(const geometry_msgs::msg::Pose& target_left,
+                         std::string pose_right, float gripper_l,
+                         float gripper_r);
+        void PtpBimanual(std::string pose_left,
+                         const geometry_msgs::msg::Pose& target_right,
+                         float gripper_l, float gripper_r);
+        void PtpBimanual(std::string pose_left, std::string pose_right);
+
         
-        double  MaxVelocityScalingFactor_;
+
+        //void PtpBimanual(geometry_msgs::msg::Pose target_virtual, double gripper_left, double gripper_right);
+
+        void PtpLeft(const geometry_msgs::msg::Pose& target, float gripper);
+        void PtpLeft(std::string pose);
+        void PtpRight(const geometry_msgs::msg::Pose& target, float gripper);
+        void PtpRight(std::string pose);
+       
+        void PrintRobotInfo();
+        
+        void OpenLeftGripper();
+        void CloseLeftGripper();
+        void OpenRightGripper();
+        void CloseRightGripper();
+        
+        geometry_msgs::msg::Pose get_target_pose_left();
+        geometry_msgs::msg::Pose get_target_pose_right();
+        geometry_msgs::msg::Pose get_current_pose_right();
+        geometry_msgs::msg::Pose get_current_pose_left();
+        geometry_msgs::msg::Pose get_current_dual_pose();
+        
+        geometry_msgs::msg::Pose PrevPose(
+            const geometry_msgs::msg::Pose& Target_pos, float dist);
+
+        void PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose);
+        
+    private:
+               double  MaxVelocityScalingFactor_;
         double  MaxAccelerationScalingFactor_;
         unsigned int     NumPlanningAttempts_;
         double  PlanningTime_;
@@ -60,7 +134,7 @@ class OpenArmMove : public Ptp
         moveit::planning_interface::MoveGroupInterface::Plan right_gripper_plan_;
         moveit::planning_interface::MoveGroupInterface::Plan bimanual_plan_;
 
-        /* Eigen::Isometry3d T_base_virtual_ ;
+        Eigen::Isometry3d T_base_virtual_ ;
         rclcpp::TimerBase::SharedPtr timer_;
         void timerCallback();
 
@@ -111,21 +185,5 @@ class OpenArmMove : public Ptp
         void CalculateOffset(geometry_msgs::msg::Pose target_virtual);
         geometry_msgs::msg::Pose EigenToPos(Eigen::Isometry3d eigen);
         void CalCurrentVirtual();
-        rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pub_virtual_target_; */
-
-       public:
-        OpenArmMove(rclcpp::Node::SharedPtr node);
-         ~OpenArmMove();
-
-       /*  geometry_msgs::msg::Pose get_target_pose_left();
-        geometry_msgs::msg::Pose get_target_pose_right();
-        geometry_msgs::msg::Pose get_current_pose_right();
-        geometry_msgs::msg::Pose get_current_pose_left();
-        geometry_msgs::msg::Pose get_current_dual_pose();
-        
-        geometry_msgs::msg::Pose PrevPose(
-            const geometry_msgs::msg::Pose& Target_pos, float dist);
-
-        void PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose); */
-        
+        rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pub_virtual_target_;
 };

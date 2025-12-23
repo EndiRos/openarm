@@ -35,6 +35,7 @@ add_executable(openarm_move
   src/openarm_move.cpp
   src/main.cpp
   src/utils.cpp
+  src/Ptp.cpp
   )
 
 target_include_directories(openarm_move PUBLIC

@@ -108,6 +108,7 @@ int main(int argc, char** argv)
     executor.add_node(move_group_node);
     std::thread exec_thread([&executor]() { executor.spin(); });
     auto reader = std::make_shared<ReadOnce>(move_group_node);
+    OpenArmMove oa(move_group_node);
     tf2_msgs::msg::TFMessage base_pos = reader->ReadTf("/isaac/tf_robot", 5.0);
     
     if (!base_pos.transforms.empty()){
@@ -135,7 +136,7 @@ int main(int argc, char** argv)
     // ahora crear obstáculo (con executor ya en marcha)
     create_obstacle(move_group_node, planning_scene_interface);
     
-    OpenArmMove oa(move_group_node);
+   
     
 
 /*     if (!oa.BimanualNamedPose("pose_T","pose_T")) return 1;
@@ -151,7 +152,7 @@ int main(int argc, char** argv)
         RCLCPP_ERROR(move_group_node->get_logger(), "No se recibió TF de /tf_bootle");
         return 1;
     }
-         
+    
     geometry_msgs::msg::TransformStamped t = pos.transforms[0];
     pose.position.x = t.transform.translation.x;
     pose.position.y = t.transform.translation.y;
@@ -194,7 +195,10 @@ int main(int argc, char** argv)
     std::this_thread::sleep_for(std::chrono::seconds(1));
     oa.PtpRight(interchangeR,CLOSE);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpLeft(interchangeL, OPEN);
+    geometry_msgs::msg::Pose dual_move (oa.get_current_dual_pose());
+    dual_move.position.x +=.05;
+    //oa.PtpBimanual(dual_move, CLOSE, CLOSE); //not viable ---> cartesian
+   /*  oa.PtpLeft(interchangeL, OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
     oa.PtpBimanual(oa.PrevPose(interchangeL, .05), 
                     oa.PrevPose(interchangeR, 0.1),
@@ -208,7 +212,7 @@ int main(int argc, char** argv)
     std::this_thread::sleep_for(std::chrono::seconds(1));
     finalR.position.z += .1;
     oa.PtpRight(finalR, OPEN);
-    oa.PtpBimanual("stand_up","stand_up");
+    oa.PtpBimanual("stand_up","stand_up"); */
 
    // oa.PtpBimanual("pose_T","pose_T");
     //oa.PtpBimanual("home","home"); 

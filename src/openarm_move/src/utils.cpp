@@ -1,6 +1,6 @@
 #include <openarm_move.hpp>
 
-void OpenArmMove::PrintRobotInfo(){
+void Ptp::PrintRobotInfo(){
     RCLCPP_INFO(LOGGER, "=== LEFT ARM ===");
     RCLCPP_INFO(LOGGER, "Planning frame: %s", left_arm_->getPlanningFrame().c_str());
     RCLCPP_INFO(LOGGER, "End effector link: %s", left_arm_->getEndEffectorLink().c_str());
@@ -60,11 +60,11 @@ void OpenArmMove::PrintRobotInfo(){
         roll_right * 180.0 / M_PI, pitch_right * 180.0 / M_PI, yaw_right * 180.0 / M_PI);
 }
 
-geometry_msgs::msg::Pose OpenArmMove::get_target_pose_left(){
+geometry_msgs::msg::Pose Ptp::get_target_pose_left(){
     return target_pose_left;
 }
 
-geometry_msgs::msg::Pose OpenArmMove::get_current_pose_right(){
+geometry_msgs::msg::Pose Ptp::get_current_pose_right(){
     geometry_msgs::msg::Pose empty_pose;
     if (!right_arm_full_) {
         RCLCPP_ERROR(LOGGER, "right_arm_full_ no inicializado en get_current_pose_right()");
@@ -80,7 +80,7 @@ geometry_msgs::msg::Pose OpenArmMove::get_current_pose_right(){
     }
 }
 
-geometry_msgs::msg::Pose OpenArmMove::get_current_pose_left(){
+geometry_msgs::msg::Pose Ptp::get_current_pose_left(){
     geometry_msgs::msg::Pose empty_pose;
     if (!left_arm_full_) {
         RCLCPP_ERROR(LOGGER, "right_arm_full_ no inicializado en get_current_pose_right()");
@@ -96,7 +96,11 @@ geometry_msgs::msg::Pose OpenArmMove::get_current_pose_left(){
     }
 }
 
-geometry_msgs::msg::Pose OpenArmMove::PrevPose(const geometry_msgs::msg::Pose &Target_pos, float dist)
+geometry_msgs::msg::Pose Ptp::get_current_dual_pose(){
+    CalCurrentVirtual();
+    return EigenToPos(T_base_virtual_);
+}
+geometry_msgs::msg::Pose Ptp::PrevPose(const geometry_msgs::msg::Pose &Target_pos, float dist)
 {
     geometry_msgs::msg::Pose target;
     target = Target_pos;
@@ -116,16 +120,28 @@ geometry_msgs::msg::Pose OpenArmMove::PrevPose(const geometry_msgs::msg::Pose &T
 
 }
 
-void OpenArmMove::setParam(moveit::planning_interface::MoveGroupInterface *group )
-{
-    group->setMaxVelocityScalingFactor(MaxVelocityScalingFactor_);
-    group->setMaxAccelerationScalingFactor(MaxAccelerationScalingFactor_);
-    group->setNumPlanningAttempts(NumPlanningAttempts_);
-    group->setPlanningTime(PlanningTime_);
-    group->setGoalJointTolerance(0.01);
+void Ptp::timerCallback() {
+    
+    CalCurrentVirtual();
+    if (pub_virtual_target_){
+        geometry_msgs::msg::PoseStamped msg;
+        msg.header.stamp = node_->now();
+        msg.header.frame_id = left_arm_full_->getPlanningFrame();
+        msg.pose = EigenToPos(T_base_virtual_);
+        pub_virtual_target_->publish(msg);
+    }
 }
 
-void OpenArmMove::PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose)
+void Ptp::setParam(
+    moveit::planning_interface::MoveGroupInterface* group) {
+  group->setMaxVelocityScalingFactor(MaxVelocityScalingFactor_);
+  group->setMaxAccelerationScalingFactor(MaxAccelerationScalingFactor_);
+  group->setNumPlanningAttempts(NumPlanningAttempts_);
+  group->setPlanningTime(PlanningTime_);
+  group->setGoalJointTolerance(0.01);
+}
+
+void Ptp::PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose)
 {
     RCLCPP_INFO(LOGGER, "Pose name: %s", pose_name.c_str());
     RCLCPP_INFO(LOGGER, "Position: x:%f y:%f z:%f",
@@ -135,4 +151,35 @@ void OpenArmMove::PrintPose(std::string pose_name, geometry_msgs::msg::Pose pose
         pose.orientation.y,
         pose.orientation.z,
         pose.orientation.w);
+}
+
+geometry_msgs::msg::Pose Ptp::EigenToPos(Eigen::Isometry3d eigen)
+{
+    geometry_msgs::msg::Pose ret;
+    ret.position.x = eigen.translation().x();
+    ret.position.y = eigen.translation().y();
+    ret.position.z = eigen.translation().z();
+    Eigen::Quaterniond q_tl(eigen.rotation());
+    ret.orientation.x = q_tl.x();
+    ret.orientation.y = q_tl.y();
+    ret.orientation.z = q_tl.z();
+    ret.orientation.w = q_tl.w();
+
+    return ret;
+}
+
+void Ptp::CalCurrentVirtual(){
+
+    moveit::core::RobotStatePtr left_state = left_arm_full_->getCurrentState();
+    moveit::core::RobotStatePtr right_state = right_arm_full_->getCurrentState();
+     // 1. Obtener transformaciones actuales de los end-effectors
+    Eigen::Isometry3d T_base_left = left_state->getGlobalLinkTransform(left_arm_->getEndEffectorLink());
+    Eigen::Isometry3d T_base_right = right_state->getGlobalLinkTransform(right_arm_->getEndEffectorLink());
+    
+    // 2. Calcular pose virtual actual (punto medio y orientación interpolada)
+    Eigen::Vector3d p_virtual =( T_base_left.translation() + T_base_right.translation()) * 0.5;
+    Eigen::Quaterniond q_virtual = Eigen::Quaterniond(T_base_left.rotation()).slerp(0.5, Eigen::Quaterniond(T_base_right.rotation()));
+    T_base_virtual_ = Eigen::Isometry3d::Identity();
+    T_base_virtual_.translation()= p_virtual;
+    T_base_virtual_.linear() = q_virtual.toRotationMatrix();
 }
