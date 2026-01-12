@@ -42,40 +42,13 @@
 #include <control_msgs/action/follow_joint_trajectory.hpp>
 #include "logger.hpp"
 #include "Topics_utils.hpp"
+#include "motion_strategy.hpp"
 
 
-Ptp::Ptp(rclcpp::Node::SharedPtr node): node_(node) {
+
+Ptp::Ptp(rclcpp::Node::SharedPtr node) : MotionStrategy(node){}
     
-    MaxAccelerationScalingFactor_ = 0.1;
-    MaxVelocityScalingFactor_ = 0.1;
-    NumPlanningAttempts_ = 20;
-    PlanningTime_= 5.0;
-	left_arm_ = new moveit::planning_interface::MoveGroupInterface(node_,"left_arm");
-    right_arm_ = new moveit::planning_interface::MoveGroupInterface(node_,"right_arm");
-    left_arm_full_ = new moveit::planning_interface::MoveGroupInterface(node_,"left_arm_full");
-    right_arm_full_ = new moveit::planning_interface::MoveGroupInterface(node_,"right_arm_full");
-    bimanual_ =new moveit::planning_interface::MoveGroupInterface(node_,"bimanual_full");
-    left_gripper_= new moveit::planning_interface::MoveGroupInterface(node_,"left_gripper");
-    right_gripper_ = new moveit::planning_interface::MoveGroupInterface(node_,"right_gripper");
-	
-    left_arm_full_->startStateMonitor();
-    pub_virtual_target_= node_->create_publisher<geometry_msgs::msg::PoseStamped>("v_target", 10);
-    timer_ = node_->create_wall_timer(
-        std::chrono::milliseconds(100),
-        std::bind(&Ptp::timerCallback, this)
-    );
-}
-
-Ptp::~Ptp()
-{
-	if(left_arm_) delete left_arm_;
-	if(right_arm_) delete right_arm_;
-    if(left_gripper_) delete left_gripper_;
-    if(right_gripper_) delete right_gripper_;
-    if(left_arm_full_) delete left_arm_full_;
-	if(right_arm_full_) delete right_arm_full_;
-     if(bimanual_) delete bimanual_;
-}
+Ptp::~Ptp(){}
 
 void Ptp::CloseLeftGripper(){
     RCLCPP_INFO(LOGGER, "Closing left gripper");
@@ -107,43 +80,51 @@ void Ptp::OpenRightGripper(){
 }
 
 
-void Ptp::PtpBimanual(const geometry_msgs::msg::Pose& target_left,
-                            const geometry_msgs::msg::Pose& target_right,
+// --- Métodos de Alto Nivel ---
+
+void Ptp::Bimanual(const std::vector<geometry_msgs::msg::Pose>& target_left,
+                            const std::vector<geometry_msgs::msg::Pose>& target_right,
                             float gripper_l,
                             float gripper_r){
     RCLCPP_INFO(LOGGER, "Init PtpBimanual TARGET TARGET");
-    PlanBimanual(target_left, target_right, gripper_l, gripper_r);
-    BimanualExec();
+    // Llamada al override correcto
+    PlanBimanual(target_left, target_right,gripper_l, gripper_r); 
+    // Nota: PlanBimanual (override) no recibe grippers. 
+    // Si necesitas mover grippers, hazlo aparte o ajusta tu lógica.
+    // O usa PlanLeftArm_full / PlanRightArm_full secuencialmente si no es coordinado.
+    
+    // Si tu lógica interna de PlanBimanual ya maneja grippers, perfecto, pero la firma base no los tiene.
+    ExecuteBimanual();
 }
 
-void Ptp::PtpBimanual(const geometry_msgs::msg::Pose& target_left,
+void Ptp::Bimanual(const std::vector<geometry_msgs::msg::Pose>& target_left,
                             std::string pose_right,
                             float gripper_l,
                             float gripper_r){
-    
     RCLCPP_INFO(LOGGER, "Init PtpBimanual TARGET POSE");
     (void) gripper_r;
-    PlanLeftFull(target_left, gripper_l);
+    // Cambio de nombre: PlanLeftFull -> PlanLeftArm_full
+    PlanLeftArm_full(target_left, gripper_l);
     RightFullToNamedPose(pose_right);
-    BimanualExec();
+    ExecuteBimanual();
 }
 
-void Ptp::PtpBimanual(std::string pose_left,
-                            const geometry_msgs::msg::Pose& target_right,
+void Ptp::Bimanual(std::string pose_left,
+                            const std::vector<geometry_msgs::msg::Pose>& target_right,
                             float gripper_l,
                             float gripper_r){
     RCLCPP_INFO(LOGGER, "Init PtpBimanual POSE TARGET");
     (void) gripper_l;
     LeftFullToNamedPose(pose_left);
-    PlanRightFull(target_right, gripper_r);
-    BimanualExec();
+    PlanRightArm_full(target_right, gripper_r);
+    ExecuteBimanual();
 }
 
-void Ptp::PtpBimanual(std::string pose_left,
+void Ptp::Bimanual(std::string pose_left,
                             std::string pose_right){
     RCLCPP_INFO(LOGGER, "Init PtpBimanual POSE POSE");
     BimanualNamedPose(pose_left, pose_right);
-    BimanualExec();
+    ExecuteBimanual();
 }
 
 /* void Ptp::PtpBimanual(geometry_msgs::msg::Pose target_virtual, double gripper_left, double gripper_right){
@@ -184,30 +165,32 @@ void Ptp::PtpBimanual(std::string pose_left,
 
 
 
-void Ptp::PtpLeft(const geometry_msgs::msg::Pose &target, float gripper)
+void Ptp::Left(const std::vector<geometry_msgs::msg::Pose>& target, float gripper)
 {
     RCLCPP_INFO(LOGGER, "Init Ptpleft TARGET");
-    PlanLeftFull(target, gripper);
-    LeftArmExec();
+    // Corregido nombre de variable y nombre de función
+    PlanLeftArm_full(target, gripper);
+    ExecuteLeft();
 }
 
-void Ptp::PtpLeft(std::string pose)
+void Ptp::Left(std::string pose)
 {
     RCLCPP_INFO(LOGGER, "Init Ptpleft POSE");
     LeftFullToNamedPose(pose);
-    LeftArmExec();
+    ExecuteLeft();
 }
 
-void Ptp::PtpRight(const geometry_msgs::msg::Pose &target, float gripper)
+void Ptp::Right(const  std::vector<geometry_msgs::msg::Pose> &target, float gripper)
 {
     RCLCPP_INFO(LOGGER, "Init PtpRight TARGET");
-    PlanRightFull(target, gripper);
-    RightArmExec();
+    // Corregido nombre de función
+    PlanRightArm_full(target, gripper);
+    ExecuteRight();
 }
 
-void Ptp::PtpRight(std::string pose)
+void Ptp::Right(std::string pose)
 {
     RCLCPP_INFO(LOGGER, "Init PtpRight POSE");
     RightFullToNamedPose(pose);
-    RightArmExec();
+    ExecuteRight();
 }

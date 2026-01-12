@@ -35,12 +35,21 @@
 /* Author: Endika Etxebarrieta */
 
 #include "openarm_move.hpp"
-
 #include "logger.hpp"
-#include "Topics_utils.hpp"
 
+// Inicializamos ptp y cartesian en la lista de inicialización
+OpenArmMove::OpenArmMove(rclcpp::Node::SharedPtr node) 
+    : node_(node),
+      ptp(new Ptp(node)),
+      //cartesian(new Cartesian(node)),
+      utils(ptp)
+{
+    RCLCPP_INFO(LOGGER, "OpenArmMove initialized with PTP and Cartesian strategies");
+}
 
-OpenArmMove::OpenArmMove(rclcpp::Node::SharedPtr node):Ptp(node),  node_(node) {}
-
-OpenArmMove::~OpenArmMove(){}
+OpenArmMove::~OpenArmMove()
+{
+    delete ptp;
+    delete cartesian;
+}
 

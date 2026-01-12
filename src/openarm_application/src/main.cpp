@@ -11,32 +11,6 @@
 #include <geometric_shapes/mesh_operations.h>
 #include <geometric_shapes/shape_operations.h> 
 
-geometry_msgs::msg::Pose createpose(const std::vector<double>& pos, const std::vector<double>& rot)
-{
-    geometry_msgs::msg::Pose ret;
-    ret.position.x = pos[0];
-    ret.position.y =pos[1];
-    ret.position.z = pos[2];
-
-    ret.orientation.x = rot[0];
-    ret.orientation.y = rot[1];
-    ret.orientation.z = rot[2];
-    ret.orientation.w = rot[3];
-
-    tf2::Quaternion q(ret.orientation.x,
-                    ret.orientation.y,
-                    ret.orientation.z,
-                    ret.orientation.w);
-    if (std::fabs(q.length()) < 1e-6) {
-    std::cout <<  "Orientación casi nula; interpretando x,y,z como RPY"<< std::endl;
-      q.setRPY(ret.orientation.x, ret.orientation.y, ret.orientation.z);
-    }
-    q.normalize();
-    ret.orientation = tf2::toMsg(q);
-    return ret;
-}
-
-
 void create_obstacle(rclcpp::Node::SharedPtr node,
                 moveit::planning_interface::PlanningSceneInterface &planning_scene_interface){
     
@@ -137,36 +111,24 @@ int main(int argc, char** argv)
     create_obstacle(move_group_node, planning_scene_interface);
     
    
-    
+    oa.ptp->Bimanual("home", "home");
 
 /*     if (!oa.BimanualNamedPose("pose_T","pose_T")) return 1;
     oa.BimanualExec(); 
     if (!oa.BimanualNamedPose("home","home")) return 1;
     oa.BimanualExec();*/
-    oa.PtpBimanual("pose_T","pose_T");
+    oa.ptp->Bimanual("pose_T","pose_T");
 
-    oa.PtpBimanual("stand_up","stand_up");
-    geometry_msgs::msg::Pose pose, inter_pose, interchangeL, interchangeR, finalR;
+    oa.ptp->Bimanual("stand_up","stand_up");
+    std::vector<geometry_msgs::msg::Pose> target, interchangeL, interchangeR, finalR, inter_pose;
+    geometry_msgs::msg::Pose pose;
     tf2_msgs::msg::TFMessage pos = reader->ReadTf("/tf_bootle", 5.0);
     if (pos.transforms.empty()) {
         RCLCPP_ERROR(move_group_node->get_logger(), "No se recibió TF de /tf_bootle");
         return 1;
     }
-    
-    geometry_msgs::msg::TransformStamped t = pos.transforms[0];
-    pose.position.x = t.transform.translation.x;
-    pose.position.y = t.transform.translation.y;
-    pose.position.z =t.transform.translation.z;
-     tf2::Quaternion q(t.transform.rotation.x,
-                        t.transform.rotation.y,
-                        t.transform.rotation.z,
-                        t.transform.rotation.w);
 
-    q.normalize();
-    pose.orientation= tf2::toMsg(q);
-    std::cout << "FIN NAMED POSE" << std::endl;
-    
-    //pose = createpose({0.28, 0.15, 0.44}, {0.87464, -0.23436, 0.4099, 0.10983});
+    target = oa.utils.TF2Vector(pos);
     interchangeL = createpose({0.18425, 0.02312, 0.55979}, {0.59773, -0.54450, 0.39626, 0.43499});
     
     interchangeR = createpose({0.18425, 0.03668, 0.61}, {0.51542, 0.51542, 0.48409, -0.48409});     
@@ -176,43 +138,42 @@ int main(int argc, char** argv)
     /* oa.PtpLeft(interchangeL,CLOSE);
     oa.PtpRight(interchangeR, CLOSE); */
     
-    
-    
+    oa.utils.PrintRobotInfo();
     //oa.PrintPose("pose 1", pose);
-    inter_pose = oa.PrevPose(pose, 0.07);
-    oa.PtpLeft(inter_pose, OPEN);
-    oa.PtpLeft(pose, OPEN);
+    inter_pose = oa.utils.AproachPoint(target, 0.07);
+    oa.ptp->Left(inter_pose, OPEN);
+    oa.ptp->Left(target, OPEN);
  
-    oa.PtpLeft(pose, CLOSE);
+    oa.ptp->Left(target, CLOSE);
     
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    pose.position.z += .05;
-    oa.PtpLeft(pose,CLOSE);
+    target.back().position.z += .05;
+    oa.ptp->Left(target,CLOSE);
     
-    oa.PtpBimanual(interchangeL, oa.PrevPose(interchangeR, 0.1), CLOSE, OPEN);
+    oa.ptp->Bimanual(interchangeL, oa.utils.AproachPoint(interchangeR, 0.1), CLOSE, OPEN);
     
-    oa.PtpRight(interchangeR,OPEN);
+    oa.ptp->Right(interchangeR,OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpRight(interchangeR,CLOSE);
+    oa.ptp->Right(interchangeR,CLOSE);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    geometry_msgs::msg::Pose dual_move (oa.get_current_dual_pose());
-    dual_move.position.x +=.05;
+    //geometry_msgs::msg::Pose dual_move (oa.utils.get_current_dual_pose());
+    //dual_move.position.x +=.05;
     //oa.PtpBimanual(dual_move, CLOSE, CLOSE); //not viable ---> cartesian
-   /*  oa.PtpLeft(interchangeL, OPEN);
+    oa.ptp->Left(interchangeL, OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    oa.PtpBimanual(oa.PrevPose(interchangeL, .05), 
-                    oa.PrevPose(interchangeR, 0.1),
+    oa.ptp->Bimanual(oa.utils.AproachPoint(interchangeL, .05), 
+                    oa.utils.AproachPoint(interchangeR, 0.1),
                     OPEN, CLOSE);
-    geometry_msgs::msg::Pose final_up(finalR);
-    final_up.position.z += 0.05;
-    oa.PtpBimanual("stand_up", final_up, CLOSE, CLOSE);
-    oa.PtpRight(finalR, CLOSE);
+    std::vector<geometry_msgs::msg::Pose> final_up(finalR);
+    final_up.back().position.z += 0.05;
+    oa.ptp->Bimanual("stand_up", final_up, CLOSE, CLOSE);
+    oa.ptp->Right(finalR, CLOSE);
 
-    oa.PtpRight(finalR, OPEN);
+    oa.ptp->Right(finalR, OPEN);
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    finalR.position.z += .1;
-    oa.PtpRight(finalR, OPEN);
-    oa.PtpBimanual("stand_up","stand_up"); */
+    finalR.back().position.z += .1;
+    oa.ptp->Right(finalR, OPEN);
+    oa.ptp->Bimanual("stand_up","stand_up"); 
 
    // oa.PtpBimanual("pose_T","pose_T");
     //oa.PtpBimanual("home","home"); 
@@ -223,3 +184,4 @@ int main(int argc, char** argv)
     exec_thread.join();
     return 0;
 }
+

@@ -34,7 +34,7 @@
 
 /* Author: Endika Etxebarrieta */
 
-#include "openarm_move.hpp"
+#include "Ptp.hpp"
 
 void Ptp::PlanArm(moveit::planning_interface::MoveGroupInterface *group,                     
                         const geometry_msgs::msg::Pose& target_pos, std::string ee_link)
@@ -102,8 +102,8 @@ void Ptp::PlanGripper(moveit::planning_interface::MoveGroupInterface* group, dou
     group->setJointValueTarget(target_values);
 }
 
-bool Ptp::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
-    PlanArm(left_arm_, target_pos, "openarm_left_hand_tcp");
+bool Ptp::PlanLeftArm(const std::vector<geometry_msgs::msg::Pose>& target_pos){
+    PlanArm(left_arm_, target_pos.back(), "openarm_left_hand_tcp");
     bool result = (left_arm_->plan(left_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
      if(result){
         RCLCPP_INFO(LOGGER, "✓ Left plan ok");
@@ -113,8 +113,8 @@ bool Ptp::PlanLeftArm(const geometry_msgs::msg::Pose& target_pos){
     return result;
 }
 
-bool Ptp::PlanRightArm(const geometry_msgs::msg::Pose& target_pos){
-     PlanArm(right_arm_, target_pos, "openarm_right_hand_tcp");
+bool Ptp::PlanRightArm(const std::vector<geometry_msgs::msg::Pose>& target_pos){
+     PlanArm(right_arm_, target_pos.back(), "openarm_right_hand_tcp");
      bool result = (right_arm_->plan(right_plan_) == moveit::core::MoveItErrorCode::SUCCESS);
      if(result){
         RCLCPP_INFO(LOGGER, "✓ Right plan ok");
@@ -125,7 +125,7 @@ bool Ptp::PlanRightArm(const geometry_msgs::msg::Pose& target_pos){
 }
 
 
-bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
+bool Ptp::PlanLeftArm_full(const std::vector<geometry_msgs::msg::Pose>& waypoints, double gripper_val) 
 {
 
     RCLCPP_INFO(LOGGER, "=== PlanLeftFull (IK left_arm -> joint-space left_arm_full) ===");
@@ -154,11 +154,11 @@ bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float grippe
     RCLCPP_INFO(LOGGER, "Probando IK en grupo 'left_arm' (EE: %s)...", ee_link.c_str());
 
     // 2) Intentar IK en left_arm
-    bool ik_ok = kstate->setFromIK(arm_jmg, target_pose, ee_link, 0.1);
+    bool ik_ok = kstate->setFromIK(arm_jmg, waypoints.back(), ee_link, 0.1);
     if (!ik_ok) {
         RCLCPP_WARN(LOGGER, "IK en 'left_arm' NO encontró solución. Intentando fallback con PlanLeftArm.");
         // fallback simple: usar planificación cartesiana sobre left_arm (ya tiene kinematics)
-        bool fallback_ok = PlanLeftArm(target_pose);
+        bool fallback_ok = PlanLeftArm(waypoints);
         if (fallback_ok) {
             RCLCPP_INFO(LOGGER, "Fallback PlanLeftArm OK");
             return true;
@@ -194,12 +194,12 @@ bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float grippe
     }
 
     // 6) Setear valor del gripper si existe en left_arm_full
-    if (gripper_state < 0.0f) gripper_state = 0.0f;
-    if (gripper_state > 0.044f) gripper_state = 0.044f;
+    if (gripper_val < 0.0f) gripper_val = 0.0f;
+    if (gripper_val > 0.044f) gripper_val = 0.044f;
     auto git = std::find(full_names.begin(), full_names.end(), std::string("openarm_left_finger_joint1"));
     if (git != full_names.end()) {
         size_t gidx = std::distance(full_names.begin(), git);
-        full_positions[gidx] = static_cast<double>(gripper_state);
+        full_positions[gidx] = static_cast<double>(gripper_val);
     }
 
     
@@ -215,7 +215,7 @@ bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float grippe
         return true;
     } else {
         RCLCPP_WARN(LOGGER, "✗ Left Full joint-space plan falló a pesar de IK. Intentando fallback a PlanLeftArm.");
-        bool fallback_ok = PlanLeftArm(target_pose);
+        bool fallback_ok = PlanLeftArm(waypoints);
         if (fallback_ok) {
             RCLCPP_INFO(LOGGER, "Fallback PlanLeftArm OK");
             return true;
@@ -225,7 +225,7 @@ bool Ptp::PlanLeftFull(const geometry_msgs::msg::Pose &target_pose, float grippe
     }
 }
 
-bool Ptp::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripper_state)
+bool Ptp::PlanRightArm_full(const std::vector<geometry_msgs::msg::Pose>& waypoints, double gripper_state)
 {
     
     // verifica la inicializacion de los movegroups
@@ -250,10 +250,10 @@ bool Ptp::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripp
 
     RCLCPP_INFO(LOGGER, "Probando IK en grupo 'right_arm' (EE: %s)...", ee_link.c_str());
 
-    bool ik_ok = kstate->setFromIK(arm_jmg, target_pose, ee_link, 0.1);
+    bool ik_ok = kstate->setFromIK(arm_jmg, waypoints.back(), ee_link, 0.1);
     if (!ik_ok){
         RCLCPP_WARN(LOGGER, "IK en 'right_arm' NO encontró solución. Intentando fallback con PlanRightArm.");
-        bool fallback_ok = PlanRightArm(target_pose);
+        bool fallback_ok = PlanRightArm(waypoints);
         if (fallback_ok){
             RCLCPP_INFO(LOGGER, "Fallback PlanRighttArm OK" );
             return true;
@@ -306,7 +306,7 @@ bool Ptp::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripp
         return true;
     } else {
         RCLCPP_WARN(LOGGER, "✗ Right Full joint-space plan falló a pesar de IK. Intentando fallback a PlanRighttArm.");
-        bool fallback_ok = PlanRightArm(target_pose);
+        bool fallback_ok = PlanRightArm(waypoints);
         if (fallback_ok) {
             RCLCPP_INFO(LOGGER, "Fallback PlanRighttArm OK");
             return true;
@@ -317,19 +317,19 @@ bool Ptp::PlanRightFull(const geometry_msgs::msg::Pose &target_pose, float gripp
 }
 
 
-bool Ptp::PlanBimanual(const geometry_msgs::msg::Pose &target_Left,
-                               const geometry_msgs::msg::Pose &target_Right,
-                               float gripper_left, float gripper_right)
+bool Ptp::PlanBimanual(const std::vector<geometry_msgs::msg::Pose>& left_waypoints, 
+                  const std::vector<geometry_msgs::msg::Pose>& right_waypoints,
+                  double gripper_left, double gripper_right)
 {
     RCLCPP_INFO(LOGGER, "Planificar subplanes con 'left_arm' y 'right_arm'"); // 1) Planificar cada brazo por separado (para obtener la configuración objetivo por brazo)
 
     // Usar los grupos de brazo que tienen kinematics configuradas (left_arm / right_arm)
-    bool ok_left = PlanLeftFull(target_Left, gripper_left);
+    bool ok_left = PlanLeftArm_full(left_waypoints, gripper_left);
     if (!ok_left){
         RCLCPP_ERROR(LOGGER, "Left arm planning failed (left_arm)");
     }
 
-    bool ok_right = PlanRightFull(target_Right, gripper_right);
+    bool ok_right = PlanRightArm_full(right_waypoints, gripper_right);
     if (!ok_right){
         RCLCPP_ERROR(LOGGER, "Left arm planning failed (left_arm)");
     }
@@ -375,3 +375,4 @@ bool Ptp::PlanJointTarget(moveit::planning_interface::MoveGroupInterface *group,
         return false;
     }
 }
+
